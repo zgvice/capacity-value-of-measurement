@@ -1,0 +1,24 @@
+﻿调用日期,年份,日期来源,日期来源原件,原件位置,当日区域及产品任务数,所选任务编号,调用开始_小时,调用结束_小时,调用持续时间_小时,十五分钟读数点数,ISO提交顺序,调用时刻来源,所选区域,所选产品,提前通知类型
+2022-06-14,2022,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D18,3,0,16.333333333333332,22.0,5.666666666666668,23,20,inputs/calls/76f0f94032_alm-history.xlsx,AEP_MARION subzone of AEP,CP,Quick_30
+2022-06-15,2022,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D23,3,3,11.333333333333334,22.0,10.666666666666666,43,19,inputs/calls/76f0f94032_alm-history.xlsx,AEP_MARION subzone of AEP,CP,Quick_30
+2022-06-16,2022,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D28,3,6,13.0,17.0,4.0,16,18,inputs/calls/76f0f94032_alm-history.xlsx,AEP_MARION subzone of AEP,CP,Quick_30
+2022-12-23,2022,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D34,6,10,18.0,22.25,4.25,17,17,inputs/calls/2022-som-pjm-sec6-demand-response.pdf,"AEP,APS,ATSI,COMED,DAY,DEOK,DOM,DUQ,EKPC,PSEG,RECO",CP,Quick30
+2022-12-24,2022,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D39,21,15,6.0,20.5,14.5,58,16,inputs/calls/2022-som-pjm-sec6-demand-response.pdf,"AECO,BGE,DPL,JCPL,METED,PECO,PENELEC,PEPCO,PPL",CP,Short60
+2025-06-23,2025,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D46,2,36,15.0,22.0,7.0,28,15,inputs/calls/76f0f94032_alm-history.xlsx,"AECO, BGE, DOM, DPL, JCPL, METED, 
+PECO, PENELEC, PEPCO, PPL, PSEG",CP,Long_120
+2025-06-24,2025,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D49,8,38,15.0,22.0,7.0,28,14,inputs/calls/76f0f94032_alm-history.xlsx,"BGE, DOM, PECO, PEPCO",CP,Long_120
+2025-06-25,2025,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D58,6,50,15.0,19.0,4.0,16,13,inputs/calls/76f0f94032_alm-history.xlsx,DOM,CP,Long_120
+2025-07-28,2025,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D65,2,52,15.75,21.0,5.25,21,12,inputs/calls/76f0f94032_alm-history.xlsx," BGE, DOM, PEPCO",CP,Short_60
+2025-07-29,2025,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D68,8,54,14.0,20.75,6.75,27,11,inputs/calls/76f0f94032_alm-history.xlsx,"ATSI, BGE, DOM, PEPCO",CP,Short_60
+2025-08-11,2025,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D77,5,62,10.0,20.0,10.0,40,10,inputs/calls/76f0f94032_alm-history.xlsx,BGE,CP,Short_60
+2026-01-25,2026,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D83,3,67,14.5,19.0,4.5,18,9,inputs/calls/76f0f94032_alm-history.xlsx,"BGE, DOM, PEPCO",CP,Long_120
+2026-05-18,2026,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D87,4,70,15.0,21.0,6.0,24,8,inputs/calls/76f0f94032_alm-history.xlsx,DOM,CP,Quick_30
+2026-05-19,2026,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D92,6,74,14.0,21.5,7.5,30,7,inputs/calls/76f0f94032_alm-history.xlsx,"BGE, DOM, PEPCO",CP,Long_120
+2026-07-02,2026,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D99,7,80,13.5,21.5,8.0,32,6,inputs/calls/76f0f94032_alm-history.xlsx,"AECO, AEP, APS, ATSI,  BGE, COMED, DAY, DEOK, DOM, DPL, DUQ, 
+EKPC, JCPL, METED, PECO, PENELEC, PEPCO, PPL, PSEG",CP,Long_120
+2026-07-03,2026,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D107,6,87,12.0,21.0,9.0,36,5,inputs/calls/76f0f94032_alm-history.xlsx,"AECO, AEP, APS, ATSI,  BGE, COMED, DAY, DEOK, DOM, DPL, DUQ, 
+EKPC, JCPL, METED, PECO, PENELEC, PEPCO, PPL, PSEG",CP,Short_60
+2026-09-01,2026,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D115,2,93,18.25,22.0,3.75,15,4,inputs/calls/76f0f94032_alm-history.xlsx,"AEP, BGE, COMED, DOM, PEPCO",CP,Short_60
+2026-09-17,2026,工作簿,inputs/calls/76f0f94032_alm-history.xlsx,Summary 2015-2026!D119,6,95,14.5,22.0,7.5,30,3,inputs/calls/76f0f94032_alm-history.xlsx,"AEP, APS, ATSI,  BGE, DAY, DEOK, DOM, DUQ, EKPC, PEPCO",CP,Quick_30
+2026-10-13,2026,10月调用报告,inputs/calls/ba9c78d336_dispatched-demand-response-oct-13-14-2026.pdf,第3页,6,102,15.0,21.0,6.0,24,2,inputs/calls/ba9c78d336_dispatched-demand-response-oct-13-14-2026.pdf,AEP BGE DOM PEPCO,Load Management; CP detail not asserted from bare PDF,Short_60
+2026-10-14,2026,10月调用报告,inputs/calls/ba9c78d336_dispatched-demand-response-oct-13-14-2026.pdf,第3页,3,107,15.0,19.5,4.5,18,1,inputs/calls/ba9c78d336_dispatched-demand-response-oct-13-14-2026.pdf,AECO AEP APS ATSI BGE DAY DEOK DOM DPL DUQ EKPC JCPL METED PECO PENELEC PEPCO PPL PSEG,Load Management; CP detail not asserted from bare PDF,Short_60

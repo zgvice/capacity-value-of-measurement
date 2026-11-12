@@ -1,0 +1,119 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "annual_group": 20,
+      "power_path": 0,
+      "q_MW": 378.6853328347206,
+      "exact_original_shortfall_MWh": 367578.9340647771,
+      "rounded_shortfall_MWh": 367578.92125,
+      "max_rounding_difference_MW": 0.0012411183888616506
+    },
+    {
+      "case": 1,
+      "annual_group": 20,
+      "power_path": 0,
+      "q_MW": 653.2514402574769,
+      "exact_original_shortfall_MWh": 383655.6177277541,
+      "rounded_shortfall_MWh": 383655.494,
+      "max_rounding_difference_MW": 0.0013485411454894347
+    },
+    {
+      "case": 2,
+      "annual_group": 20,
+      "power_path": 32,
+      "q_MW": 378.6853328347206,
+      "exact_original_shortfall_MWh": 367741.8581880937,
+      "rounded_shortfall_MWh": 367741.845,
+      "max_rounding_difference_MW": 0.0012319947127252817
+    },
+    {
+      "case": 3,
+      "annual_group": 20,
+      "power_path": 32,
+      "q_MW": 653.2514402574769,
+      "exact_original_shortfall_MWh": 383809.9249358918,
+      "rounded_shortfall_MWh": 383809.80075,
+      "max_rounding_difference_MW": 0.0013731263457827936
+    },
+    {
+      "case": 4,
+      "annual_group": 851,
+      "power_path": 0,
+      "q_MW": 378.6853328347206,
+      "exact_original_shortfall_MWh": 1577.8641502208122,
+      "rounded_shortfall_MWh": 1577.86225,
+      "max_rounding_difference_MW": 0.0011788820064566607
+    },
+    {
+      "case": 5,
+      "annual_group": 851,
+      "power_path": 0,
+      "q_MW": 653.2514402574769,
+      "exact_original_shortfall_MWh": 7830.419752470494,
+      "rounded_shortfall_MWh": 7830.31975,
+      "max_rounding_difference_MW": 0.0012863047625160107
+    },
+    {
+      "case": 6,
+      "annual_group": 851,
+      "power_path": 32,
+      "q_MW": 378.6853328347206,
+      "exact_original_shortfall_MWh": 1582.6431652816718,
+      "rounded_shortfall_MWh": 1582.64175,
+      "max_rounding_difference_MW": 0.001281348020711448
+    },
+    {
+      "case": 7,
+      "annual_group": 851,
+      "power_path": 32,
+      "q_MW": 653.2514402574769,
+      "exact_original_shortfall_MWh": 7835.198767531355,
+      "rounded_shortfall_MWh": 7835.09925,
+      "max_rounding_difference_MW": 0.0013887707766571111
+    },
+    {
+      "case": 8,
+      "annual_group": 1493,
+      "power_path": 0,
+      "q_MW": 378.6853328347206,
+      "exact_original_shortfall_MWh": 334126.0524323183,
+      "rounded_shortfall_MWh": 334126.0455,
+      "max_rounding_difference_MW": 0.0011910022221854888
+    },
+    {
+      "case": 9,
+      "annual_group": 1493,
+      "power_path": 0,
+      "q_MW": 653.2514402574769,
+      "exact_original_shortfall_MWh": 363454.95054955943,
+      "rounded_shortfall_MWh": 363454.7075,
+      "max_rounding_difference_MW": 0.0012984249806322623
+    },
+    {
+      "case": 10,
+      "annual_group": 1493,
+      "power_path": 32,
+      "q_MW": 378.6853328347206,
+      "exact_original_shortfall_MWh": 333928.2533187733,
+      "rounded_shortfall_MWh": 333928.245,
+      "max_rounding_difference_MW": 0.0011872746254084632
+    },
+    {
+      "case": 11,
+      "annual_group": 1493,
+      "power_path": 32,
+      "q_MW": 653.2514402574769,
+      "exact_original_shortfall_MWh": 363257.1514360144,
+      "rounded_shortfall_MWh": 363256.907,
+      "max_rounding_difference_MW": 0.0012946973838552367
+    }
+  ],
+  "quarter_points": 35040,
+  "tool_steps": 105120,
+  "tool_minutes": 5,
+  "service_hours": 8760,
+  "original_annual_atoms": 40300,
+  "full_physics_source": "checks/portfolio_capacity.json/正态1户/physical_state_check",
+  "source": "当前年度缺口、同一冻结邀约、同一正态功率积分轨迹；额外状态约束沿用已证明不绑定的原界。"
+}

@@ -1,0 +1,563 @@
+{
+  "cases": {
+    "20次历史_原安排": {
+      "total_lower_MW": 502.3200656164738,
+      "total_upper_MW": 502.37006561647377,
+      "net_lower_MW": 123.6347327817532,
+      "net_upper_MW": 123.68473278175315,
+      "risk_lower_MWh": 8758.486518055026,
+      "risk_upper_MWh": 8761.513480972619,
+      "root_evaluations": 7,
+      "duration_hours": 8.059265217789552
+    },
+    "误差标准差率7.15%": {
+      "total_lower_MW": 651.8132216399246,
+      "total_upper_MW": 651.8453633548437,
+      "net_lower_MW": 273.12788880520395,
+      "net_upper_MW": 273.1600305201231,
+      "risk_lower_MWh": 8745.302350080121,
+      "risk_upper_MWh": 8774.115769787639,
+      "root_evaluations": 8,
+      "error_SD_MW": 143.0,
+      "error_SD_rate": 0.0715,
+      "minimum_used_normal_load_MW": 1562.0139556862139,
+      "physically_limited_points": 0,
+      "reduced_historical_delivery_MWh": 0.0,
+      "comparison": "相同高斯随机数下的负荷波动情景；真实响应保留正常用电上限。",
+      "duration_hours": 13.003425920142051
+    },
+    "误差标准差率14.44%": {
+      "total_lower_MW": 502.3200656164738,
+      "total_upper_MW": 502.37006561647377,
+      "net_lower_MW": 123.6347327817532,
+      "net_upper_MW": 123.68473278175315,
+      "risk_lower_MWh": 8758.486518055026,
+      "risk_upper_MWh": 8761.513480972619,
+      "root_evaluations": 7,
+      "error_SD_MW": 288.8,
+      "error_SD_rate": 0.1444,
+      "minimum_used_normal_load_MW": 1115.4519608543956,
+      "physically_limited_points": 0,
+      "reduced_historical_delivery_MWh": 0.0,
+      "comparison": "相同高斯随机数下的负荷波动情景；真实响应保留正常用电上限。",
+      "duration_hours": 8.059265217789552
+    },
+    "误差标准差率28.65%": {
+      "total_lower_MW": 418.44845866412675,
+      "total_upper_MW": 418.57587701864867,
+      "net_lower_MW": 39.763125829406135,
+      "net_upper_MW": 39.89054418392806,
+      "risk_lower_MWh": 8758.388914355575,
+      "risk_upper_MWh": 8776.786981898125,
+      "root_evaluations": 7,
+      "error_SD_MW": 573.0,
+      "error_SD_rate": 0.2865,
+      "minimum_used_normal_load_MW": 244.99298327412976,
+      "physically_limited_points": 7,
+      "reduced_historical_delivery_MWh": 432.287294794833,
+      "comparison": "相同高斯随机数下的负荷波动情景；真实响应保留正常用电上限。",
+      "duration_hours": 5.341591117164327
+    },
+    "固定记录_核验标准差率14.44%": {
+      "total_lower_MW": 502.3200656164738,
+      "total_upper_MW": 502.37006561647377,
+      "net_lower_MW": 123.6347327817532,
+      "net_upper_MW": 123.68473278175315,
+      "risk_lower_MWh": 8758.486518055026,
+      "risk_upper_MWh": 8761.513480972619,
+      "root_evaluations": 7,
+      "error_SD_MW": 288.8,
+      "error_SD_rate": 0.1444,
+      "physically_limited_points": 0,
+      "reduced_historical_delivery_MWh": 0.0,
+      "comparison": "同一客户、同一真实调节和全部15分钟记录；只扩大核验误差界。",
+      "duration_hours": 8.059265217789552
+    },
+    "固定记录_核验标准差率28.65%": {
+      "total_lower_MW": 431.81488968727086,
+      "total_upper_MW": 431.8669549798704,
+      "net_lower_MW": 53.12955685255025,
+      "net_upper_MW": 53.18162214514979,
+      "risk_lower_MWh": 8759.533209432286,
+      "risk_upper_MWh": 8765.682225792725,
+      "root_evaluations": 7,
+      "error_SD_MW": 573.0,
+      "error_SD_rate": 0.2865,
+      "physically_limited_points": 0,
+      "reduced_historical_delivery_MWh": 0.0,
+      "comparison": "同一客户、同一真实调节和全部15分钟记录；只扩大核验误差界。",
+      "duration_hours": 6.089685002609488
+    },
+    "完整信息_原安排": {
+      "total_lower_MW": 653.2514402574769,
+      "total_upper_MW": 653.2691997862205,
+      "net_lower_MW": 274.5661074227563,
+      "net_upper_MW": 274.5838669514999,
+      "risk_lower_MWh": 8755.358955479689,
+      "risk_upper_MWh": 8770.886731746388,
+      "root_evaluations": 7,
+      "duration_hours": 14.5
+    },
+    "邀约最长12小时": {
+      "total_lower_MW": 650.2083682807636,
+      "total_upper_MW": 650.2389765958181,
+      "net_lower_MW": 271.52303544604297,
+      "net_upper_MW": 271.55364376109753,
+      "risk_lower_MWh": 8757.780294932687,
+      "risk_upper_MWh": 8785.521975206082,
+      "root_evaluations": 9,
+      "invitation_limit_hours": 12.0,
+      "duration_hours": 14.5
+    },
+    "邀约最长15小时": {
+      "total_lower_MW": 653.2417413958001,
+      "total_upper_MW": 653.2691997862205,
+      "net_lower_MW": 274.5564085610795,
+      "net_upper_MW": 274.5838669514999,
+      "risk_lower_MWh": 8746.87891633028,
+      "risk_upper_MWh": 8770.886731746388,
+      "root_evaluations": 6,
+      "invitation_limit_hours": 15.0,
+      "duration_hours": 14.5
+    },
+    "调用后增加用电25%": {
+      "total_lower_MW": 636.4174375110827,
+      "total_upper_MW": 636.5598051292603,
+      "net_lower_MW": 257.73210467636204,
+      "net_upper_MW": 257.8744722945397,
+      "risk_lower_MWh": 8759.84325465583,
+      "risk_upper_MWh": 8801.10556280408,
+      "root_evaluations": 12,
+      "payback_fraction": 0.25,
+      "payback_hours": 4,
+      "duration_hours": 14.5
+    },
+    "调用后增加用电50%": {
+      "total_lower_MW": 586.0641865770131,
+      "total_upper_MW": 586.1731857017188,
+      "net_lower_MW": 207.37885374229245,
+      "net_upper_MW": 207.4878528669982,
+      "risk_lower_MWh": 8759.947743528935,
+      "risk_upper_MWh": 8789.783716123988,
+      "root_evaluations": 12,
+      "payback_fraction": 0.5,
+      "payback_hours": 4,
+      "duration_hours": 14.5
+    }
+  },
+  "full_physics": [
+    {
+      "user": "正态1",
+      "initial_state_MWh": 13140000.0,
+      "annual_consumption_upper_MWh": 1964233.613917788,
+      "minimum_state_lower_MWh": 11175766.386082212,
+      "terminal_lower_MWh": 11175766.386082212,
+      "verified_for_true_duration_hours": 14.5
+    }
+  ],
+  "annual_atoms": 40300,
+  "hours": 8760,
+  "exact_annual_paths": 1788,
+  "parameters": {
+    "load_mw": 2000.0,
+    "nomination_mw": 1000.0,
+    "response_mean_ratio": 1.0,
+    "response_sd_ratio": 0.1,
+    "response_rho15": 0.0,
+    "error_mean_rate": 0.0,
+    "error_sd_rate": 0.1444,
+    "bias_bound_rate": 0.04,
+    "verification_coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_error_budget_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "load_daily_variance_share": 0.5,
+    "load_rho15": 0.8408964152537145,
+    "verified_min_duration_hours": 0.0,
+    "true_duration_hours": 14.5,
+    "maximum_extension_hours": null,
+    "tail_level": 0.95,
+    "risk_budget_mwh": 8760.0,
+    "system_surplus_mw": 1000.0,
+    "future_paths": 64,
+    "quadrature_nodes": 32,
+    "load_seed": 2026110313,
+    "future_seed": 2026110417,
+    "capacity_tolerance_mw": 0.2,
+    "reference_tolerance_mw": 0.0001,
+    "solver_tolerance": 1e-08,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibration_batch": 4096,
+    "schedule_iterations": 6,
+    "duration_comparison_fraction": 0.5,
+    "time_tolerance_hours": 1e-10,
+    "hour_bin_tolerance": 1e-09,
+    "duration_check_tolerance_hours": 1e-06,
+    "covariance_relative_tolerance": 1e-11,
+    "transport_iterations": 500,
+    "transport_solver_tolerance": 1e-10,
+    "transport_gap_mwh": 0.002,
+    "empirical_users": [
+      "LSE A",
+      "LSE B",
+      "LSE C"
+    ],
+    "normal_sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "history_power_seed": 2026110421,
+    "individual_load_seed": 2026110521,
+    "common_error_amplitude": 0.02,
+    "individual_error_amplitude": 0.2,
+    "state_power_ratio": 1.5,
+    "winter_dates": [
+      "2022-12-23",
+      "2022-12-24"
+    ],
+    "summer_dates": [
+      "2025-06-23",
+      "2025-06-24",
+      "2025-06-25"
+    ],
+    "coverage_draws": 10000,
+    "coverage_seed": 2026110511,
+    "coverage_batch": 1000,
+    "validation_future_seed": 2026110513,
+    "boundary_duration_hours": 12.0,
+    "surplus_factors": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "invitation_limits_hours": [
+      12.0,
+      15.0
+    ],
+    "payback_fractions": [
+      0.0,
+      0.25,
+      0.5
+    ],
+    "payback_hours": 4,
+    "error_scales": [
+      0.0715,
+      0.1444,
+      0.2865
+    ],
+    "sensitivity_tolerance_mw": 0.2
+  },
+  "history_rule_settings": {
+    "training_dates": [
+      "2022-06-14",
+      "2022-06-15",
+      "2022-06-16",
+      "2025-07-28",
+      "2025-07-29",
+      "2025-08-11",
+      "2026-01-25",
+      "2026-05-18",
+      "2026-05-19",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-09-01",
+      "2026-09-17",
+      "2026-10-13",
+      "2026-10-14"
+    ],
+    "all_dates": [
+      "2022-06-14",
+      "2022-06-15",
+      "2022-06-16",
+      "2022-12-23",
+      "2022-12-24",
+      "2025-06-23",
+      "2025-06-24",
+      "2025-06-25",
+      "2025-07-28",
+      "2025-07-29",
+      "2025-08-11",
+      "2026-01-25",
+      "2026-05-18",
+      "2026-05-19",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-09-01",
+      "2026-09-17",
+      "2026-10-13",
+      "2026-10-14"
+    ],
+    "statistics": 955,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_share": 0.5,
+    "rho15": 0.8408964152537145,
+    "daily_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "call_design": [
+      {
+        "date": "2022-06-14",
+        "start_hour": 16.333333333333332,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          1101,
+          1102,
+          1103,
+          1104,
+          1105,
+          1108
+        ]
+      },
+      {
+        "date": "2022-06-15",
+        "start_hour": 11.333333333333334,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          1101,
+          1102,
+          1103,
+          1104,
+          1105,
+          1108
+        ]
+      },
+      {
+        "date": "2022-06-16",
+        "start_hour": 13.0,
+        "end_hour": 17.0,
+        "baseline_input_days": [
+          1101,
+          1102,
+          1103,
+          1104,
+          1105,
+          1108
+        ]
+      },
+      {
+        "date": "2022-12-23",
+        "start_hour": 18.0,
+        "end_hour": 22.25,
+        "baseline_input_days": [
+          1291,
+          1292,
+          1293,
+          1294,
+          1297,
+          1298,
+          1299,
+          1300
+        ]
+      },
+      {
+        "date": "2022-12-24",
+        "start_hour": 6.0,
+        "end_hour": 20.5,
+        "baseline_input_days": [
+          1295,
+          1296
+        ]
+      },
+      {
+        "date": "2025-06-23",
+        "start_hour": 15.0,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          2204,
+          2207,
+          2208,
+          2209,
+          2210,
+          2211
+        ]
+      },
+      {
+        "date": "2025-06-24",
+        "start_hour": 15.0,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          2207,
+          2208,
+          2209,
+          2210,
+          2211
+        ]
+      },
+      {
+        "date": "2025-06-25",
+        "start_hour": 15.0,
+        "end_hour": 19.0,
+        "baseline_input_days": [
+          2207,
+          2208,
+          2209,
+          2210,
+          2211
+        ]
+      },
+      {
+        "date": "2025-07-28",
+        "start_hour": 15.75,
+        "end_hour": 21.0,
+        "baseline_input_days": [
+          2239,
+          2242,
+          2243,
+          2244,
+          2245,
+          2246
+        ]
+      },
+      {
+        "date": "2025-07-29",
+        "start_hour": 14.0,
+        "end_hour": 20.75,
+        "baseline_input_days": [
+          2242,
+          2243,
+          2244,
+          2245,
+          2246
+        ]
+      },
+      {
+        "date": "2025-08-11",
+        "start_hour": 10.0,
+        "end_hour": 20.0,
+        "baseline_input_days": [
+          2253,
+          2256,
+          2257,
+          2258,
+          2259,
+          2260
+        ]
+      },
+      {
+        "date": "2026-01-25",
+        "start_hour": 14.5,
+        "end_hour": 19.0,
+        "baseline_input_days": [
+          2422,
+          2423,
+          2429
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "start_hour": 15.0,
+        "end_hour": 21.0,
+        "baseline_input_days": [
+          2533,
+          2536,
+          2537,
+          2538,
+          2539,
+          2540
+        ]
+      },
+      {
+        "date": "2026-05-19",
+        "start_hour": 14.0,
+        "end_hour": 21.5,
+        "baseline_input_days": [
+          2536,
+          2537,
+          2538,
+          2539,
+          2540
+        ]
+      },
+      {
+        "date": "2026-07-02",
+        "start_hour": 13.5,
+        "end_hour": 21.5,
+        "baseline_input_days": [
+          2578,
+          2579,
+          2580,
+          2581,
+          2582,
+          2585,
+          2586,
+          2587
+        ]
+      },
+      {
+        "date": "2026-07-03",
+        "start_hour": 12.0,
+        "end_hour": 21.0,
+        "baseline_input_days": [
+          2579,
+          2580,
+          2581,
+          2582,
+          2585,
+          2586,
+          2587
+        ]
+      },
+      {
+        "date": "2026-09-01",
+        "start_hour": 18.25,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          2641,
+          2642,
+          2643,
+          2644,
+          2645,
+          2648
+        ]
+      },
+      {
+        "date": "2026-09-17",
+        "start_hour": 14.5,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          2655,
+          2656,
+          2657,
+          2658,
+          2659,
+          2662,
+          2663,
+          2664
+        ]
+      },
+      {
+        "date": "2026-10-13",
+        "start_hour": 15.0,
+        "end_hour": 21.0,
+        "baseline_input_days": [
+          2683,
+          2684,
+          2685,
+          2686,
+          2687,
+          2690
+        ]
+      },
+      {
+        "date": "2026-10-14",
+        "start_hour": 15.0,
+        "end_hour": 19.5,
+        "baseline_input_days": [
+          2683,
+          2684,
+          2685,
+          2686,
+          2687,
+          2690
+        ]
+      }
+    ]
+  }
+}

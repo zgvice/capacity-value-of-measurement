@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "customer": "正态1",
+      "performed": true,
+      "value": {
+        "total_lower_MW": 652.1900224927894,
+        "total_upper_MW": 652.2115754461119,
+        "net_lower_MW": 278.56840225496205,
+        "net_upper_MW": 278.58995520828455,
+        "risk_lower_MWh": 8759.996630741285,
+        "risk_upper_MWh": 8778.955538974407,
+        "root_evaluations": 3
+      },
+      "duration_deduction_lower_MW": 165.6008946568291,
+      "duration_deduction_upper_MW": 165.67244761015155,
+      "pairing_deduction_lower_MW": 0.0,
+      "pairing_deduction_upper_MW": 0.02155295332249807
+    },
+    {
+      "customer": "LSE A",
+      "performed": false,
+      "reason": "99%剩余折减未比95%扩大1兆瓦以上"
+    },
+    {
+      "customer": "LSE B",
+      "performed": true,
+      "value": {
+        "total_lower_MW": 652.1693574735276,
+        "total_upper_MW": 652.2108138912963,
+        "net_lower_MW": 278.5477372357003,
+        "net_upper_MW": 278.589193653469,
+        "risk_lower_MWh": 8759.999046682125,
+        "risk_upper_MWh": 8796.456205841456,
+        "root_evaluations": 3
+      },
+      "duration_deduction_lower_MW": 50.40081050146034,
+      "duration_deduction_upper_MW": 50.5254761863348,
+      "pairing_deduction_lower_MW": 0.0,
+      "pairing_deduction_upper_MW": 0.041456417768699794
+    },
+    {
+      "customer": "LSE C",
+      "performed": true,
+      "value": {
+        "total_lower_MW": 652.157212560052,
+        "total_upper_MW": 652.207212560052,
+        "net_lower_MW": 278.5355923222247,
+        "net_upper_MW": 278.58559232222467,
+        "risk_lower_MWh": 8738.021072374386,
+        "risk_upper_MWh": 8781.978936310197,
+        "root_evaluations": 5
+      },
+      "duration_deduction_lower_MW": 14.797212034373274,
+      "duration_deduction_upper_MW": 14.859948896858214,
+      "pairing_deduction_lower_MW": 0.0,
+      "pairing_deduction_upper_MW": 0.05830941936176259
+    }
+  ]
+}

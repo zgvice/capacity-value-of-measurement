@@ -1,0 +1,61 @@
+﻿参数,取值,来源
+load_mw,2000.0,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+nomination_mw,1000.0,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+response_mean_ratio,1.0,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+response_sd_ratio,0.1,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+response_rho15,0.0,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+error_mean_rate,0.0,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+error_sd_rate,0.1444,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+bias_bound_rate,0.04,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+verification_coverage,0.95,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+error_budget_share,0.5,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+global_error_budget_share,0.5,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+baseline_days,10,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+error_calibration_days,10,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+load_daily_variance_share,0.5,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+load_rho15,0.8408964152537145,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+verified_min_duration_hours,0.0,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+true_duration_hours,14.5,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+maximum_extension_hours,,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+tail_level,0.95,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+risk_budget_mwh,8760.0,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+system_surplus_mw,1000.0,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+future_paths,64,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+quadrature_nodes,32,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+load_seed,2026110313,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+future_seed,2026110417,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+capacity_tolerance_mw,0.1,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+reference_tolerance_mw,0.0001,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+solver_tolerance,1e-08,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+calibration_draws,262144,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+calibration_seed,2026110419,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+calibration_batch,4096,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+schedule_iterations,6,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+duration_comparison_fraction,0.5,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+time_tolerance_hours,1e-10,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+hour_bin_tolerance,1e-09,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+duration_check_tolerance_hours,1e-06,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+covariance_relative_tolerance,1e-11,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+transport_iterations,500,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+transport_solver_tolerance,1e-10,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+transport_gap_mwh,0.002,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+empirical_users,"['LSE A', 'LSE B', 'LSE C']",继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+normal_sizes,"[1, 2, 3, 4]",继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+history_power_seed,2026110421,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+individual_load_seed,2026110521,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+common_error_amplitude,0.02,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+individual_error_amplitude,0.2,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+state_power_ratio,1.5,继承实验三；portfolio_inputs.py及normal_case_parameters.py的同名参数注释
+winter_dates,"('2022-12-23', '2022-12-24')",用户指定的2022年冬季；call_tasks.csv/date。
+summer_dates,"('2025-06-23', '2025-06-24', '2025-06-25')",用户指定的2025年夏季代表过程；call_tasks.csv/date。
+coverage_draws,10000,作者选择的独立覆盖核对次数，不进入认证规则。
+coverage_seed,2026110511,作者固定的独立核对随机种子，与原历史及校准种子不同。
+coverage_batch,1000,数值计算批量，控制内存。
+validation_future_seed,2026110513,作者固定的独立未来功率轨迹种子；年度系统场景及客户分布不变。
+boundary_duration_hours,12.0,作者选择的持续能力检验：客户能调12小时，冬季14.5小时邀约不变。
+surplus_factors,"(0.5, 1.0, 1.5)",作者选择的余量敏感性：既定1000MW补全尺度的上下50%；官方缺电时段数据保持原值。
+invitation_limits_hours,"(12.0, 15.0)",用户此前认可12/15小时服务要求对照；客户能力使用共同参数true_duration_hours。
+payback_fractions,"(0.0, 0.25, 0.5)",既定作者情景：调用后额外用电量/本次削减电量为0、25%、50%。
+payback_hours,4,既定作者情景：调用结束后首四个完整非调用小时增加用电。
+error_scales,"(0.0715, 0.1444, 0.2865)",2013年澳大利亚报告表30，CAISO未调整十取十基线，客户误差波动指标的第10/50/90百分位。
+sensitivity_tolerance_mw,0.2,敏感性容量区间精度；主实验已有精确区间直接复用。

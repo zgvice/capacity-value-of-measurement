@@ -1,0 +1,88 @@
+{
+  "cases": {
+    "500": {
+      "scale_MW": 500.0,
+      "reference_MW": 200.57756453752518,
+      "capacities": [
+        {
+          "extension_hours": 0.0,
+          "net_lower_MW": 56.32369471277343,
+          "net_upper_MW": 56.40921443955449,
+          "total_lower_MW": 256.9012592502986,
+          "total_upper_MW": 256.98677897707967,
+          "risk_lower_MWh": 8758.02208603343,
+          "risk_upper_MWh": 8767.654129169863
+        },
+        {
+          "extension_hours": 4.0,
+          "net_lower_MW": 88.30807252888917,
+          "net_upper_MW": 88.39359225567023,
+          "total_lower_MW": 288.88563706641435,
+          "total_upper_MW": 288.9711567931954,
+          "risk_lower_MWh": 8744.826202784305,
+          "risk_upper_MWh": 8781.241383304234
+        }
+      ],
+      "gain_lower_MW": 31.89885808933468,
+      "gain_upper_MW": 32.0698975428968,
+      "common_tail_saving_MWh": 9119.826209707731,
+      "evening_share": 0.7589915509719626
+    },
+    "1000": {
+      "scale_MW": 1000.0,
+      "reference_MW": 378.6853328347206,
+      "capacities": [
+        {
+          "extension_hours": 0.0,
+          "net_lower_MW": 56.81228249488157,
+          "net_upper_MW": 56.81233486861095,
+          "total_lower_MW": 435.4976153296022,
+          "total_upper_MW": 435.49766770333156,
+          "risk_lower_MWh": 8759.995180220123,
+          "risk_upper_MWh": 8760.00109118442
+        },
+        {
+          "extension_hours": 4.0,
+          "net_lower_MW": 177.3017130334456,
+          "net_upper_MW": 177.3017654071749,
+          "total_lower_MW": 555.9870458681662,
+          "total_upper_MW": 555.9870982418955,
+          "risk_lower_MWh": 8759.997852812072,
+          "risk_upper_MWh": 8760.0167311771
+        }
+      ],
+      "gain_lower_MW": 120.48937816483465,
+      "gain_upper_MW": 120.48948291229334,
+      "common_tail_saving_MWh": 17260.307345702357,
+      "evening_share": 0.7566232084043816
+    },
+    "1500": {
+      "scale_MW": 1500.0,
+      "reference_MW": 556.2944337725639,
+      "capacities": [
+        {
+          "extension_hours": 0.0,
+          "net_lower_MW": 56.696766820095945,
+          "net_upper_MW": 56.761237918180996,
+          "total_lower_MW": 612.9912005926599,
+          "total_upper_MW": 613.0556716907449,
+          "risk_lower_MWh": 8756.989801737544,
+          "risk_upper_MWh": 8764.218982227472
+        },
+        {
+          "extension_hours": 4.0,
+          "net_lower_MW": 262.23062751523685,
+          "net_upper_MW": 262.2950986133219,
+          "total_lower_MW": 818.5250612878008,
+          "total_upper_MW": 818.5895323858858,
+          "risk_lower_MWh": 8748.01257432085,
+          "risk_upper_MWh": 8764.583987262662
+        }
+      ],
+      "gain_lower_MW": 205.46938959705585,
+      "gain_upper_MW": 205.59833179322595,
+      "common_tail_saving_MWh": 24674.51097592146,
+      "evening_share": 0.7586247653470832
+    }
+  }
+}

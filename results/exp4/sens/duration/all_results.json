@@ -1,0 +1,3649 @@
+{
+  "grid": {
+    "baseline_hours": 14.5,
+    "minimum_hours": 4.0,
+    "step_hours": 0.5,
+    "history_counts": [
+      5,
+      20
+    ],
+    "future_paths": 128,
+    "quadrature_nodes": 64
+  },
+  "customers": {
+    "正态1": {
+      "customer": "正态1",
+      "parameters": {
+        "load_mw": 2000.0,
+        "nomination_mw": 1000.0,
+        "response_mean_ratio": 1.0,
+        "response_sd_ratio": 0.1,
+        "response_rho15": 0.0,
+        "error_mean_rate": 0.0,
+        "error_sd_rate": 0.1444,
+        "bias_bound_rate": 0.04,
+        "verification_coverage": 0.95,
+        "error_budget_share": 0.5,
+        "global_error_budget_share": 0.5,
+        "baseline_days": 10,
+        "error_calibration_days": 10,
+        "load_daily_variance_share": 0.5,
+        "load_rho15": 0.8408964152537145,
+        "verified_min_duration_hours": 0.0,
+        "true_duration_hours": 14.5,
+        "maximum_extension_hours": null,
+        "tail_level": 0.95,
+        "risk_budget_mwh": 8760.0,
+        "system_surplus_mw": 1000.0,
+        "future_paths": 128,
+        "quadrature_nodes": 64,
+        "load_seed": 2026110313,
+        "future_seed": 2026110417,
+        "capacity_tolerance_mw": 0.1,
+        "reference_tolerance_mw": 0.0001,
+        "solver_tolerance": 1e-08,
+        "calibration_draws": 262144,
+        "calibration_seed": 2026110419,
+        "calibration_batch": 4096,
+        "schedule_iterations": 6,
+        "duration_comparison_fraction": 0.5,
+        "time_tolerance_hours": 1e-10,
+        "hour_bin_tolerance": 1e-09,
+        "duration_check_tolerance_hours": 1e-06,
+        "covariance_relative_tolerance": 1e-11,
+        "transport_iterations": 500,
+        "transport_solver_tolerance": 1e-10,
+        "transport_gap_mwh": 0.002,
+        "empirical_users": [
+          "LSE A",
+          "LSE B",
+          "LSE C"
+        ],
+        "normal_sizes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "history_power_seed": 2026110421,
+        "individual_load_seed": 2026110521,
+        "common_error_amplitude": 0.02,
+        "individual_error_amplitude": 0.2,
+        "state_power_ratio": 1.5
+      },
+      "grid": {
+        "baseline_hours": 14.5,
+        "minimum_hours": 4.0,
+        "step_hours": 0.5,
+        "history_counts": [
+          5,
+          20
+        ],
+        "future_paths": 128,
+        "quadrature_nodes": 64
+      },
+      "rows": [
+        {
+          "true_hours": 4.0,
+          "H5": 3.798004618027397,
+          "H20": 3.7980046180273974,
+          "capacity_5": {
+            "total_lower_MW": 400.279625078588,
+            "total_upper_MW": 400.329625078588,
+            "net_lower_MW": 21.594292243867415,
+            "net_upper_MW": 21.64429224386737,
+            "risk_lower_MWh": 8754.829406542392,
+            "risk_upper_MWh": 8765.169887686228,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 400.279625078588,
+            "total_upper_MW": 400.329625078588,
+            "net_lower_MW": 21.594292243867415,
+            "net_upper_MW": 21.64429224386737,
+            "risk_lower_MWh": 8754.829406542392,
+            "risk_upper_MWh": 8765.169887686228,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 402.24625883935494,
+            "total_upper_MW": 402.2869913043296,
+            "net_lower_MW": 23.560926004634325,
+            "net_upper_MW": 23.601658469608992,
+            "risk_lower_MWh": 8757.004440680814,
+            "risk_upper_MWh": 8765.05246391903,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 225,
+          "removed_history_delivery_MWh": 56207.91510457943
+        },
+        {
+          "true_hours": 4.5,
+          "H5": 4.26369115016582,
+          "H20": 4.280923488373305,
+          "capacity_5": {
+            "total_lower_MW": 404.8315536111384,
+            "total_upper_MW": 404.85716857477706,
+            "net_lower_MW": 26.146220776417806,
+            "net_upper_MW": 26.17183574005645,
+            "risk_lower_MWh": 8759.977813185,
+            "risk_upper_MWh": 8764.757164266255,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 405.00981177610055,
+            "total_upper_MW": 405.0336441580896,
+            "net_lower_MW": 26.324478941379937,
+            "net_upper_MW": 26.34831132336899,
+            "risk_lower_MWh": 8759.97019119955,
+            "risk_upper_MWh": 8764.399958033306,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 407.37286180532277,
+            "total_upper_MW": 407.39304997500454,
+            "net_lower_MW": 28.68752897060216,
+            "net_upper_MW": 28.707717140283933,
+            "risk_lower_MWh": 8759.021412210015,
+            "risk_upper_MWh": 8762.594532385148,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 192,
+          "removed_history_delivery_MWh": 48195.6583700605
+        },
+        {
+          "true_hours": 5.0,
+          "H5": 4.803825493408696,
+          "H20": 4.811333771627291,
+          "capacity_5": {
+            "total_lower_MW": 411.05607487050594,
+            "total_upper_MW": 411.08319265814157,
+            "net_lower_MW": 32.37074203578533,
+            "net_upper_MW": 32.39785982342096,
+            "risk_lower_MWh": 8759.979870400291,
+            "risk_upper_MWh": 8764.441637048627,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 411.15426993361,
+            "total_upper_MW": 411.1804057706146,
+            "net_lower_MW": 32.4689370988894,
+            "net_upper_MW": 32.49507293589397,
+            "risk_lower_MWh": 8759.977131775742,
+            "risk_upper_MWh": 8764.269261026158,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 413.74944659637555,
+            "total_upper_MW": 413.76785363406987,
+            "net_lower_MW": 35.06411376165494,
+            "net_upper_MW": 35.082520799349254,
+            "risk_lower_MWh": 8758.415220548053,
+            "risk_upper_MWh": 8761.299480775086,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 164,
+          "removed_history_delivery_MWh": 41111.306826928
+        },
+        {
+          "true_hours": 5.5,
+          "H5": 5.3494894015949495,
+          "H20": 5.349489401594951,
+          "capacity_5": {
+            "total_lower_MW": 418.57740041544974,
+            "total_upper_MW": 418.60105775592655,
+            "net_lower_MW": 39.89206758072913,
+            "net_upper_MW": 39.915724921205936,
+            "risk_lower_MWh": 8759.986622462011,
+            "risk_upper_MWh": 8763.394784008467,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 418.57740041544974,
+            "total_upper_MW": 418.60105775592655,
+            "net_lower_MW": 39.89206758072913,
+            "net_upper_MW": 39.915724921205936,
+            "risk_lower_MWh": 8759.986622462011,
+            "risk_upper_MWh": 8763.394784008467,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 420.92616682236667,
+            "total_upper_MW": 420.94313446312816,
+            "net_lower_MW": 42.240833987646056,
+            "net_upper_MW": 42.25780162840755,
+            "risk_lower_MWh": 8759.073273293008,
+            "risk_upper_MWh": 8761.426042356794,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 137,
+          "removed_history_delivery_MWh": 34467.51418015086
+        },
+        {
+          "true_hours": 6.0,
+          "H5": 5.8708710348281645,
+          "H20": 5.870871034828166,
+          "capacity_5": {
+            "total_lower_MW": 427.4658778532927,
+            "total_upper_MW": 427.4923141126943,
+            "net_lower_MW": 48.78054501857207,
+            "net_upper_MW": 48.806981277973705,
+            "risk_lower_MWh": 8759.967774265451,
+            "risk_upper_MWh": 8763.284726011052,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 427.4658778532927,
+            "total_upper_MW": 427.4923141126943,
+            "net_lower_MW": 48.78054501857207,
+            "net_upper_MW": 48.806981277973705,
+            "risk_lower_MWh": 8759.967774265451,
+            "risk_upper_MWh": 8763.284726011052,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 430.09524748060386,
+            "total_upper_MW": 430.10950379345326,
+            "net_lower_MW": 51.40991464588325,
+            "net_upper_MW": 51.424170958732645,
+            "risk_lower_MWh": 8759.436515881043,
+            "risk_upper_MWh": 8761.160286482142,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 112,
+          "removed_history_delivery_MWh": 28154.687408197482
+        },
+        {
+          "true_hours": 6.5,
+          "H5": 6.278007064950072,
+          "H20": 6.278007064950072,
+          "capacity_5": {
+            "total_lower_MW": 435.74874855189006,
+            "total_upper_MW": 435.8009709126387,
+            "net_lower_MW": 57.06341571716945,
+            "net_upper_MW": 57.115638077918106,
+            "risk_lower_MWh": 8759.961882903503,
+            "risk_upper_MWh": 8765.812181525243,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 435.74874855189006,
+            "total_upper_MW": 435.8009709126387,
+            "net_lower_MW": 57.06341571716945,
+            "net_upper_MW": 57.115638077918106,
+            "risk_lower_MWh": 8759.961882903503,
+            "risk_upper_MWh": 8765.812181525243,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 440.9593426767023,
+            "total_upper_MW": 440.9709846267529,
+            "net_lower_MW": 62.274009841981695,
+            "net_upper_MW": 62.2856517920323,
+            "risk_lower_MWh": 8759.542555004024,
+            "risk_upper_MWh": 8760.765160043435,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 92,
+          "removed_history_delivery_MWh": 23204.133475307604
+        },
+        {
+          "true_hours": 7.0,
+          "H5": 6.278007064950072,
+          "H20": 6.5007266781671,
+          "capacity_5": {
+            "total_lower_MW": 435.74874855189006,
+            "total_upper_MW": 435.8009709126387,
+            "net_lower_MW": 57.06341571716945,
+            "net_upper_MW": 57.115638077918106,
+            "risk_lower_MWh": 8759.961882903503,
+            "risk_upper_MWh": 8765.812181525243,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 440.92757426780844,
+            "total_upper_MW": 440.9775742678084,
+            "net_lower_MW": 62.24224143308783,
+            "net_upper_MW": 62.29224143308778,
+            "risk_lower_MWh": 8757.37554883187,
+            "risk_upper_MWh": 8762.625243881488,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 455.5293010440964,
+            "total_upper_MW": 455.59777428842807,
+            "net_lower_MW": 76.84396820937582,
+            "net_upper_MW": 76.91244145370746,
+            "risk_lower_MWh": 8759.7014128405,
+            "risk_upper_MWh": 8765.816009160495,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 73,
+          "removed_history_delivery_MWh": 18367.465081179776
+        },
+        {
+          "true_hours": 7.5,
+          "H5": 6.278007064950072,
+          "H20": 6.5007266781671,
+          "capacity_5": {
+            "total_lower_MW": 435.74874855189006,
+            "total_upper_MW": 435.8009709126387,
+            "net_lower_MW": 57.06341571716945,
+            "net_upper_MW": 57.115638077918106,
+            "risk_lower_MWh": 8759.961882903503,
+            "risk_upper_MWh": 8765.812181525243,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 440.92757426780844,
+            "total_upper_MW": 440.9775742678084,
+            "net_lower_MW": 62.24224143308783,
+            "net_upper_MW": 62.29224143308778,
+            "risk_lower_MWh": 8757.37554883187,
+            "risk_upper_MWh": 8762.625243881488,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 473.5348286408542,
+            "total_upper_MW": 473.5548877161733,
+            "net_lower_MW": 94.84949580613358,
+            "net_upper_MW": 94.8695548814527,
+            "risk_lower_MWh": 8759.934837486804,
+            "risk_upper_MWh": 8761.448998445014,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 59,
+          "removed_history_delivery_MWh": 14707.270355505818
+        },
+        {
+          "true_hours": 8.0,
+          "H5": 7.053106693196195,
+          "H20": 7.20671514360702,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 462.17883951912296,
+            "total_upper_MW": 462.2164203403242,
+            "net_lower_MW": 83.49350668440235,
+            "net_upper_MW": 83.53108750560358,
+            "risk_lower_MWh": 8759.437299088633,
+            "risk_upper_MWh": 8762.579203672516,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 499.3344310021241,
+            "total_upper_MW": 499.42143332955436,
+            "net_lower_MW": 120.64909816740351,
+            "net_upper_MW": 120.73610049483375,
+            "risk_lower_MWh": 8759.616409517681,
+            "risk_upper_MWh": 8764.987296074261,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 49,
+          "removed_history_delivery_MWh": 12239.048291119294
+        },
+        {
+          "true_hours": 8.5,
+          "H5": 7.053106693196195,
+          "H20": 7.222596154336741,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 462.7129058567964,
+            "total_upper_MW": 462.76290585679635,
+            "net_lower_MW": 84.02757302207579,
+            "net_upper_MW": 84.07757302207574,
+            "risk_lower_MWh": 8757.920693135738,
+            "risk_upper_MWh": 8762.079447887585,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 530.7919310755271,
+            "total_upper_MW": 530.8027297928876,
+            "net_lower_MW": 152.10659824080653,
+            "net_upper_MW": 152.11739695816698,
+            "risk_lower_MWh": 8759.980707013581,
+            "risk_upper_MWh": 8760.530747980278,
+            "root_evaluations": 9
+          },
+          "changed_meter_points": 41,
+          "removed_history_delivery_MWh": 10153.9021540134
+        },
+        {
+          "true_hours": 9.0,
+          "H5": 7.053106693196195,
+          "H20": 8.022814146619776,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 500.37531697100513,
+            "total_upper_MW": 500.418987944766,
+            "net_lower_MW": 121.68998413628452,
+            "net_upper_MW": 121.73365511004539,
+            "risk_lower_MWh": 8759.986417434751,
+            "risk_upper_MWh": 8762.66413335953,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 560.4969362178429,
+            "total_upper_MW": 560.5366429912418,
+            "net_lower_MW": 181.81160338312225,
+            "net_upper_MW": 181.8513101565212,
+            "risk_lower_MWh": 8756.782530267052,
+            "risk_upper_MWh": 8760.189233899817,
+            "root_evaluations": 8
+          },
+          "changed_meter_points": 33,
+          "removed_history_delivery_MWh": 8201.377675180227
+        },
+        {
+          "true_hours": 9.5,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610336,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 582.7056421311559,
+            "total_upper_MW": 582.7497233493337,
+            "net_lower_MW": 204.02030929643524,
+            "net_upper_MW": 204.06439051461314,
+            "risk_lower_MWh": 8756.44098412399,
+            "risk_upper_MWh": 8760.441281504216,
+            "root_evaluations": 8
+          },
+          "changed_meter_points": 27,
+          "removed_history_delivery_MWh": 6683.620164104099
+        },
+        {
+          "true_hours": 10.0,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 606.4318020128878,
+            "total_upper_MW": 606.4709095939238,
+            "net_lower_MW": 227.74646917816722,
+            "net_upper_MW": 227.7855767592032,
+            "risk_lower_MWh": 8759.331675309946,
+            "risk_upper_MWh": 8762.894423095157,
+            "root_evaluations": 9
+          },
+          "changed_meter_points": 21,
+          "removed_history_delivery_MWh": 5156.95074322528
+        },
+        {
+          "true_hours": 10.5,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 628.7137507262956,
+            "total_upper_MW": 628.7276298938069,
+            "net_lower_MW": 250.02841789157503,
+            "net_upper_MW": 250.0422970590863,
+            "risk_lower_MWh": 8759.999927341667,
+            "risk_upper_MWh": 8761.13282399791,
+            "root_evaluations": 10
+          },
+          "changed_meter_points": 17,
+          "removed_history_delivery_MWh": 4148.001042536757
+        },
+        {
+          "true_hours": 11.0,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 647.7299980254231,
+            "total_upper_MW": 647.761873457977,
+            "net_lower_MW": 269.0446651907025,
+            "net_upper_MW": 269.0765406232564,
+            "risk_lower_MWh": 8759.916817172956,
+            "risk_upper_MWh": 8789.344562292988,
+            "root_evaluations": 13
+          },
+          "changed_meter_points": 14,
+          "removed_history_delivery_MWh": 3461.3933039003296
+        },
+        {
+          "true_hours": 11.5,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 649.0058126315862,
+            "total_upper_MW": 649.0660284365887,
+            "net_lower_MW": 270.3204797968656,
+            "net_upper_MW": 270.38069560186807,
+            "risk_lower_MWh": 8755.910116036674,
+            "risk_upper_MWh": 8811.050100805518,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 12,
+          "removed_history_delivery_MWh": 2957.2523161876443
+        },
+        {
+          "true_hours": 12.0,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 650.207466239108,
+            "total_upper_MW": 650.2556655080353,
+            "net_lower_MW": 271.52213340438743,
+            "net_upper_MW": 271.57033267331474,
+            "risk_lower_MWh": 8756.96903116828,
+            "risk_upper_MWh": 8800.654345031859,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 10,
+          "removed_history_delivery_MWh": 2415.15171998347
+        },
+        {
+          "true_hours": 12.5,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 651.0317932679532,
+            "total_upper_MW": 651.071749266592,
+            "net_lower_MW": 272.34646043323255,
+            "net_upper_MW": 272.38641643187134,
+            "risk_lower_MWh": 8757.888316202985,
+            "risk_upper_MWh": 8793.860093273719,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 8,
+          "removed_history_delivery_MWh": 1929.6215092367934
+        },
+        {
+          "true_hours": 13.0,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 651.8319250678771,
+            "total_upper_MW": 651.8638797485168,
+            "net_lower_MW": 273.1465922331565,
+            "net_upper_MW": 273.17854691379614,
+            "risk_lower_MWh": 8757.316932601909,
+            "risk_upper_MWh": 8785.965274889097,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 6,
+          "removed_history_delivery_MWh": 1389.1357575904672
+        },
+        {
+          "true_hours": 13.5,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 652.3964234819775,
+            "total_upper_MW": 652.4227331784762,
+            "net_lower_MW": 273.7110906472569,
+            "net_upper_MW": 273.73740034375555,
+            "risk_lower_MWh": 8758.207204551585,
+            "risk_upper_MWh": 8781.55823933473,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 4,
+          "removed_history_delivery_MWh": 893.9525503765656
+        },
+        {
+          "true_hours": 14.0,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 652.8958814789698,
+            "total_upper_MW": 652.9171965954985,
+            "net_lower_MW": 274.21054864424923,
+            "net_upper_MW": 274.23186376077786,
+            "risk_lower_MWh": 8758.894646339782,
+            "risk_upper_MWh": 8777.613641270229,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 2,
+          "removed_history_delivery_MWh": 393.1078702170935
+        },
+        {
+          "true_hours": 14.5,
+          "H5": 7.053106693196195,
+          "H20": 8.062335728610334,
+          "capacity_5": {
+            "total_lower_MW": 457.12070207295767,
+            "total_upper_MW": 457.13314307851226,
+            "net_lower_MW": 78.43536923823706,
+            "net_upper_MW": 78.44781024379165,
+            "risk_lower_MWh": 8759.560387993984,
+            "risk_upper_MWh": 8760.653224689968,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 502.4765564665697,
+            "total_upper_MW": 502.5265564665697,
+            "net_lower_MW": 123.7912236318491,
+            "net_upper_MW": 123.84122363184906,
+            "risk_lower_MWh": 8758.488817147538,
+            "risk_upper_MWh": 8761.511043221963,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 653.2565706224538,
+            "total_upper_MW": 653.2742788475476,
+            "net_lower_MW": 274.57123778773314,
+            "net_upper_MW": 274.588946012827,
+            "risk_lower_MWh": 8759.868773049096,
+            "risk_upper_MWh": 8775.351674000789,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 0,
+          "removed_history_delivery_MWh": -0.0
+        }
+      ],
+      "full_references": {
+        "central": {
+          "reference_MW": 378.6853328347206,
+          "total_lower_MW": 653.2565706224538,
+          "total_upper_MW": 653.2742788475476,
+          "net_lower_MW": 274.57123778773314,
+          "net_upper_MW": 274.588946012827,
+          "risk_lower_MWh": 8759.868773049096,
+          "risk_upper_MWh": 8775.351674000789,
+          "root_evaluations": 5
+        },
+        "tail_0.9": {
+          "reference_MW": 380.44970482587814,
+          "total_lower_MW": 653.8138588855184,
+          "total_upper_MW": 653.877962952076,
+          "net_lower_MW": 273.3641540596402,
+          "net_upper_MW": 273.4282581261979,
+          "risk_lower_MWh": 8703.86927871652,
+          "risk_upper_MWh": 8760.005289554592,
+          "root_evaluations": 7
+        },
+        "tail_0.99": {
+          "reference_MW": 373.6216202378273,
+          "total_lower_MW": 652.1947437379123,
+          "total_upper_MW": 652.2115754461119,
+          "net_lower_MW": 278.573123500085,
+          "net_upper_MW": 278.58995520828455,
+          "risk_lower_MWh": 8759.678088757957,
+          "risk_upper_MWh": 8774.47861308655,
+          "root_evaluations": 8
+        },
+        "budget_0.5": {
+          "reference_MW": 366.62641912698746,
+          "total_lower_MW": 648.2329046541977,
+          "total_upper_MW": 648.2486332239645,
+          "net_lower_MW": 281.6064855272102,
+          "net_upper_MW": 281.622214096977,
+          "risk_lower_MWh": 4378.7316263497305,
+          "risk_upper_MWh": 4392.396057489589,
+          "root_evaluations": 10
+        },
+        "budget_2.0": {
+          "reference_MW": 401.15509182214737,
+          "total_lower_MW": 662.9515697446334,
+          "total_upper_MW": 662.9663804158697,
+          "net_lower_MW": 261.796477922486,
+          "net_upper_MW": 261.81128859372234,
+          "risk_lower_MWh": 17519.843866700736,
+          "risk_upper_MWh": 17536.484112496284,
+          "root_evaluations": 8
+        }
+      },
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "history_points": 544,
+      "history_days": 20,
+      "history_statistics": 932,
+      "true_error_checks": {
+        "5": {
+          "truth_error_retained": true,
+          "admissible_bias_lower_MW": -80.0,
+          "admissible_bias_upper_MW": 80.0,
+          "zero_bias_error_retained": true,
+          "maximum_error_ratio": 0.7659574687573628
+        },
+        "20": {
+          "truth_error_retained": true,
+          "admissible_bias_lower_MW": -80.0,
+          "admissible_bias_upper_MW": 80.0,
+          "zero_bias_error_retained": true,
+          "maximum_error_ratio": 0.8791148401207424
+        }
+      },
+      "historical_maximum_hours": 14.5,
+      "baseline_meter_max_difference_MW": 0.0
+    },
+    "LSE A": {
+      "customer": "LSE A",
+      "parameters": {
+        "load_mw": 2000.0,
+        "nomination_mw": 1000.0,
+        "response_mean_ratio": 1.0,
+        "response_sd_ratio": 0.1,
+        "response_rho15": 0.0,
+        "error_mean_rate": 0.0,
+        "error_sd_rate": 0.1444,
+        "bias_bound_rate": 0.04,
+        "verification_coverage": 0.95,
+        "error_budget_share": 0.5,
+        "global_error_budget_share": 0.5,
+        "baseline_days": 10,
+        "error_calibration_days": 10,
+        "load_daily_variance_share": 0.5,
+        "load_rho15": 0.8408964152537145,
+        "verified_min_duration_hours": 0.0,
+        "true_duration_hours": 14.5,
+        "maximum_extension_hours": null,
+        "tail_level": 0.95,
+        "risk_budget_mwh": 8760.0,
+        "system_surplus_mw": 1000.0,
+        "future_paths": 128,
+        "quadrature_nodes": 64,
+        "load_seed": 2026110313,
+        "future_seed": 2026110417,
+        "capacity_tolerance_mw": 0.1,
+        "reference_tolerance_mw": 0.0001,
+        "solver_tolerance": 1e-08,
+        "calibration_draws": 262144,
+        "calibration_seed": 2026110419,
+        "calibration_batch": 4096,
+        "schedule_iterations": 6,
+        "duration_comparison_fraction": 0.5,
+        "time_tolerance_hours": 1e-10,
+        "hour_bin_tolerance": 1e-09,
+        "duration_check_tolerance_hours": 1e-06,
+        "covariance_relative_tolerance": 1e-11,
+        "transport_iterations": 500,
+        "transport_solver_tolerance": 1e-10,
+        "transport_gap_mwh": 0.002,
+        "empirical_users": [
+          "LSE A",
+          "LSE B",
+          "LSE C"
+        ],
+        "normal_sizes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "history_power_seed": 2026110421,
+        "individual_load_seed": 2026110521,
+        "common_error_amplitude": 0.02,
+        "individual_error_amplitude": 0.2,
+        "state_power_ratio": 1.5
+      },
+      "grid": {
+        "baseline_hours": 14.5,
+        "minimum_hours": 4.0,
+        "step_hours": 0.5,
+        "history_counts": [
+          5,
+          20
+        ],
+        "future_paths": 128,
+        "quadrature_nodes": 64
+      },
+      "rows": [
+        {
+          "true_hours": 4.0,
+          "H5": 3.516774229991343,
+          "H20": 3.811073826956751,
+          "capacity_5": {
+            "total_lower_MW": 397.8184704542241,
+            "total_upper_MW": 397.86315368025305,
+            "net_lower_MW": 19.133137619503486,
+            "net_upper_MW": 19.177820845532437,
+            "risk_lower_MWh": 8756.702907896897,
+            "risk_upper_MWh": 8766.525616356448,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 400.3988902582117,
+            "total_upper_MW": 400.44889025821163,
+            "net_lower_MW": 21.713557423491068,
+            "net_upper_MW": 21.763557423491022,
+            "risk_lower_MWh": 8754.844347391865,
+            "risk_upper_MWh": 8765.155273713079,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 402.2460585896489,
+            "total_upper_MW": 402.2867930571206,
+            "net_lower_MW": 23.560725754928285,
+            "net_upper_MW": 23.601460222399965,
+            "risk_lower_MWh": 8756.997004398872,
+            "risk_upper_MWh": 8765.045491712968,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 225,
+          "removed_history_delivery_MWh": 56516.47412635581
+        },
+        {
+          "true_hours": 4.5,
+          "H5": 3.516774229991343,
+          "H20": 4.318396115584641,
+          "capacity_5": {
+            "total_lower_MW": 397.8184704542241,
+            "total_upper_MW": 397.86315368025305,
+            "net_lower_MW": 19.133137619503486,
+            "net_upper_MW": 19.177820845532437,
+            "risk_lower_MWh": 8756.702907896897,
+            "risk_upper_MWh": 8766.525616356448,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 405.39619746477416,
+            "total_upper_MW": 405.4161621956675,
+            "net_lower_MW": 26.71086463005355,
+            "net_upper_MW": 26.73082936094687,
+            "risk_lower_MWh": 8759.959256381435,
+            "risk_upper_MWh": 8763.639517559985,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 407.3724821832273,
+            "total_upper_MW": 407.3926705541087,
+            "net_lower_MW": 28.687149348506694,
+            "net_upper_MW": 28.70733771938808,
+            "risk_lower_MWh": 8759.026074164978,
+            "risk_upper_MWh": 8762.599168961111,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 192,
+          "removed_history_delivery_MWh": 48390.658310815896
+        },
+        {
+          "true_hours": 5.0,
+          "H5": 4.16498719985912,
+          "H20": 4.815981269739898,
+          "capacity_5": {
+            "total_lower_MW": 403.79795029482807,
+            "total_upper_MW": 403.89764443868813,
+            "net_lower_MW": 25.112617460107458,
+            "net_upper_MW": 25.21231160396752,
+            "risk_lower_MWh": 8753.2935413133,
+            "risk_upper_MWh": 8772.307814391765,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 411.2116564141325,
+            "total_upper_MW": 411.23721349679954,
+            "net_lower_MW": 32.526323579411894,
+            "net_upper_MW": 32.55188066207893,
+            "risk_lower_MWh": 8759.975374889113,
+            "risk_upper_MWh": 8764.167998376937,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 413.74895749551945,
+            "total_upper_MW": 413.76736468083584,
+            "net_lower_MW": 35.06362466079884,
+            "net_upper_MW": 35.08203184611523,
+            "risk_lower_MWh": 8758.396123401546,
+            "risk_upper_MWh": 8761.280322036615,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 164,
+          "removed_history_delivery_MWh": 40940.97327548579
+        },
+        {
+          "true_hours": 5.5,
+          "H5": 4.16498719985912,
+          "H20": 5.280477338192122,
+          "capacity_5": {
+            "total_lower_MW": 403.79795029482807,
+            "total_upper_MW": 403.89764443868813,
+            "net_lower_MW": 25.112617460107458,
+            "net_upper_MW": 25.21231160396752,
+            "risk_lower_MWh": 8753.2935413133,
+            "risk_upper_MWh": 8772.307814391765,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 417.5577172856339,
+            "total_upper_MW": 417.5915666504168,
+            "net_lower_MW": 38.87238445091327,
+            "net_upper_MW": 38.90623381569617,
+            "risk_lower_MWh": 8759.998226393533,
+            "risk_upper_MWh": 8764.959188848557,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 420.92568608247996,
+            "total_upper_MW": 420.94265376392343,
+            "net_lower_MW": 42.240353247759344,
+            "net_upper_MW": 42.25732092920282,
+            "risk_lower_MWh": 8759.07034367149,
+            "risk_upper_MWh": 8761.423137829726,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 137,
+          "removed_history_delivery_MWh": 34309.98298691118
+        },
+        {
+          "true_hours": 6.0,
+          "H5": 5.527666778852602,
+          "H20": 5.786691046473502,
+          "capacity_5": {
+            "total_lower_MW": 421.3031528685045,
+            "total_upper_MW": 421.39120934451273,
+            "net_lower_MW": 42.617820033783914,
+            "net_upper_MW": 42.70587650979212,
+            "risk_lower_MWh": 8752.417300927676,
+            "risk_upper_MWh": 8764.542859075453,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 425.85689265119714,
+            "total_upper_MW": 425.8994117293784,
+            "net_lower_MW": 47.17155981647653,
+            "net_upper_MW": 47.2140788946578,
+            "risk_lower_MWh": 8759.970656572536,
+            "risk_upper_MWh": 8765.434382733481,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 430.0945438855106,
+            "total_upper_MW": 430.1088004693258,
+            "net_lower_MW": 51.40921105078996,
+            "net_upper_MW": 51.423467634605174,
+            "risk_lower_MWh": 8759.443810373461,
+            "risk_upper_MWh": 8761.167625821252,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 112,
+          "removed_history_delivery_MWh": 28113.17938182273
+        },
+        {
+          "true_hours": 6.5,
+          "H5": 6.287842521599939,
+          "H20": 6.287842521599939,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 440.9583340717863,
+            "total_upper_MW": 440.96997639745007,
+            "net_lower_MW": 62.27300123706567,
+            "net_upper_MW": 62.28464356272946,
+            "risk_lower_MWh": 8759.528304198937,
+            "risk_upper_MWh": 8760.750965513173,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 92,
+          "removed_history_delivery_MWh": 23430.602273766788
+        },
+        {
+          "true_hours": 7.0,
+          "H5": 6.287842521599939,
+          "H20": 6.766139840228064,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 448.0785207597119,
+            "total_upper_MW": 448.1285207597119,
+            "net_lower_MW": 69.39318792499131,
+            "net_upper_MW": 69.44318792499126,
+            "risk_lower_MWh": 8757.583748774401,
+            "risk_upper_MWh": 8762.415902085597,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 455.52770380680016,
+            "total_upper_MW": 455.59618394944107,
+            "net_lower_MW": 76.84237097207955,
+            "net_upper_MW": 76.91085111472046,
+            "risk_lower_MWh": 8759.676507900509,
+            "risk_upper_MWh": 8765.791739354385,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 73,
+          "removed_history_delivery_MWh": 18523.652346769904
+        },
+        {
+          "true_hours": 7.5,
+          "H5": 6.287842521599939,
+          "H20": 7.268768843091536,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 464.356087770471,
+            "total_upper_MW": 464.42181115155756,
+            "net_lower_MW": 85.67075493575038,
+            "net_upper_MW": 85.73647831683695,
+            "risk_lower_MWh": 8759.998760316283,
+            "risk_upper_MWh": 8765.387085433524,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 473.5311769393688,
+            "total_upper_MW": 473.5512582186519,
+            "net_lower_MW": 94.84584410464817,
+            "net_upper_MW": 94.86592538393131,
+            "risk_lower_MWh": 8759.936811786023,
+            "risk_upper_MWh": 8761.452715945854,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 59,
+          "removed_history_delivery_MWh": 15037.268338489066
+        },
+        {
+          "true_hours": 8.0,
+          "H5": 6.287842521599939,
+          "H20": 7.82614949741948,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 488.9737472149882,
+            "total_upper_MW": 488.9841883198773,
+            "net_lower_MW": 110.28841438026757,
+            "net_upper_MW": 110.29885548515671,
+            "risk_lower_MWh": 8759.952411116265,
+            "risk_upper_MWh": 8760.649031427083,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 499.32781299556353,
+            "total_upper_MW": 499.41485210412947,
+            "net_lower_MW": 120.64248016084292,
+            "net_upper_MW": 120.72951926940885,
+            "risk_lower_MWh": 8759.587517053236,
+            "risk_upper_MWh": 8764.96121920733,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 49,
+          "removed_history_delivery_MWh": 12447.459935525243
+        },
+        {
+          "true_hours": 8.5,
+          "H5": 6.287842521599939,
+          "H20": 8.281682982423439,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 515.2513346235552,
+            "total_upper_MW": 515.2652656126392,
+            "net_lower_MW": 136.56600178883457,
+            "net_upper_MW": 136.57993277791854,
+            "risk_lower_MWh": 8759.996689949083,
+            "risk_upper_MWh": 8760.77275747945,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 530.7798151483399,
+            "total_upper_MW": 530.7906211839143,
+            "net_lower_MW": 152.09448231361932,
+            "net_upper_MW": 152.10528834919364,
+            "risk_lower_MWh": 8759.98058819499,
+            "risk_upper_MWh": 8760.531009869173,
+            "root_evaluations": 9
+          },
+          "changed_meter_points": 41,
+          "removed_history_delivery_MWh": 10451.545702051848
+        },
+        {
+          "true_hours": 9.0,
+          "H5": 6.287842521599939,
+          "H20": 8.800498722317558,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 550.0911183373489,
+            "total_upper_MW": 550.1411183373489,
+            "net_lower_MW": 171.4057855026283,
+            "net_upper_MW": 171.45578550262826,
+            "risk_lower_MWh": 8757.769206588135,
+            "risk_upper_MWh": 8762.230852575074,
+            "root_evaluations": 9
+          },
+          "full_information": {
+            "total_lower_MW": 560.4872677576776,
+            "total_upper_MW": 560.5269829439188,
+            "net_lower_MW": 181.801934922957,
+            "net_upper_MW": 181.8416501091982,
+            "risk_lower_MWh": 8756.688010869684,
+            "risk_upper_MWh": 8760.096297580973,
+            "root_evaluations": 8
+          },
+          "changed_meter_points": 33,
+          "removed_history_delivery_MWh": 8342.843347749687
+        },
+        {
+          "true_hours": 9.5,
+          "H5": 6.287842521599939,
+          "H20": 8.800498722317558,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 550.0911183373489,
+            "total_upper_MW": 550.1411183373489,
+            "net_lower_MW": 171.4057855026283,
+            "net_upper_MW": 171.45578550262826,
+            "risk_lower_MWh": 8757.769206588135,
+            "risk_upper_MWh": 8762.230852575074,
+            "root_evaluations": 9
+          },
+          "full_information": {
+            "total_lower_MW": 582.6952139017022,
+            "total_upper_MW": 582.7393174836344,
+            "net_lower_MW": 204.00988106698162,
+            "net_upper_MW": 204.0539846489138,
+            "risk_lower_MWh": 8756.455313769016,
+            "risk_upper_MWh": 8760.457257121085,
+            "root_evaluations": 8
+          },
+          "changed_meter_points": 27,
+          "removed_history_delivery_MWh": 6913.0937100306455
+        },
+        {
+          "true_hours": 10.0,
+          "H5": 6.287842521599939,
+          "H20": 9.766565626227178,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 594.8733979738948,
+            "total_upper_MW": 594.9384097761434,
+            "net_lower_MW": 216.18806513917423,
+            "net_upper_MW": 216.25307694142282,
+            "risk_lower_MWh": 8759.899150711077,
+            "risk_upper_MWh": 8765.918846525497,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 606.4213961855666,
+            "total_upper_MW": 606.4605347510096,
+            "net_lower_MW": 227.73606335084594,
+            "net_upper_MW": 227.775201916289,
+            "risk_lower_MWh": 8759.331971917483,
+            "risk_upper_MWh": 8762.897919321025,
+            "root_evaluations": 9
+          },
+          "changed_meter_points": 21,
+          "removed_history_delivery_MWh": 5271.180497631926
+        },
+        {
+          "true_hours": 10.5,
+          "H5": 6.287842521599939,
+          "H20": 9.766565626227178,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 594.8733979738948,
+            "total_upper_MW": 594.9384097761434,
+            "net_lower_MW": 216.18806513917423,
+            "net_upper_MW": 216.25307694142282,
+            "risk_lower_MWh": 8759.899150711077,
+            "risk_upper_MWh": 8765.918846525497,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 628.7021089378281,
+            "total_upper_MW": 628.7164977258375,
+            "net_lower_MW": 250.01677610310753,
+            "net_upper_MW": 250.03116489111687,
+            "risk_lower_MWh": 8759.999880842617,
+            "risk_upper_MWh": 8761.17460794021,
+            "root_evaluations": 10
+          },
+          "changed_meter_points": 17,
+          "removed_history_delivery_MWh": 4349.194214049797
+        },
+        {
+          "true_hours": 11.0,
+          "H5": 6.287842521599939,
+          "H20": 10.069241489464824,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 608.9417019009669,
+            "total_upper_MW": 608.9705608950204,
+            "net_lower_MW": 230.2563690662463,
+            "net_upper_MW": 230.2852280602998,
+            "risk_lower_MWh": 8759.740806159849,
+            "risk_upper_MWh": 8762.35880265384,
+            "root_evaluations": 9
+          },
+          "full_information": {
+            "total_lower_MW": 647.7290945080092,
+            "total_upper_MW": 647.7605603037063,
+            "net_lower_MW": 269.0437616732886,
+            "net_upper_MW": 269.07522746898564,
+            "risk_lower_MWh": 8759.914120606001,
+            "risk_upper_MWh": 8788.96360670845,
+            "root_evaluations": 13
+          },
+          "changed_meter_points": 14,
+          "removed_history_delivery_MWh": 3732.915523595286
+        },
+        {
+          "true_hours": 11.5,
+          "H5": 6.287842521599939,
+          "H20": 10.069241489464824,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 608.9417019009669,
+            "total_upper_MW": 608.9705608950204,
+            "net_lower_MW": 230.2563690662463,
+            "net_upper_MW": 230.2852280602998,
+            "risk_lower_MWh": 8759.740806159849,
+            "risk_upper_MWh": 8762.35880265384,
+            "root_evaluations": 9
+          },
+          "full_information": {
+            "total_lower_MW": 649.0050682786965,
+            "total_upper_MW": 649.0652915272279,
+            "net_lower_MW": 270.3197354439759,
+            "net_upper_MW": 270.37995869250733,
+            "risk_lower_MWh": 8755.93306970318,
+            "risk_upper_MWh": 8811.07762596106,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 12,
+          "removed_history_delivery_MWh": 3212.1828668656826
+        },
+        {
+          "true_hours": 12.0,
+          "H5": 6.287842521599939,
+          "H20": 10.069241489464824,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 608.9417019009669,
+            "total_upper_MW": 608.9705608950204,
+            "net_lower_MW": 230.2563690662463,
+            "net_upper_MW": 230.2852280602998,
+            "risk_lower_MWh": 8759.740806159849,
+            "risk_upper_MWh": 8762.35880265384,
+            "root_evaluations": 9
+          },
+          "full_information": {
+            "total_lower_MW": 650.2068535455965,
+            "total_upper_MW": 650.2550589414589,
+            "net_lower_MW": 271.52152071087585,
+            "net_upper_MW": 271.56972610673824,
+            "risk_lower_MWh": 8756.921709128108,
+            "risk_upper_MWh": 8800.61218137353,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 10,
+          "removed_history_delivery_MWh": 2749.3852215994198
+        },
+        {
+          "true_hours": 12.5,
+          "H5": 6.287842521599939,
+          "H20": 12.257364841226462,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 650.6200027627739,
+            "total_upper_MW": 650.6651187251994,
+            "net_lower_MW": 271.93466992805327,
+            "net_upper_MW": 271.97978589047875,
+            "risk_lower_MWh": 8759.368432340258,
+            "risk_upper_MWh": 8800.137243196754,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 651.0312004603131,
+            "total_upper_MW": 651.0711623870284,
+            "net_lower_MW": 272.3458676255925,
+            "net_upper_MW": 272.38582955230777,
+            "risk_lower_MWh": 8757.881605304643,
+            "risk_upper_MWh": 8793.859413823031,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 8,
+          "removed_history_delivery_MWh": 2138.4865198115544
+        },
+        {
+          "true_hours": 13.0,
+          "H5": 6.287842521599939,
+          "H20": 12.257364841226462,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 650.6200027627739,
+            "total_upper_MW": 650.6651187251994,
+            "net_lower_MW": 271.93466992805327,
+            "net_upper_MW": 271.97978589047875,
+            "risk_lower_MWh": 8759.368432340258,
+            "risk_upper_MWh": 8800.137243196754,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 651.8313788752512,
+            "total_upper_MW": 651.863339017817,
+            "net_lower_MW": 273.14604604053056,
+            "net_upper_MW": 273.1780061830964,
+            "risk_lower_MWh": 8757.334191991818,
+            "risk_upper_MWh": 8785.987016109168,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 6,
+          "removed_history_delivery_MWh": 1570.6300218156089
+        },
+        {
+          "true_hours": 13.5,
+          "H5": 6.287842521599939,
+          "H20": 12.257364841226462,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 650.6200027627739,
+            "total_upper_MW": 650.6651187251994,
+            "net_lower_MW": 271.93466992805327,
+            "net_upper_MW": 271.97978589047875,
+            "risk_lower_MWh": 8759.368432340258,
+            "risk_upper_MWh": 8800.137243196754,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 652.3958346247244,
+            "total_upper_MW": 652.4221502097955,
+            "net_lower_MW": 273.71050179000383,
+            "net_upper_MW": 273.7368173750749,
+            "risk_lower_MWh": 8758.21818316365,
+            "risk_upper_MWh": 8781.575844819248,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 4,
+          "removed_history_delivery_MWh": 1080.7375054786635
+        },
+        {
+          "true_hours": 14.0,
+          "H5": 6.287842521599939,
+          "H20": 13.041848052293727,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 651.8567274942752,
+            "total_upper_MW": 651.8840473694539,
+            "net_lower_MW": 273.1713946595546,
+            "net_upper_MW": 273.1987145347333,
+            "risk_lower_MWh": 8751.603530627266,
+            "risk_upper_MWh": 8776.075091410905,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 652.8951778616249,
+            "total_upper_MW": 652.9165000143271,
+            "net_lower_MW": 274.2098450269043,
+            "net_upper_MW": 274.2311671796065,
+            "risk_lower_MWh": 8758.894855704799,
+            "risk_upper_MWh": 8777.620039134892,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 2,
+          "removed_history_delivery_MWh": 464.97969856109995
+        },
+        {
+          "true_hours": 14.5,
+          "H5": 6.287842521599939,
+          "H20": 13.041848052293727,
+          "capacity_5": {
+            "total_lower_MW": 435.95718852691215,
+            "total_upper_MW": 436.00731640561753,
+            "net_lower_MW": 57.27185569219154,
+            "net_upper_MW": 57.32198357089692,
+            "risk_lower_MWh": 8759.984408883443,
+            "risk_upper_MWh": 8765.586338782925,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 651.8567274942752,
+            "total_upper_MW": 651.8840473694539,
+            "net_lower_MW": 273.1713946595546,
+            "net_upper_MW": 273.1987145347333,
+            "risk_lower_MWh": 8751.603530627266,
+            "risk_upper_MWh": 8776.075091410905,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 653.2558116058741,
+            "total_upper_MW": 653.2735274211337,
+            "net_lower_MW": 274.5704787711535,
+            "net_upper_MW": 274.5881945864131,
+            "risk_lower_MWh": 8759.86024446726,
+            "risk_upper_MWh": 8775.350276063737,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 0,
+          "removed_history_delivery_MWh": -0.0
+        }
+      ],
+      "full_references": {
+        "central": {
+          "reference_MW": 378.6853328347206,
+          "total_lower_MW": 653.2558116058741,
+          "total_upper_MW": 653.2735274211337,
+          "net_lower_MW": 274.5704787711535,
+          "net_upper_MW": 274.5881945864131,
+          "risk_lower_MWh": 8759.86024446726,
+          "risk_upper_MWh": 8775.350276063737,
+          "root_evaluations": 5
+        },
+        "tail_0.9": {
+          "reference_MW": 380.44970482587814,
+          "total_lower_MW": 653.8126926038722,
+          "total_upper_MW": 653.8770387908396,
+          "net_lower_MW": 273.362987777994,
+          "net_upper_MW": 273.42733396496146,
+          "risk_lower_MWh": 8703.655506680561,
+          "risk_upper_MWh": 8760.00500416306,
+          "root_evaluations": 7
+        },
+        "tail_0.99": {
+          "reference_MW": 373.6216202378273,
+          "total_lower_MW": 652.194395169616,
+          "total_upper_MW": 652.2112228106417,
+          "net_lower_MW": 278.5727749317887,
+          "net_upper_MW": 278.58960257281444,
+          "risk_lower_MWh": 8759.682692707134,
+          "risk_upper_MWh": 8774.479624348096,
+          "root_evaluations": 8
+        },
+        "budget_0.5": {
+          "reference_MW": 366.62641912698746,
+          "total_lower_MW": 648.2320614250727,
+          "total_upper_MW": 648.2477874368684,
+          "net_lower_MW": 281.6056422980853,
+          "net_upper_MW": 281.62136830988095,
+          "risk_lower_MWh": 4378.747771122655,
+          "risk_upper_MWh": 4392.4088752309635,
+          "root_evaluations": 10
+        },
+        "budget_2.0": {
+          "reference_MW": 401.15509182214737,
+          "total_lower_MW": 662.9509706737598,
+          "total_upper_MW": 662.965634833611,
+          "net_lower_MW": 261.79587885161243,
+          "net_upper_MW": 261.81054301146366,
+          "risk_lower_MWh": 17519.84161051089,
+          "risk_upper_MWh": 17536.31655332715,
+          "root_evaluations": 8
+        }
+      },
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "history_points": 544,
+      "history_days": 20,
+      "history_statistics": 932,
+      "true_error_checks": {
+        "5": {
+          "truth_error_retained": true,
+          "admissible_bias_lower_MW": -80.0,
+          "admissible_bias_upper_MW": 80.0,
+          "zero_bias_error_retained": true,
+          "maximum_error_ratio": 0.6386185339181853
+        },
+        "20": {
+          "truth_error_retained": true,
+          "admissible_bias_lower_MW": -80.0,
+          "admissible_bias_upper_MW": 80.0,
+          "zero_bias_error_retained": true,
+          "maximum_error_ratio": 0.6386185339181853
+        }
+      },
+      "historical_maximum_hours": 14.5,
+      "baseline_meter_max_difference_MW": 0.0
+    },
+    "LSE B": {
+      "customer": "LSE B",
+      "parameters": {
+        "load_mw": 2000.0,
+        "nomination_mw": 1000.0,
+        "response_mean_ratio": 1.0,
+        "response_sd_ratio": 0.1,
+        "response_rho15": 0.0,
+        "error_mean_rate": 0.0,
+        "error_sd_rate": 0.1444,
+        "bias_bound_rate": 0.04,
+        "verification_coverage": 0.95,
+        "error_budget_share": 0.5,
+        "global_error_budget_share": 0.5,
+        "baseline_days": 10,
+        "error_calibration_days": 10,
+        "load_daily_variance_share": 0.5,
+        "load_rho15": 0.8408964152537145,
+        "verified_min_duration_hours": 0.0,
+        "true_duration_hours": 14.5,
+        "maximum_extension_hours": null,
+        "tail_level": 0.95,
+        "risk_budget_mwh": 8760.0,
+        "system_surplus_mw": 1000.0,
+        "future_paths": 128,
+        "quadrature_nodes": 64,
+        "load_seed": 2026110313,
+        "future_seed": 2026110417,
+        "capacity_tolerance_mw": 0.1,
+        "reference_tolerance_mw": 0.0001,
+        "solver_tolerance": 1e-08,
+        "calibration_draws": 262144,
+        "calibration_seed": 2026110419,
+        "calibration_batch": 4096,
+        "schedule_iterations": 6,
+        "duration_comparison_fraction": 0.5,
+        "time_tolerance_hours": 1e-10,
+        "hour_bin_tolerance": 1e-09,
+        "duration_check_tolerance_hours": 1e-06,
+        "covariance_relative_tolerance": 1e-11,
+        "transport_iterations": 500,
+        "transport_solver_tolerance": 1e-10,
+        "transport_gap_mwh": 0.002,
+        "empirical_users": [
+          "LSE A",
+          "LSE B",
+          "LSE C"
+        ],
+        "normal_sizes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "history_power_seed": 2026110421,
+        "individual_load_seed": 2026110521,
+        "common_error_amplitude": 0.02,
+        "individual_error_amplitude": 0.2,
+        "state_power_ratio": 1.5
+      },
+      "grid": {
+        "baseline_hours": 14.5,
+        "minimum_hours": 4.0,
+        "step_hours": 0.5,
+        "history_counts": [
+          5,
+          20
+        ],
+        "future_paths": 128,
+        "quadrature_nodes": 64
+      },
+      "rows": [
+        {
+          "true_hours": 4.0,
+          "H5": 3.1403987801047992,
+          "H20": 3.769709957254251,
+          "capacity_5": {
+            "total_lower_MW": 394.89521471179484,
+            "total_upper_MW": 394.9691356667937,
+            "net_lower_MW": 16.209881877074224,
+            "net_upper_MW": 16.283802832073093,
+            "risk_lower_MWh": 8756.248737887016,
+            "risk_upper_MWh": 8773.766915997316,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 400.00541222175167,
+            "total_upper_MW": 400.0554122217516,
+            "net_lower_MW": 21.320079387031058,
+            "net_upper_MW": 21.370079387031012,
+            "risk_lower_MWh": 8754.79571376761,
+            "risk_upper_MWh": 8765.20428383704,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 402.24658096799504,
+            "total_upper_MW": 402.2873102116833,
+            "net_lower_MW": 23.561248133274432,
+            "net_upper_MW": 23.60197737696268,
+            "risk_lower_MWh": 8756.985707213124,
+            "risk_upper_MWh": 8765.03323165459,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 225,
+          "removed_history_delivery_MWh": 59289.88778142354
+        },
+        {
+          "true_hours": 4.5,
+          "H5": 3.1403987801047992,
+          "H20": 4.258511560620017,
+          "capacity_5": {
+            "total_lower_MW": 394.89521471179484,
+            "total_upper_MW": 394.9691356667937,
+            "net_lower_MW": 16.209881877074224,
+            "net_upper_MW": 16.283802832073093,
+            "risk_lower_MWh": 8756.248737887016,
+            "risk_upper_MWh": 8773.766915997316,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 404.73695023041387,
+            "total_upper_MW": 404.7869502304138,
+            "net_lower_MW": 26.051617395693256,
+            "net_upper_MW": 26.10161739569321,
+            "risk_lower_MWh": 8755.329061039612,
+            "risk_upper_MWh": 8764.670952033133,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 407.3730251996661,
+            "total_upper_MW": 407.3932134929701,
+            "net_lower_MW": 28.687692364945462,
+            "net_upper_MW": 28.707880658249508,
+            "risk_lower_MWh": 8759.013905847492,
+            "risk_upper_MWh": 8762.586799416145,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 192,
+          "removed_history_delivery_MWh": 50698.4514048197
+        },
+        {
+          "true_hours": 5.0,
+          "H5": 4.189138424633805,
+          "H20": 4.7568268545274295,
+          "capacity_5": {
+            "total_lower_MW": 404.0263848938445,
+            "total_upper_MW": 404.1238010166227,
+            "net_lower_MW": 25.34105205912391,
+            "net_upper_MW": 25.438468181902067,
+            "risk_lower_MWh": 8753.68035515084,
+            "risk_upper_MWh": 8772.162518342653,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 410.40588717264245,
+            "total_upper_MW": 410.4558871726424,
+            "net_lower_MW": 31.72055433792184,
+            "net_upper_MW": 31.770554337921794,
+            "risk_lower_MWh": 8755.837227419153,
+            "risk_upper_MWh": 8764.16277215651,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 413.74959013033487,
+            "total_upper_MW": 413.76799717166136,
+            "net_lower_MW": 35.064257295614254,
+            "net_upper_MW": 35.08266433694075,
+            "risk_lower_MWh": 8758.344794103434,
+            "risk_upper_MWh": 8761.228819326752,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 164,
+          "removed_history_delivery_MWh": 43382.96277288449
+        },
+        {
+          "true_hours": 5.5,
+          "H5": 4.189138424633805,
+          "H20": 5.28115235725869,
+          "capacity_5": {
+            "total_lower_MW": 404.0263848938445,
+            "total_upper_MW": 404.1238010166227,
+            "net_lower_MW": 25.34105205912391,
+            "net_upper_MW": 25.438468181902067,
+            "risk_lower_MWh": 8753.68035515084,
+            "risk_upper_MWh": 8772.162518342653,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 417.54662141781597,
+            "total_upper_MW": 417.580595164209,
+            "net_lower_MW": 38.86128858309536,
+            "net_upper_MW": 38.89526232948839,
+            "risk_lower_MWh": 8759.981779291827,
+            "risk_upper_MWh": 8764.962629259504,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 420.92702914950064,
+            "total_upper_MW": 420.9439960571188,
+            "net_lower_MW": 42.24169631478003,
+            "net_upper_MW": 42.258663222398184,
+            "risk_lower_MWh": 8759.05479700941,
+            "risk_upper_MWh": 8761.407483496563,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 137,
+          "removed_history_delivery_MWh": 36488.56852782455
+        },
+        {
+          "true_hours": 6.0,
+          "H5": 5.07600433341632,
+          "H20": 5.463629152254893,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 420.24682504407133,
+            "total_upper_MW": 420.3454593040457,
+            "net_lower_MW": 41.56149220935072,
+            "net_upper_MW": 41.660126469325064,
+            "risk_lower_MWh": 8751.852164956383,
+            "risk_upper_MWh": 8765.668050671016,
+            "root_evaluations": 5
+          },
+          "full_information": {
+            "total_lower_MW": 430.0959947004412,
+            "total_upper_MW": 430.11025104150536,
+            "net_lower_MW": 51.41066186572061,
+            "net_upper_MW": 51.42491820678475,
+            "risk_lower_MWh": 8759.456993962056,
+            "risk_upper_MWh": 8761.180734423808,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 112,
+          "removed_history_delivery_MWh": 29929.420896353928
+        },
+        {
+          "true_hours": 6.5,
+          "H5": 5.07600433341632,
+          "H20": 6.18776584915559,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 433.7252227282652,
+            "total_upper_MW": 433.79769448224346,
+            "net_lower_MW": 55.03988989354457,
+            "net_upper_MW": 55.112361647522846,
+            "risk_lower_MWh": 8753.775959502198,
+            "risk_upper_MWh": 8762.109789890163,
+            "root_evaluations": 5
+          },
+          "full_information": {
+            "total_lower_MW": 440.96075691775945,
+            "total_upper_MW": 440.97239812609223,
+            "net_lower_MW": 62.27542408303884,
+            "net_upper_MW": 62.28706529137162,
+            "risk_lower_MWh": 8759.525676024406,
+            "risk_upper_MWh": 8760.748162486932,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 92,
+          "removed_history_delivery_MWh": 24472.761231273944
+        },
+        {
+          "true_hours": 7.0,
+          "H5": 5.07600433341632,
+          "H20": 6.679441599189472,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 445.59199180986707,
+            "total_upper_MW": 445.60208940236583,
+            "net_lower_MW": 66.90665897514646,
+            "net_upper_MW": 66.91675656764522,
+            "risk_lower_MWh": 8759.66261177661,
+            "risk_upper_MWh": 8760.6661727187,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 455.5302292928248,
+            "total_upper_MW": 455.5987059761632,
+            "net_lower_MW": 76.84489645810419,
+            "net_upper_MW": 76.9133731414426,
+            "risk_lower_MWh": 8759.631522577498,
+            "risk_upper_MWh": 8765.747118057558,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 73,
+          "removed_history_delivery_MWh": 19417.054547304484
+        },
+        {
+          "true_hours": 7.5,
+          "H5": 5.07600433341632,
+          "H20": 7.206683068489779,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 462.0211908559719,
+            "total_upper_MW": 462.07119085597185,
+            "net_lower_MW": 83.33585802125128,
+            "net_upper_MW": 83.38585802125124,
+            "risk_lower_MWh": 8757.903280695415,
+            "risk_upper_MWh": 8762.096703479063,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 473.53560306899607,
+            "total_upper_MW": 473.55566278522343,
+            "net_lower_MW": 94.85027023427546,
+            "net_upper_MW": 94.87032995050282,
+            "risk_lower_MWh": 8759.945234853309,
+            "risk_upper_MWh": 8761.45957965398,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 59,
+          "removed_history_delivery_MWh": 15696.2350537558
+        },
+        {
+          "true_hours": 8.0,
+          "H5": 5.07600433341632,
+          "H20": 7.688395051746915,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 481.6868701802095,
+            "total_upper_MW": 481.73687018020945,
+            "net_lower_MW": 103.00153734548888,
+            "net_upper_MW": 103.05153734548884,
+            "risk_lower_MWh": 8758.234957824083,
+            "risk_upper_MWh": 8761.76478542043,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 499.33726137383786,
+            "total_upper_MW": 499.4242416756103,
+            "net_lower_MW": 120.65192853911725,
+            "net_upper_MW": 120.73890884088968,
+            "risk_lower_MWh": 8759.608161561275,
+            "risk_upper_MWh": 8764.978350867837,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 49,
+          "removed_history_delivery_MWh": 13062.845738153563
+        },
+        {
+          "true_hours": 8.5,
+          "H5": 5.07600433341632,
+          "H20": 8.170342218098671,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 508.2082706472881,
+            "total_upper_MW": 508.2285928869312,
+            "net_lower_MW": 129.52293781256748,
+            "net_upper_MW": 129.5432600522106,
+            "risk_lower_MWh": 8759.999542311918,
+            "risk_upper_MWh": 8761.181675789749,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 530.8126609300722,
+            "total_upper_MW": 530.8234409648624,
+            "net_lower_MW": 152.12732809535157,
+            "net_upper_MW": 152.13810813014175,
+            "risk_lower_MWh": 8759.959201148687,
+            "risk_upper_MWh": 8760.50805637516,
+            "root_evaluations": 9
+          },
+          "changed_meter_points": 41,
+          "removed_history_delivery_MWh": 11000.142059358277
+        },
+        {
+          "true_hours": 9.0,
+          "H5": 5.07600433341632,
+          "H20": 8.420793601436625,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 524.1472870858844,
+            "total_upper_MW": 524.2384731005912,
+            "net_lower_MW": 145.46195425116377,
+            "net_upper_MW": 145.55314026587064,
+            "risk_lower_MWh": 8759.998318990376,
+            "risk_upper_MWh": 8764.811415030408,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 560.5251128521246,
+            "total_upper_MW": 560.5646888436245,
+            "net_lower_MW": 181.839780017404,
+            "net_upper_MW": 181.87935600890387,
+            "risk_lower_MWh": 8756.73149668048,
+            "risk_upper_MWh": 8760.126686374053,
+            "root_evaluations": 8
+          },
+          "changed_meter_points": 33,
+          "removed_history_delivery_MWh": 8759.623936177604
+        },
+        {
+          "true_hours": 9.5,
+          "H5": 5.07600433341632,
+          "H20": 9.171314513091376,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 567.3327635596271,
+            "total_upper_MW": 567.3868507222518,
+            "net_lower_MW": 188.64743072490649,
+            "net_upper_MW": 188.70151788753117,
+            "risk_lower_MWh": 8759.430215603325,
+            "risk_upper_MWh": 8764.0546305596,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 582.7412778862594,
+            "total_upper_MW": 582.7852328017773,
+            "net_lower_MW": 204.05594505153874,
+            "net_upper_MW": 204.09989996705667,
+            "risk_lower_MWh": 8756.3973909454,
+            "risk_upper_MWh": 8760.384768935792,
+            "root_evaluations": 8
+          },
+          "changed_meter_points": 27,
+          "removed_history_delivery_MWh": 7089.379276709953
+        },
+        {
+          "true_hours": 10.0,
+          "H5": 5.07600433341632,
+          "H20": 9.676021868081738,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 590.1971583186224,
+            "total_upper_MW": 590.2617096415864,
+            "net_lower_MW": 211.51182548390182,
+            "net_upper_MW": 211.57637680686582,
+            "risk_lower_MWh": 8759.648699034735,
+            "risk_upper_MWh": 8765.560792661921,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 606.4588916614659,
+            "total_upper_MW": 606.4979504458852,
+            "net_lower_MW": 227.77355882674533,
+            "net_upper_MW": 227.81261761116457,
+            "risk_lower_MWh": 8759.324774674122,
+            "risk_upper_MWh": 8762.8809555981,
+            "root_evaluations": 9
+          },
+          "changed_meter_points": 21,
+          "removed_history_delivery_MWh": 5488.105467478301
+        },
+        {
+          "true_hours": 10.5,
+          "H5": 5.07600433341632,
+          "H20": 10.253409212269288,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 616.4224614601695,
+            "total_upper_MW": 616.4421757457959,
+            "net_lower_MW": 237.73712862544892,
+            "net_upper_MW": 237.7568429110753,
+            "risk_lower_MWh": 8759.999486256836,
+            "risk_upper_MWh": 8761.722547436006,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 628.7375960005782,
+            "total_upper_MW": 628.7506259244401,
+            "net_lower_MW": 250.05226316585754,
+            "net_upper_MW": 250.0652930897195,
+            "risk_lower_MWh": 8759.999881513142,
+            "risk_upper_MWh": 8761.063499750093,
+            "root_evaluations": 10
+          },
+          "changed_meter_points": 17,
+          "removed_history_delivery_MWh": 4289.245169127393
+        },
+        {
+          "true_hours": 11.0,
+          "H5": 5.07600433341632,
+          "H20": 10.253409212269288,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 616.4224614601695,
+            "total_upper_MW": 616.4421757457959,
+            "net_lower_MW": 237.73712862544892,
+            "net_upper_MW": 237.7568429110753,
+            "risk_lower_MWh": 8759.999486256836,
+            "risk_upper_MWh": 8761.722547436006,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 647.7313909346083,
+            "total_upper_MW": 647.7638822279872,
+            "net_lower_MW": 269.04605809988766,
+            "net_upper_MW": 269.0785493932666,
+            "risk_lower_MWh": 8759.927845269796,
+            "risk_upper_MWh": 8789.923177543835,
+            "root_evaluations": 13
+          },
+          "changed_meter_points": 14,
+          "removed_history_delivery_MWh": 3631.779529983086
+        },
+        {
+          "true_hours": 11.5,
+          "H5": 5.07600433341632,
+          "H20": 10.253409212269288,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 616.4224614601695,
+            "total_upper_MW": 616.4421757457959,
+            "net_lower_MW": 237.73712862544892,
+            "net_upper_MW": 237.7568429110753,
+            "risk_lower_MWh": 8759.999486256836,
+            "risk_upper_MWh": 8761.722547436006,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 649.0063188150768,
+            "total_upper_MW": 649.0665295582444,
+            "net_lower_MW": 270.3209859803562,
+            "net_upper_MW": 270.3811967235238,
+            "risk_lower_MWh": 8755.944383877992,
+            "risk_upper_MWh": 8811.079246440057,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 12,
+          "removed_history_delivery_MWh": 3231.1208491967886
+        },
+        {
+          "true_hours": 12.0,
+          "H5": 5.07600433341632,
+          "H20": 10.253409212269288,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 616.4224614601695,
+            "total_upper_MW": 616.4421757457959,
+            "net_lower_MW": 237.73712862544892,
+            "net_upper_MW": 237.7568429110753,
+            "risk_lower_MWh": 8759.999486256836,
+            "risk_upper_MWh": 8761.722547436006,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 650.2071659482294,
+            "total_upper_MW": 650.2553682200655,
+            "net_lower_MW": 271.5218331135088,
+            "net_upper_MW": 271.5700353853449,
+            "risk_lower_MWh": 8756.850552101136,
+            "risk_upper_MWh": 8800.530014171314,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 10,
+          "removed_history_delivery_MWh": 2761.343501627331
+        },
+        {
+          "true_hours": 12.5,
+          "H5": 5.07600433341632,
+          "H20": 10.253409212269288,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 616.4224614601695,
+            "total_upper_MW": 616.4421757457959,
+            "net_lower_MW": 237.73712862544892,
+            "net_upper_MW": 237.7568429110753,
+            "risk_lower_MWh": 8759.999486256836,
+            "risk_upper_MWh": 8761.722547436006,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 651.0311958122389,
+            "total_upper_MW": 651.0711577854349,
+            "net_lower_MW": 272.3458629775183,
+            "net_upper_MW": 272.3858249507143,
+            "risk_lower_MWh": 8757.875057573976,
+            "risk_upper_MWh": 8793.850699843731,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 8,
+          "removed_history_delivery_MWh": 2229.8921510148975
+        },
+        {
+          "true_hours": 13.0,
+          "H5": 5.07600433341632,
+          "H20": 10.253409212269288,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 616.4224614601695,
+            "total_upper_MW": 616.4421757457959,
+            "net_lower_MW": 237.73712862544892,
+            "net_upper_MW": 237.7568429110753,
+            "risk_lower_MWh": 8759.999486256836,
+            "risk_upper_MWh": 8761.722547436006,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 651.8313165874888,
+            "total_upper_MW": 651.8632773529323,
+            "net_lower_MW": 273.1459837527682,
+            "net_upper_MW": 273.1779445182117,
+            "risk_lower_MWh": 8757.310925466802,
+            "risk_upper_MWh": 8785.96453316546,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 6,
+          "removed_history_delivery_MWh": 1713.7295279626137
+        },
+        {
+          "true_hours": 13.5,
+          "H5": 5.07600433341632,
+          "H20": 10.253409212269288,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 616.4224614601695,
+            "total_upper_MW": 616.4421757457959,
+            "net_lower_MW": 237.73712862544892,
+            "net_upper_MW": 237.7568429110753,
+            "risk_lower_MWh": 8759.999486256836,
+            "risk_upper_MWh": 8761.722547436006,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 652.3956524599429,
+            "total_upper_MW": 652.4219698666618,
+            "net_lower_MW": 273.71031962522227,
+            "net_upper_MW": 273.7366370319412,
+            "risk_lower_MWh": 8758.208087447687,
+            "risk_upper_MWh": 8781.565152656063,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 4,
+          "removed_history_delivery_MWh": 1193.9353750546697
+        },
+        {
+          "true_hours": 14.0,
+          "H5": 5.07600433341632,
+          "H20": 10.253409212269288,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 616.4224614601695,
+            "total_upper_MW": 616.4421757457959,
+            "net_lower_MW": 237.73712862544892,
+            "net_upper_MW": 237.7568429110753,
+            "risk_lower_MWh": 8759.999486256836,
+            "risk_upper_MWh": 8761.722547436006,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 652.8950311310838,
+            "total_upper_MW": 652.9163547510914,
+            "net_lower_MW": 274.2096982963632,
+            "net_upper_MW": 274.23102191637076,
+            "risk_lower_MWh": 8758.909461808775,
+            "risk_upper_MWh": 8777.635207165844,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 2,
+          "removed_history_delivery_MWh": 597.0897676546622
+        },
+        {
+          "true_hours": 14.5,
+          "H5": 5.07600433341632,
+          "H20": 10.253409212269288,
+          "capacity_5": {
+            "total_lower_MW": 414.70665316887494,
+            "total_upper_MW": 414.72718126500416,
+            "net_lower_MW": 36.021320334154325,
+            "net_upper_MW": 36.04184843028355,
+            "risk_lower_MWh": 8759.035993008252,
+            "risk_upper_MWh": 8762.198053010296,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 616.4224614601695,
+            "total_upper_MW": 616.4421757457959,
+            "net_lower_MW": 237.73712862544892,
+            "net_upper_MW": 237.7568429110753,
+            "risk_lower_MWh": 8759.999486256836,
+            "risk_upper_MWh": 8761.722547436006,
+            "root_evaluations": 8
+          },
+          "full_information": {
+            "total_lower_MW": 653.2558880824912,
+            "total_upper_MW": 653.2736031329847,
+            "net_lower_MW": 274.5705552477706,
+            "net_upper_MW": 274.5882702982641,
+            "risk_lower_MWh": 8759.866777875417,
+            "risk_upper_MWh": 8775.354357995982,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 0,
+          "removed_history_delivery_MWh": -0.0
+        }
+      ],
+      "full_references": {
+        "central": {
+          "reference_MW": 378.6853328347206,
+          "total_lower_MW": 653.2558880824912,
+          "total_upper_MW": 653.2736031329847,
+          "net_lower_MW": 274.5705552477706,
+          "net_upper_MW": 274.5882702982641,
+          "risk_lower_MWh": 8759.866777875417,
+          "risk_upper_MWh": 8775.354357995982,
+          "root_evaluations": 5
+        },
+        "tail_0.9": {
+          "reference_MW": 380.44970482587814,
+          "total_lower_MW": 653.8117215616044,
+          "total_upper_MW": 653.8785219006995,
+          "net_lower_MW": 273.36201673572623,
+          "net_upper_MW": 273.4288170748214,
+          "risk_lower_MWh": 8701.506332246385,
+          "risk_upper_MWh": 8760.004751701308,
+          "root_evaluations": 7
+        },
+        "tail_0.99": {
+          "reference_MW": 373.6216202378273,
+          "total_lower_MW": 652.1939873024825,
+          "total_upper_MW": 652.2108138912963,
+          "net_lower_MW": 278.57236706465517,
+          "net_upper_MW": 278.589193653469,
+          "risk_lower_MWh": 8759.69241563656,
+          "risk_upper_MWh": 8774.48812339742,
+          "root_evaluations": 8
+        },
+        "budget_0.5": {
+          "reference_MW": 366.62641912698746,
+          "total_lower_MW": 648.2317493086791,
+          "total_upper_MW": 648.2474978203782,
+          "net_lower_MW": 281.60533018169167,
+          "net_upper_MW": 281.6210786933907,
+          "risk_lower_MWh": 4378.788156678823,
+          "risk_upper_MWh": 4392.467871313335,
+          "root_evaluations": 10
+        },
+        "budget_2.0": {
+          "reference_MW": 401.15509182214737,
+          "total_lower_MW": 662.9520887845043,
+          "total_upper_MW": 662.9669014126737,
+          "net_lower_MW": 261.79699696235696,
+          "net_upper_MW": 261.8118095905263,
+          "risk_lower_MWh": 17519.858380220496,
+          "risk_upper_MWh": 17536.498003660916,
+          "root_evaluations": 8
+        }
+      },
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "history_points": 544,
+      "history_days": 20,
+      "history_statistics": 932,
+      "true_error_checks": {
+        "5": {
+          "truth_error_retained": true,
+          "admissible_bias_lower_MW": -80.0,
+          "admissible_bias_upper_MW": 80.0,
+          "zero_bias_error_retained": true,
+          "maximum_error_ratio": 0.6005299973220083
+        },
+        "20": {
+          "truth_error_retained": true,
+          "admissible_bias_lower_MW": -80.0,
+          "admissible_bias_upper_MW": 74.38759235083958,
+          "zero_bias_error_retained": true,
+          "maximum_error_ratio": 0.7796164646581039
+        }
+      },
+      "historical_maximum_hours": 14.5,
+      "baseline_meter_max_difference_MW": 0.0
+    },
+    "LSE C": {
+      "customer": "LSE C",
+      "parameters": {
+        "load_mw": 2000.0,
+        "nomination_mw": 1000.0,
+        "response_mean_ratio": 1.0,
+        "response_sd_ratio": 0.1,
+        "response_rho15": 0.0,
+        "error_mean_rate": 0.0,
+        "error_sd_rate": 0.1444,
+        "bias_bound_rate": 0.04,
+        "verification_coverage": 0.95,
+        "error_budget_share": 0.5,
+        "global_error_budget_share": 0.5,
+        "baseline_days": 10,
+        "error_calibration_days": 10,
+        "load_daily_variance_share": 0.5,
+        "load_rho15": 0.8408964152537145,
+        "verified_min_duration_hours": 0.0,
+        "true_duration_hours": 14.5,
+        "maximum_extension_hours": null,
+        "tail_level": 0.95,
+        "risk_budget_mwh": 8760.0,
+        "system_surplus_mw": 1000.0,
+        "future_paths": 128,
+        "quadrature_nodes": 64,
+        "load_seed": 2026110313,
+        "future_seed": 2026110417,
+        "capacity_tolerance_mw": 0.1,
+        "reference_tolerance_mw": 0.0001,
+        "solver_tolerance": 1e-08,
+        "calibration_draws": 262144,
+        "calibration_seed": 2026110419,
+        "calibration_batch": 4096,
+        "schedule_iterations": 6,
+        "duration_comparison_fraction": 0.5,
+        "time_tolerance_hours": 1e-10,
+        "hour_bin_tolerance": 1e-09,
+        "duration_check_tolerance_hours": 1e-06,
+        "covariance_relative_tolerance": 1e-11,
+        "transport_iterations": 500,
+        "transport_solver_tolerance": 1e-10,
+        "transport_gap_mwh": 0.002,
+        "empirical_users": [
+          "LSE A",
+          "LSE B",
+          "LSE C"
+        ],
+        "normal_sizes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "history_power_seed": 2026110421,
+        "individual_load_seed": 2026110521,
+        "common_error_amplitude": 0.02,
+        "individual_error_amplitude": 0.2,
+        "state_power_ratio": 1.5
+      },
+      "grid": {
+        "baseline_hours": 14.5,
+        "minimum_hours": 4.0,
+        "step_hours": 0.5,
+        "history_counts": [
+          5,
+          20
+        ],
+        "future_paths": 128,
+        "quadrature_nodes": 64
+      },
+      "rows": [
+        {
+          "true_hours": 4.0,
+          "H5": 3.823613873261723,
+          "H20": 3.8400605408982758,
+          "capacity_5": {
+            "total_lower_MW": 400.5351996514878,
+            "total_upper_MW": 400.55278565801297,
+            "net_lower_MW": 21.84986681676719,
+            "net_upper_MW": 21.867452823292354,
+            "risk_lower_MWh": 8759.996695111606,
+            "risk_upper_MWh": 8763.614232543207,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 400.68912603405386,
+            "total_upper_MW": 400.7051727767534,
+            "net_lower_MW": 22.003793199333245,
+            "net_upper_MW": 22.019839942032775,
+            "risk_lower_MWh": 8759.9965274132,
+            "risk_upper_MWh": 8763.285359085805,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 402.25312019205654,
+            "total_upper_MW": 402.29380030400466,
+            "net_lower_MW": 23.56778735733593,
+            "net_upper_MW": 23.60846746928405,
+            "risk_lower_MWh": 8756.998788410316,
+            "risk_upper_MWh": 8765.035879187464,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 225,
+          "removed_history_delivery_MWh": 64387.8497473185
+        },
+        {
+          "true_hours": 4.5,
+          "H5": 4.315077351700728,
+          "H20": 4.31937327096558,
+          "capacity_5": {
+            "total_lower_MW": 405.3546010307119,
+            "total_upper_MW": 405.3750741331675,
+            "net_lower_MW": 26.669268195991265,
+            "net_upper_MW": 26.689741298446904,
+            "risk_lower_MWh": 8759.959684454992,
+            "risk_upper_MWh": 8763.737061475982,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 405.39954216410285,
+            "total_upper_MW": 405.41956585522456,
+            "net_lower_MW": 26.714209329382243,
+            "net_upper_MW": 26.73423302050395,
+            "risk_lower_MWh": 8759.957286611065,
+            "risk_upper_MWh": 8763.648196533375,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 407.3817242148536,
+            "total_upper_MW": 407.4019112762756,
+            "net_lower_MW": 28.69639138013298,
+            "net_upper_MW": 28.716578441554987,
+            "risk_lower_MWh": 8758.917735057845,
+            "risk_upper_MWh": 8762.489682629239,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 192,
+          "removed_history_delivery_MWh": 54282.976344192575
+        },
+        {
+          "true_hours": 5.0,
+          "H5": 4.835786172776153,
+          "H20": 4.835786172776154,
+          "capacity_5": {
+            "total_lower_MW": 411.4651980504248,
+            "total_upper_MW": 411.4883299442201,
+            "net_lower_MW": 32.779865215704206,
+            "net_upper_MW": 32.80299710949947,
+            "risk_lower_MWh": 8759.961744269844,
+            "risk_upper_MWh": 8763.738453778591,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 411.4651980504248,
+            "total_upper_MW": 411.4883299442201,
+            "net_lower_MW": 32.779865215704206,
+            "net_upper_MW": 32.80299710949947,
+            "risk_lower_MWh": 8759.961744269844,
+            "risk_upper_MWh": 8763.738453778591,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 413.7599813257643,
+            "total_upper_MW": 413.7783874299504,
+            "net_lower_MW": 35.07464849104366,
+            "net_upper_MW": 35.09305459522977,
+            "risk_lower_MWh": 8758.263679015277,
+            "risk_upper_MWh": 8761.147661316887,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 164,
+          "removed_history_delivery_MWh": 45888.9964375046
+        },
+        {
+          "true_hours": 5.5,
+          "H5": 5.33643433723581,
+          "H20": 5.33643433723581,
+          "capacity_5": {
+            "total_lower_MW": 418.3675653807826,
+            "total_upper_MW": 418.393479655834,
+            "net_lower_MW": 39.68223254606198,
+            "net_upper_MW": 39.70814682111342,
+            "risk_lower_MWh": 8759.999054264119,
+            "risk_upper_MWh": 8763.746249408827,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 418.3675653807826,
+            "total_upper_MW": 418.393479655834,
+            "net_lower_MW": 39.68223254606198,
+            "net_upper_MW": 39.70814682111342,
+            "risk_lower_MWh": 8759.999054264119,
+            "risk_upper_MWh": 8763.746249408827,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 420.9420300018793,
+            "total_upper_MW": 420.9589928859276,
+            "net_lower_MW": 42.25669716715868,
+            "net_upper_MW": 42.273660051207,
+            "risk_lower_MWh": 8759.040849249426,
+            "risk_upper_MWh": 8761.392581924016,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 137,
+          "removed_history_delivery_MWh": 38176.40504165547
+        },
+        {
+          "true_hours": 6.0,
+          "H5": 5.835337710242325,
+          "H20": 5.835337710242326,
+          "capacity_5": {
+            "total_lower_MW": 426.75862190833885,
+            "total_upper_MW": 426.79232016469234,
+            "net_lower_MW": 48.07328907361824,
+            "net_upper_MW": 48.10698732997173,
+            "risk_lower_MWh": 8759.969900260212,
+            "risk_upper_MWh": 8764.243244572404,
+            "root_evaluations": 6
+          },
+          "capacity_20": {
+            "total_lower_MW": 426.75862190833885,
+            "total_upper_MW": 426.79232016469234,
+            "net_lower_MW": 48.07328907361824,
+            "net_upper_MW": 48.10698732997173,
+            "risk_lower_MWh": 8759.969900260212,
+            "risk_upper_MWh": 8764.243244572404,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 430.1141942790054,
+            "total_upper_MW": 430.12844754368695,
+            "net_lower_MW": 51.42886144428479,
+            "net_upper_MW": 51.443114708966334,
+            "risk_lower_MWh": 8759.466199391092,
+            "risk_upper_MWh": 8761.18916489843,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 112,
+          "removed_history_delivery_MWh": 31308.6344270368
+        },
+        {
+          "true_hours": 6.5,
+          "H5": 6.254213872684085,
+          "H20": 6.288038312407091,
+          "capacity_5": {
+            "total_lower_MW": 435.18073301378195,
+            "total_upper_MW": 435.2307330137819,
+            "net_lower_MW": 56.495400179061335,
+            "net_upper_MW": 56.54540017906129,
+            "risk_lower_MWh": 8757.178616642124,
+            "risk_upper_MWh": 8762.821391435453,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 435.9432818444675,
+            "total_upper_MW": 435.99383658103255,
+            "net_lower_MW": 57.25794900974688,
+            "net_upper_MW": 57.30850374631194,
+            "risk_lower_MWh": 8759.978775929792,
+            "risk_upper_MWh": 8765.629128526834,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 440.9871226554762,
+            "total_upper_MW": 440.9987555009733,
+            "net_lower_MW": 62.30178982075557,
+            "net_upper_MW": 62.31342266625268,
+            "risk_lower_MWh": 8759.529242777886,
+            "risk_upper_MWh": 8760.750499685615,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 92,
+          "removed_history_delivery_MWh": 25710.68546524021
+        },
+        {
+          "true_hours": 7.0,
+          "H5": 6.507015345620448,
+          "H20": 6.792763038605157,
+          "capacity_5": {
+            "total_lower_MW": 441.05473551270757,
+            "total_upper_MW": 441.1047355127075,
+            "net_lower_MW": 62.369402677986955,
+            "net_upper_MW": 62.41940267798691,
+            "risk_lower_MWh": 8757.379025399065,
+            "risk_upper_MWh": 8762.620986322157,
+            "root_evaluations": 8
+          },
+          "capacity_20": {
+            "total_lower_MW": 448.85941752593845,
+            "total_upper_MW": 448.92724836301295,
+            "net_lower_MW": 70.17408469121784,
+            "net_upper_MW": 70.24191552829234,
+            "risk_lower_MWh": 8759.98790013381,
+            "risk_upper_MWh": 8766.490543313028,
+            "root_evaluations": 6
+          },
+          "full_information": {
+            "total_lower_MW": 455.57421088914134,
+            "total_upper_MW": 455.64250123339104,
+            "net_lower_MW": 76.88887805442073,
+            "net_upper_MW": 76.95716839867043,
+            "risk_lower_MWh": 8759.642242643098,
+            "risk_upper_MWh": 8765.737452722602,
+            "root_evaluations": 6
+          },
+          "changed_meter_points": 73,
+          "removed_history_delivery_MWh": 20435.572748635695
+        },
+        {
+          "true_hours": 7.5,
+          "H5": 7.267953494978648,
+          "H20": 7.267953494978648,
+          "capacity_5": {
+            "total_lower_MW": 464.2594603570324,
+            "total_upper_MW": 464.3094603570324,
+            "net_lower_MW": 85.57412752231181,
+            "net_upper_MW": 85.62412752231177,
+            "risk_lower_MWh": 8757.9482199163,
+            "risk_upper_MWh": 8762.051765826816,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 464.2594603570324,
+            "total_upper_MW": 464.3094603570324,
+            "net_lower_MW": 85.57412752231181,
+            "net_upper_MW": 85.62412752231177,
+            "risk_lower_MWh": 8757.9482199163,
+            "risk_upper_MWh": 8762.051765826816,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 473.62322017286317,
+            "total_upper_MW": 473.6396987657466,
+            "net_lower_MW": 94.93788733814256,
+            "net_upper_MW": 94.95436593102596,
+            "risk_lower_MWh": 8759.999995292907,
+            "risk_upper_MWh": 8761.243036549658,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 59,
+          "removed_history_delivery_MWh": 16432.49769855439
+        },
+        {
+          "true_hours": 8.0,
+          "H5": 7.770900794865482,
+          "H20": 7.770900794865482,
+          "capacity_5": {
+            "total_lower_MW": 485.94104896053045,
+            "total_upper_MW": 485.9910489605304,
+            "net_lower_MW": 107.25571612580984,
+            "net_upper_MW": 107.3057161258098,
+            "risk_lower_MWh": 8758.291985781734,
+            "risk_upper_MWh": 8761.707998963562,
+            "root_evaluations": 7
+          },
+          "capacity_20": {
+            "total_lower_MW": 485.94104896053045,
+            "total_upper_MW": 485.9910489605304,
+            "net_lower_MW": 107.25571612580984,
+            "net_upper_MW": 107.3057161258098,
+            "risk_lower_MWh": 8758.291985781734,
+            "risk_upper_MWh": 8761.707998963562,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 499.49872486901734,
+            "total_upper_MW": 499.58480212223117,
+            "net_lower_MW": 120.81339203429673,
+            "net_upper_MW": 120.89946928751056,
+            "risk_lower_MWh": 8759.641625144865,
+            "risk_upper_MWh": 8764.948685571697,
+            "root_evaluations": 7
+          },
+          "changed_meter_points": 49,
+          "removed_history_delivery_MWh": 13524.4021766343
+        },
+        {
+          "true_hours": 8.5,
+          "H5": 8.254973223613863,
+          "H20": 8.254973223613863,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "full_information": {
+            "total_lower_MW": 531.1691538460456,
+            "total_upper_MW": 531.179698843081,
+            "net_lower_MW": 152.48382101132495,
+            "net_upper_MW": 152.49436600836043,
+            "risk_lower_MWh": 8759.966497530619,
+            "risk_upper_MWh": 8760.5023590856,
+            "root_evaluations": 9
+          },
+          "changed_meter_points": 41,
+          "removed_history_delivery_MWh": 11308.730473540225
+        },
+        {
+          "true_hours": 9.0,
+          "H5": 8.254973223613863,
+          "H20": 8.679782247023656,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 544.322050936723,
+            "total_upper_MW": 544.3363739815896,
+            "net_lower_MW": 165.63671810200242,
+            "net_upper_MW": 165.65104114686903,
+            "risk_lower_MWh": 8759.999959449124,
+            "risk_upper_MWh": 8761.287250568772,
+            "root_evaluations": 10
+          },
+          "full_information": {
+            "total_lower_MW": 560.8670877398048,
+            "total_upper_MW": 560.9058851683164,
+            "net_lower_MW": 182.18175490508418,
+            "net_upper_MW": 182.22055233359583,
+            "risk_lower_MWh": 8757.415999371693,
+            "risk_upper_MWh": 8760.736201346306,
+            "root_evaluations": 8
+          },
+          "changed_meter_points": 33,
+          "removed_history_delivery_MWh": 9209.194967798498
+        },
+        {
+          "true_hours": 9.5,
+          "H5": 8.254973223613863,
+          "H20": 9.251248838597412,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 571.2013473137572,
+            "total_upper_MW": 571.2435250014446,
+            "net_lower_MW": 192.51601447903658,
+            "net_upper_MW": 192.55819216672398,
+            "risk_lower_MWh": 8759.762165344504,
+            "risk_upper_MWh": 8763.529911691312,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 583.1647844625254,
+            "total_upper_MW": 583.2031195520535,
+            "net_lower_MW": 204.4794516278048,
+            "net_upper_MW": 204.5177867173329,
+            "risk_lower_MWh": 8759.988222268716,
+            "risk_upper_MWh": 8763.45284036416,
+            "root_evaluations": 9
+          },
+          "changed_meter_points": 27,
+          "removed_history_delivery_MWh": 7659.772583051169
+        },
+        {
+          "true_hours": 10.0,
+          "H5": 8.254973223613863,
+          "H20": 9.687084698603885,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 591.0152123990817,
+            "total_upper_MW": 591.0802264370286,
+            "net_lower_MW": 212.32987956436114,
+            "net_upper_MW": 212.394893602308,
+            "risk_lower_MWh": 8759.699522171954,
+            "risk_upper_MWh": 8765.683078447442,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 606.7975188778335,
+            "total_upper_MW": 606.8358393665997,
+            "net_lower_MW": 228.11218604311284,
+            "net_upper_MW": 228.15050653187905,
+            "risk_lower_MWh": 8759.502921924688,
+            "risk_upper_MWh": 8762.990492335108,
+            "root_evaluations": 9
+          },
+          "changed_meter_points": 21,
+          "removed_history_delivery_MWh": 6008.206961840596
+        },
+        {
+          "true_hours": 10.5,
+          "H5": 8.254973223613863,
+          "H20": 9.687084698603885,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 591.0152123990817,
+            "total_upper_MW": 591.0802264370286,
+            "net_lower_MW": 212.32987956436114,
+            "net_upper_MW": 212.394893602308,
+            "risk_lower_MWh": 8759.699522171954,
+            "risk_upper_MWh": 8765.683078447442,
+            "root_evaluations": 7
+          },
+          "full_information": {
+            "total_lower_MW": 629.0733702756023,
+            "total_upper_MW": 629.099340558959,
+            "net_lower_MW": 250.3880374408817,
+            "net_upper_MW": 250.41400772423845,
+            "risk_lower_MWh": 8758.002833619283,
+            "risk_upper_MWh": 8760.117057381842,
+            "root_evaluations": 10
+          },
+          "changed_meter_points": 17,
+          "removed_history_delivery_MWh": 4704.709055408611
+        },
+        {
+          "true_hours": 11.0,
+          "H5": 8.254973223613863,
+          "H20": 10.4331309971985,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 624.939256947275,
+            "total_upper_MW": 624.9523171188196,
+            "net_lower_MW": 246.2539241125544,
+            "net_upper_MW": 246.26698428409895,
+            "risk_lower_MWh": 8759.958350194422,
+            "risk_upper_MWh": 8761.048076638324,
+            "root_evaluations": 9
+          },
+          "full_information": {
+            "total_lower_MW": 647.7570366395264,
+            "total_upper_MW": 647.8014698773133,
+            "net_lower_MW": 269.0717038048058,
+            "net_upper_MW": 269.11613704259264,
+            "risk_lower_MWh": 8759.954887768537,
+            "risk_upper_MWh": 8800.961019572387,
+            "root_evaluations": 13
+          },
+          "changed_meter_points": 14,
+          "removed_history_delivery_MWh": 3800.0533388733757
+        },
+        {
+          "true_hours": 11.5,
+          "H5": 8.254973223613863,
+          "H20": 10.4331309971985,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 624.939256947275,
+            "total_upper_MW": 624.9523171188196,
+            "net_lower_MW": 246.2539241125544,
+            "net_upper_MW": 246.26698428409895,
+            "risk_lower_MWh": 8759.958350194422,
+            "risk_upper_MWh": 8761.048076638324,
+            "root_evaluations": 9
+          },
+          "full_information": {
+            "total_lower_MW": 649.0252178834719,
+            "total_upper_MW": 649.0854022409608,
+            "net_lower_MW": 270.3398850487513,
+            "net_upper_MW": 270.40006940624016,
+            "risk_lower_MWh": 8755.525928321651,
+            "risk_upper_MWh": 8810.632647390747,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 12,
+          "removed_history_delivery_MWh": 3210.942009562369
+        },
+        {
+          "true_hours": 12.0,
+          "H5": 8.254973223613863,
+          "H20": 11.00551862441463,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 647.7005812737191,
+            "total_upper_MW": 647.7306883278037,
+            "net_lower_MW": 269.01524843899847,
+            "net_upper_MW": 269.0453554930831,
+            "risk_lower_MWh": 8759.999916064413,
+            "risk_upper_MWh": 8787.746721419744,
+            "root_evaluations": 3
+          },
+          "full_information": {
+            "total_lower_MW": 650.2197914970562,
+            "total_upper_MW": 650.2680301184092,
+            "net_lower_MW": 271.5344586623356,
+            "net_upper_MW": 271.5826972836886,
+            "risk_lower_MWh": 8756.971291760063,
+            "risk_upper_MWh": 8800.678077160366,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 10,
+          "removed_history_delivery_MWh": 2649.156724393294
+        },
+        {
+          "true_hours": 12.5,
+          "H5": 8.254973223613863,
+          "H20": 11.00551862441463,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 647.7005812737191,
+            "total_upper_MW": 647.7306883278037,
+            "net_lower_MW": 269.01524843899847,
+            "net_upper_MW": 269.0453554930831,
+            "risk_lower_MWh": 8759.999916064413,
+            "risk_upper_MWh": 8787.746721419744,
+            "root_evaluations": 3
+          },
+          "full_information": {
+            "total_lower_MW": 651.0422060923785,
+            "total_upper_MW": 651.0822205677782,
+            "net_lower_MW": 272.35687325765787,
+            "net_upper_MW": 272.3968877330576,
+            "risk_lower_MWh": 8758.158436506756,
+            "risk_upper_MWh": 8794.179490096096,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 8,
+          "removed_history_delivery_MWh": 2099.5042902725495
+        },
+        {
+          "true_hours": 13.0,
+          "H5": 8.254973223613863,
+          "H20": 11.00551862441463,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 647.7005812737191,
+            "total_upper_MW": 647.7306883278037,
+            "net_lower_MW": 269.01524843899847,
+            "net_upper_MW": 269.0453554930831,
+            "risk_lower_MWh": 8759.999916064413,
+            "risk_upper_MWh": 8787.746721419744,
+            "root_evaluations": 3
+          },
+          "full_information": {
+            "total_lower_MW": 651.8421190441788,
+            "total_upper_MW": 651.8741343900606,
+            "net_lower_MW": 273.15678620945823,
+            "net_upper_MW": 273.18880155534,
+            "risk_lower_MWh": 8756.90200382495,
+            "risk_upper_MWh": 8785.588666678826,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 6,
+          "removed_history_delivery_MWh": 1579.4100347694005
+        },
+        {
+          "true_hours": 13.5,
+          "H5": 8.254973223613863,
+          "H20": 11.00551862441463,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 647.7005812737191,
+            "total_upper_MW": 647.7306883278037,
+            "net_lower_MW": 269.01524843899847,
+            "net_upper_MW": 269.0453554930831,
+            "risk_lower_MWh": 8759.999916064413,
+            "risk_upper_MWh": 8787.746721419744,
+            "root_evaluations": 3
+          },
+          "full_information": {
+            "total_lower_MW": 652.4062959321341,
+            "total_upper_MW": 652.4326695091363,
+            "net_lower_MW": 273.72096309741346,
+            "net_upper_MW": 273.7473366744157,
+            "risk_lower_MWh": 8758.074089937607,
+            "risk_upper_MWh": 8781.45747690404,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 4,
+          "removed_history_delivery_MWh": 1065.704653525581
+        },
+        {
+          "true_hours": 14.0,
+          "H5": 8.254973223613863,
+          "H20": 11.00551862441463,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 647.7005812737191,
+            "total_upper_MW": 647.7306883278037,
+            "net_lower_MW": 269.01524843899847,
+            "net_upper_MW": 269.0453554930831,
+            "risk_lower_MWh": 8759.999916064413,
+            "risk_upper_MWh": 8787.746721419744,
+            "root_evaluations": 3
+          },
+          "full_information": {
+            "total_lower_MW": 652.9078684306558,
+            "total_upper_MW": 652.9292262826727,
+            "net_lower_MW": 274.22253559593514,
+            "net_upper_MW": 274.24389344795213,
+            "risk_lower_MWh": 8758.976641037441,
+            "risk_upper_MWh": 8777.730596382551,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 2,
+          "removed_history_delivery_MWh": 535.6669040037867
+        },
+        {
+          "true_hours": 14.5,
+          "H5": 8.254973223613863,
+          "H20": 11.00551862441463,
+          "capacity_5": {
+            "total_lower_MW": 513.459113618616,
+            "total_upper_MW": 513.509113618616,
+            "net_lower_MW": 134.7737807838954,
+            "net_upper_MW": 134.82378078389536,
+            "risk_lower_MWh": 8758.59173517607,
+            "risk_upper_MWh": 8761.407736706504,
+            "root_evaluations": 5
+          },
+          "capacity_20": {
+            "total_lower_MW": 647.7005812737191,
+            "total_upper_MW": 647.7306883278037,
+            "net_lower_MW": 269.01524843899847,
+            "net_upper_MW": 269.0453554930831,
+            "risk_lower_MWh": 8759.999916064413,
+            "risk_upper_MWh": 8787.746721419744,
+            "root_evaluations": 3
+          },
+          "full_information": {
+            "total_lower_MW": 653.272170543281,
+            "total_upper_MW": 653.2898853741718,
+            "net_lower_MW": 274.58683770856044,
+            "net_upper_MW": 274.6045525394512,
+            "risk_lower_MWh": 8759.951629785448,
+            "risk_upper_MWh": 8775.4384492458,
+            "root_evaluations": 5
+          },
+          "changed_meter_points": 0,
+          "removed_history_delivery_MWh": -0.0
+        }
+      ],
+      "full_references": {
+        "central": {
+          "reference_MW": 378.6853328347206,
+          "total_lower_MW": 653.272170543281,
+          "total_upper_MW": 653.2898853741718,
+          "net_lower_MW": 274.58683770856044,
+          "net_upper_MW": 274.6045525394512,
+          "risk_lower_MWh": 8759.951629785448,
+          "risk_upper_MWh": 8775.4384492458,
+          "root_evaluations": 5
+        },
+        "tail_0.9": {
+          "reference_MW": 380.44970482587814,
+          "total_lower_MW": 653.8292896361838,
+          "total_upper_MW": 653.902684354242,
+          "net_lower_MW": 273.3795848103057,
+          "net_upper_MW": 273.4529795283638,
+          "risk_lower_MWh": 8695.754427837532,
+          "risk_upper_MWh": 8760.01465483704,
+          "root_evaluations": 7
+        },
+        "tail_0.99": {
+          "reference_MW": 373.6216202378273,
+          "total_lower_MW": 652.1986520542755,
+          "total_upper_MW": 652.2155219794138,
+          "net_lower_MW": 278.5770318164482,
+          "net_upper_MW": 278.5939017415865,
+          "risk_lower_MWh": 8759.648917276674,
+          "risk_upper_MWh": 8774.48511882102,
+          "root_evaluations": 8
+        },
+        "budget_0.5": {
+          "reference_MW": 366.62641912698746,
+          "total_lower_MW": 648.2480805586337,
+          "total_upper_MW": 648.2639777166983,
+          "net_lower_MW": 281.6216614316462,
+          "net_upper_MW": 281.6375585897108,
+          "risk_lower_MWh": 4379.0642875202875,
+          "risk_upper_MWh": 4392.872501751264,
+          "root_evaluations": 10
+        },
+        "budget_2.0": {
+          "reference_MW": 401.15509182214737,
+          "total_lower_MW": 662.9685132386594,
+          "total_upper_MW": 662.983502731321,
+          "net_lower_MW": 261.813421416512,
+          "net_upper_MW": 261.8284109091736,
+          "risk_lower_MWh": 17519.954316053536,
+          "risk_upper_MWh": 17536.767257455,
+          "root_evaluations": 8
+        }
+      },
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "history_points": 544,
+      "history_days": 20,
+      "history_statistics": 932,
+      "true_error_checks": {
+        "5": {
+          "truth_error_retained": true,
+          "admissible_bias_lower_MW": -80.0,
+          "admissible_bias_upper_MW": 80.0,
+          "zero_bias_error_retained": true,
+          "maximum_error_ratio": 0.5810565687448918
+        },
+        "20": {
+          "truth_error_retained": true,
+          "admissible_bias_lower_MW": -80.0,
+          "admissible_bias_upper_MW": 80.0,
+          "zero_bias_error_retained": true,
+          "maximum_error_ratio": 0.7941944599022568
+        }
+      },
+      "historical_maximum_hours": 14.5,
+      "baseline_meter_max_difference_MW": 0.0
+    }
+  },
+  "completed": true,
+  "comparison_rows": 88,
+  "history_days": 20,
+  "annual_atoms": 40300,
+  "annual_paths": 1788,
+  "annual_hours": 8760
+}

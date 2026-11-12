@@ -1,0 +1,199 @@
+{
+  "parameters": {
+    "load_mw": 2000.0,
+    "nomination_mw": 1000.0,
+    "response_mean_ratio": 1.0,
+    "response_sd_ratio": 0.1,
+    "response_rho15": 0.0,
+    "error_mean_rate": 0.0,
+    "error_sd_rate": 0.1444,
+    "bias_bound_rate": 0.04,
+    "verification_coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_error_budget_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "load_daily_variance_share": 0.5,
+    "load_rho15": 0.8408964152537145,
+    "verified_min_duration_hours": 0.0,
+    "true_duration_hours": 14.5,
+    "maximum_extension_hours": null,
+    "tail_level": 0.95,
+    "risk_budget_mwh": 8760.0,
+    "system_surplus_mw": 1000.0,
+    "future_paths": 64,
+    "quadrature_nodes": 32,
+    "load_seed": 2026110313,
+    "future_seed": 2026110417,
+    "capacity_tolerance_mw": 0.1,
+    "reference_tolerance_mw": 0.0001,
+    "solver_tolerance": 1e-08,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibration_batch": 4096,
+    "schedule_iterations": 6,
+    "duration_comparison_fraction": 0.5,
+    "time_tolerance_hours": 1e-10,
+    "hour_bin_tolerance": 1e-09,
+    "duration_check_tolerance_hours": 1e-06,
+    "covariance_relative_tolerance": 1e-11,
+    "transport_iterations": 500,
+    "transport_solver_tolerance": 1e-10,
+    "transport_gap_mwh": 0.002,
+    "empirical_users": [
+      "LSE A",
+      "LSE B",
+      "LSE C"
+    ],
+    "normal_sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "history_power_seed": 2026110421,
+    "individual_load_seed": 2026110521,
+    "common_error_amplitude": 0.02,
+    "individual_error_amplitude": 0.2,
+    "state_power_ratio": 1.5
+  },
+  "sensitivity": {
+    "history_counts": [
+      5,
+      20
+    ],
+    "annual_tail_levels": [
+      0.9,
+      0.95,
+      0.99
+    ],
+    "risk_budget_factors": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "history_coverages": [
+      0.9,
+      0.95,
+      0.99
+    ],
+    "bias_bound_rates": [
+      0.0,
+      0.04,
+      0.08
+    ],
+    "error_sd_rates": [
+      0.0715,
+      0.1444,
+      0.2865
+    ],
+    "numerical_resolutions": [
+      [
+        64,
+        32
+      ],
+      [
+        128,
+        64
+      ],
+      [
+        256,
+        128
+      ]
+    ],
+    "refinement_trigger_mw": 1.0,
+    "capacity_tolerance_mw": 0.1,
+    "common_variance_fraction": 0.5,
+    "surplus_scales_mw": [
+      500.0,
+      1000.0,
+      1500.0
+    ]
+  },
+  "names": [
+    "正态1",
+    "LSE A",
+    "LSE B",
+    "LSE C"
+  ],
+  "statistics": 932,
+  "history_counts": [
+    5,
+    20
+  ],
+  "history_dates": {
+    "5": [
+      "2026-07-03",
+      "2026-09-01",
+      "2026-09-17",
+      "2026-10-13",
+      "2026-10-14"
+    ],
+    "20": [
+      "2022-06-14",
+      "2022-06-15",
+      "2022-06-16",
+      "2022-12-23",
+      "2022-12-24",
+      "2025-06-23",
+      "2025-06-24",
+      "2025-06-25",
+      "2025-07-28",
+      "2025-07-29",
+      "2025-08-11",
+      "2026-01-25",
+      "2026-05-18",
+      "2026-05-19",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-09-01",
+      "2026-09-17",
+      "2026-10-13",
+      "2026-10-14"
+    ]
+  },
+  "source_plan_count": 3,
+  "frozen_plan_count": 3,
+  "frozen_plan_thresholds_MW": [
+    378.6853328347206,
+    556.4410763841998,
+    654.9283979309973
+  ],
+  "plan_probes": [
+    {
+      "count": 5,
+      "q_MW": 457.1244217414816,
+      "duration_hours": 7.053106693196195,
+      "original_risk_lower_MWh": 8759.590077991032,
+      "original_risk_upper_MWh": 8759.590645056756,
+      "extended_risk_lower_MWh": 8759.590077991032,
+      "extended_risk_upper_MWh": 8759.590645056756,
+      "risk_reduction_lower_MWh": -0.0005670657246810151
+    },
+    {
+      "count": 20,
+      "q_MW": 502.512109107989,
+      "duration_hours": 8.062335728610334,
+      "original_risk_lower_MWh": 8759.971358221703,
+      "original_risk_upper_MWh": 8759.971364118486,
+      "extended_risk_lower_MWh": 8759.971358221703,
+      "extended_risk_upper_MWh": 8759.971364118486,
+      "risk_reduction_lower_MWh": -5.896783477510326e-06
+    }
+  ],
+  "statistical_rule": "主比较932项统计；逐项保留可见记录支持的统计，使用同一校准全集",
+  "plan_rule": "中央5次和20次边界追加安排后冻结；风险和核验敏感性均不重生成调用",
+  "cores": 22,
+  "true_duration_sensitivity": {
+    "baseline_hours": 14.5,
+    "minimum_hours": 4.0,
+    "step_hours": 0.5,
+    "history_counts": [
+      5,
+      20
+    ],
+    "future_paths": 128,
+    "quadrature_nodes": 64
+  },
+  "baseline_history_reused": true
+}

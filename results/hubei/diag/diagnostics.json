@@ -1,0 +1,24 @@
+{
+  "users": [
+    "LSE A",
+    "LSE B",
+    "LSE C"
+  ],
+  "draws_per_event": 512,
+  "seed": 2026110601,
+  "nodes": 32,
+  "empirical_event_counts": {
+    "LSE A": 5,
+    "LSE B": 17,
+    "LSE C": 6
+  },
+  "full_day": {
+    "matched_customer_days": 28,
+    "quarter_points": 2660,
+    "source_columns": "T0015—T2345；按日期和匿名客户编号匹配",
+    "interpretation": "调用前、调用中、调用后分别记录基线与电表差值；不改变主实验误差分布"
+  },
+  "leave_one_out": "每次留出一整场，其余场次重新拟合经验边际及相邻秩关联；生成同长度完整时序",
+  "interval": "每场统计量的2.5%—97.5%模拟区间，按真实场次数汇总",
+  "model_changed": false
+}

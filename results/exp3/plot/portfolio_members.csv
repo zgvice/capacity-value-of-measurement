@@ -1,0 +1,78 @@
+﻿组合,客户,是否参与,份额,该户申报量_兆瓦,该户正常负荷_兆瓦
+正态1户,正态1,True,1.0,1000.0,2000.0
+正态1户,LSE A,False,0.0,0.0,0.0
+正态1户,LSE B,False,0.0,0.0,0.0
+正态1户,LSE C,False,0.0,0.0,0.0
+正态1户,正态2,False,0.0,0.0,0.0
+正态1户,正态3,False,0.0,0.0,0.0
+正态1户,正态4,False,0.0,0.0,0.0
+正态2户,正态1,True,0.5,500.0,1000.0
+正态2户,LSE A,False,0.0,0.0,0.0
+正态2户,LSE B,False,0.0,0.0,0.0
+正态2户,LSE C,False,0.0,0.0,0.0
+正态2户,正态2,True,0.5,500.0,1000.0
+正态2户,正态3,False,0.0,0.0,0.0
+正态2户,正态4,False,0.0,0.0,0.0
+正态3户,正态1,True,0.3333333333333333,333.3333333333333,666.6666666666666
+正态3户,LSE A,False,0.0,0.0,0.0
+正态3户,LSE B,False,0.0,0.0,0.0
+正态3户,LSE C,False,0.0,0.0,0.0
+正态3户,正态2,True,0.3333333333333333,333.3333333333333,666.6666666666666
+正态3户,正态3,True,0.3333333333333333,333.3333333333333,666.6666666666666
+正态3户,正态4,False,0.0,0.0,0.0
+正态4户,正态1,True,0.25,250.0,500.0
+正态4户,LSE A,False,0.0,0.0,0.0
+正态4户,LSE B,False,0.0,0.0,0.0
+正态4户,LSE C,False,0.0,0.0,0.0
+正态4户,正态2,True,0.25,250.0,500.0
+正态4户,正态3,True,0.25,250.0,500.0
+正态4户,正态4,True,0.25,250.0,500.0
+LSE A,正态1,False,0.0,0.0,0.0
+LSE A,LSE A,True,1.0,1000.0,2000.0
+LSE A,LSE B,False,0.0,0.0,0.0
+LSE A,LSE C,False,0.0,0.0,0.0
+LSE A,正态2,False,0.0,0.0,0.0
+LSE A,正态3,False,0.0,0.0,0.0
+LSE A,正态4,False,0.0,0.0,0.0
+LSE B,正态1,False,0.0,0.0,0.0
+LSE B,LSE A,False,0.0,0.0,0.0
+LSE B,LSE B,True,1.0,1000.0,2000.0
+LSE B,LSE C,False,0.0,0.0,0.0
+LSE B,正态2,False,0.0,0.0,0.0
+LSE B,正态3,False,0.0,0.0,0.0
+LSE B,正态4,False,0.0,0.0,0.0
+LSE C,正态1,False,0.0,0.0,0.0
+LSE C,LSE A,False,0.0,0.0,0.0
+LSE C,LSE B,False,0.0,0.0,0.0
+LSE C,LSE C,True,1.0,1000.0,2000.0
+LSE C,正态2,False,0.0,0.0,0.0
+LSE C,正态3,False,0.0,0.0,0.0
+LSE C,正态4,False,0.0,0.0,0.0
+LSE A＋LSE B,正态1,False,0.0,0.0,0.0
+LSE A＋LSE B,LSE A,True,0.5,500.0,1000.0
+LSE A＋LSE B,LSE B,True,0.5,500.0,1000.0
+LSE A＋LSE B,LSE C,False,0.0,0.0,0.0
+LSE A＋LSE B,正态2,False,0.0,0.0,0.0
+LSE A＋LSE B,正态3,False,0.0,0.0,0.0
+LSE A＋LSE B,正态4,False,0.0,0.0,0.0
+LSE A＋LSE C,正态1,False,0.0,0.0,0.0
+LSE A＋LSE C,LSE A,True,0.5,500.0,1000.0
+LSE A＋LSE C,LSE B,False,0.0,0.0,0.0
+LSE A＋LSE C,LSE C,True,0.5,500.0,1000.0
+LSE A＋LSE C,正态2,False,0.0,0.0,0.0
+LSE A＋LSE C,正态3,False,0.0,0.0,0.0
+LSE A＋LSE C,正态4,False,0.0,0.0,0.0
+LSE B＋LSE C,正态1,False,0.0,0.0,0.0
+LSE B＋LSE C,LSE A,False,0.0,0.0,0.0
+LSE B＋LSE C,LSE B,True,0.5,500.0,1000.0
+LSE B＋LSE C,LSE C,True,0.5,500.0,1000.0
+LSE B＋LSE C,正态2,False,0.0,0.0,0.0
+LSE B＋LSE C,正态3,False,0.0,0.0,0.0
+LSE B＋LSE C,正态4,False,0.0,0.0,0.0
+LSE A＋LSE B＋LSE C,正态1,False,0.0,0.0,0.0
+LSE A＋LSE B＋LSE C,LSE A,True,0.3333333333333333,333.3333333333333,666.6666666666666
+LSE A＋LSE B＋LSE C,LSE B,True,0.3333333333333333,333.3333333333333,666.6666666666666
+LSE A＋LSE B＋LSE C,LSE C,True,0.3333333333333333,333.3333333333333,666.6666666666666
+LSE A＋LSE B＋LSE C,正态2,False,0.0,0.0,0.0
+LSE A＋LSE B＋LSE C,正态3,False,0.0,0.0,0.0
+LSE A＋LSE B＋LSE C,正态4,False,0.0,0.0,0.0

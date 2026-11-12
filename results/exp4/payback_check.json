@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "payback_fraction": 0.25,
+      "hours": 8760,
+      "time_steps": 105120,
+      "annual_group": 20,
+      "LP_incremental_loss_MWh": 3234.904386464739,
+      "integrated_incremental_loss_MWh": 3234.904386464157,
+      "difference_MWh": 5.820766091346741e-10,
+      "maximum_energy_equality_residual_MWh": 8.185452315956354e-12,
+      "state_bounds": [
+        {
+          "user": "正态1",
+          "initial_state_MWh": 13140000.0,
+          "annual_consumption_upper_MWh": 1964233.613917788,
+          "minimum_state_lower_MWh": 11175766.386082212,
+          "terminal_lower_MWh": 11175766.386082212,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    {
+      "payback_fraction": 0.5,
+      "hours": 8760,
+      "time_steps": 105120,
+      "annual_group": 20,
+      "LP_incremental_loss_MWh": 26572.81740576774,
+      "integrated_incremental_loss_MWh": 26572.817405769776,
+      "difference_MWh": 2.0372681319713593e-09,
+      "maximum_energy_equality_residual_MWh": 1.8189894035458565e-12,
+      "state_bounds": [
+        {
+          "user": "正态1",
+          "initial_state_MWh": 13140000.0,
+          "annual_consumption_upper_MWh": 1964233.613917788,
+          "minimum_state_lower_MWh": 11175766.386082212,
+          "terminal_lower_MWh": 11175766.386082212,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "cases": {
+    "500": {
+      "surplus_mw": 500.0,
+      "no_resource_reference_MW": 200.57756453752518,
+      "total_lower_MW": 331.51479264836166,
+      "total_upper_MW": 331.6103805871616,
+      "net_lower_MW": 130.9372281108365,
+      "net_upper_MW": 131.03281604963644,
+      "risk_lower_MWh": 8757.000419155618,
+      "risk_upper_MWh": 8861.044203899117,
+      "root_evaluations": 7,
+      "plans": [
+        {
+          "trigger_reference_MW": 200.57756453752518
+        },
+        {
+          "trigger_reference_MW": 292.5281678961318
+        },
+        {
+          "trigger_reference_MW": 331.4717916072825
+        }
+      ]
+    },
+    "1000": {
+      "surplus_mw": 1000.0,
+      "no_resource_reference_MW": 378.6853328347206,
+      "total_lower_MW": 653.2514402574769,
+      "total_upper_MW": 653.2691997862205,
+      "net_lower_MW": 274.5661074227563,
+      "net_upper_MW": 274.5838669514999,
+      "risk_lower_MWh": 8755.358955479689,
+      "risk_upper_MWh": 8770.886731746388,
+      "root_evaluations": 7,
+      "plans": [
+        {
+          "trigger_reference_MW": 378.6853328347206,
+          "call_blocks": 1284731,
+          "merged_touching_calls": 84,
+          "service_beyond_original_cutoff_blocks": 219563,
+          "max_effective_continuous_service_hours": 14.5,
+          "touching_calls_remaining": 0
+        },
+        {
+          "trigger_reference_MW": 556.4410763841998,
+          "call_blocks": 2295207,
+          "merged_touching_calls": 4673,
+          "service_beyond_original_cutoff_blocks": 443662,
+          "max_effective_continuous_service_hours": 14.5,
+          "touching_calls_remaining": 0
+        },
+        {
+          "trigger_reference_MW": 654.9283979309973,
+          "call_blocks": 4355497,
+          "merged_touching_calls": 25766,
+          "service_beyond_original_cutoff_blocks": 1801510,
+          "max_effective_continuous_service_hours": 14.5,
+          "touching_calls_remaining": 0
+        }
+      ]
+    },
+    "1500": {
+      "surplus_mw": 1500.0,
+      "no_resource_reference_MW": 556.2944337725639,
+      "total_lower_MW": 974.6348782051236,
+      "total_upper_MW": 974.7155662736008,
+      "net_lower_MW": 418.3404444325597,
+      "net_upper_MW": 418.4211325010368,
+      "risk_lower_MWh": 8759.538928640475,
+      "risk_upper_MWh": 8829.819003570317,
+      "root_evaluations": 6,
+      "plans": [
+        {
+          "trigger_reference_MW": 556.2944337725639
+        },
+        {
+          "trigger_reference_MW": 836.3847636546988
+        },
+        {
+          "trigger_reference_MW": 974.6957591402394
+        }
+      ]
+    }
+  },
+  "source": "1000MW为既定补全尺度，500/1500MW为作者上下50%情景；官方缺电时段原值、全部场景概率及全年时序保持不变。",
+  "invitation": "每档均沿用同一缺口触发和服务格式生成规则重新形成邀约；未将原邀约时间表当成新供需情景的最优安排。",
+  "parameters": {
+    "load_mw": 2000.0,
+    "nomination_mw": 1000.0,
+    "response_mean_ratio": 1.0,
+    "response_sd_ratio": 0.1,
+    "response_rho15": 0.0,
+    "error_mean_rate": 0.0,
+    "error_sd_rate": 0.1444,
+    "bias_bound_rate": 0.04,
+    "verification_coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_error_budget_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "load_daily_variance_share": 0.5,
+    "load_rho15": 0.8408964152537145,
+    "verified_min_duration_hours": 0.0,
+    "true_duration_hours": 14.5,
+    "maximum_extension_hours": null,
+    "tail_level": 0.95,
+    "risk_budget_mwh": 8760.0,
+    "system_surplus_mw": 1000.0,
+    "future_paths": 64,
+    "quadrature_nodes": 32,
+    "load_seed": 2026110313,
+    "future_seed": 2026110417,
+    "capacity_tolerance_mw": 0.2,
+    "reference_tolerance_mw": 0.0001,
+    "solver_tolerance": 1e-08,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibration_batch": 4096,
+    "schedule_iterations": 6,
+    "duration_comparison_fraction": 0.5,
+    "time_tolerance_hours": 1e-10,
+    "hour_bin_tolerance": 1e-09,
+    "duration_check_tolerance_hours": 1e-06,
+    "covariance_relative_tolerance": 1e-11,
+    "transport_iterations": 500,
+    "transport_solver_tolerance": 1e-10,
+    "transport_gap_mwh": 0.002,
+    "empirical_users": [
+      "LSE A",
+      "LSE B",
+      "LSE C"
+    ],
+    "normal_sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "history_power_seed": 2026110421,
+    "individual_load_seed": 2026110521,
+    "common_error_amplitude": 0.02,
+    "individual_error_amplitude": 0.2,
+    "state_power_ratio": 1.5,
+    "winter_dates": [
+      "2022-12-23",
+      "2022-12-24"
+    ],
+    "summer_dates": [
+      "2025-06-23",
+      "2025-06-24",
+      "2025-06-25"
+    ],
+    "coverage_draws": 10000,
+    "coverage_seed": 2026110511,
+    "coverage_batch": 1000,
+    "validation_future_seed": 2026110513,
+    "boundary_duration_hours": 12.0,
+    "surplus_factors": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "invitation_limits_hours": [
+      12.0,
+      15.0
+    ],
+    "payback_fractions": [
+      0.0,
+      0.25,
+      0.5
+    ],
+    "payback_hours": 4,
+    "error_scales": [
+      0.0715,
+      0.1444,
+      0.2865
+    ],
+    "sensitivity_tolerance_mw": 0.2
+  }
+}

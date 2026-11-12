@@ -1,0 +1,22 @@
+{
+  "capacity_rows": 144,
+  "comparison_rows": 48,
+  "customers": [
+    "正态1",
+    "LSE A",
+    "LSE B",
+    "LSE C"
+  ],
+  "statistics": 932,
+  "completed": true,
+  "risk_roots_bracketed": true,
+  "monotonicity_checked": [
+    "历史资料",
+    "偏差界",
+    "覆盖要求",
+    "固定记录误差范围",
+    "风险总边界",
+    "预算总边界"
+  ],
+  "truth_exclusions": []
+}

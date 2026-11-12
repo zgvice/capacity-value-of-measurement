@@ -1,0 +1,15 @@
+{
+  "source": "code/adequacy/experiment_config.json",
+  "N": 256,
+  "T": 8784,
+  "generators": 153,
+  "power_MW": 300,
+  "state_MWh": 1200,
+  "load_scale": 1.15,
+  "seed": 2026102901,
+  "per_generator_marginal_laws_unchanged": true,
+  "initial_distribution": "repair/(failure+repair)",
+  "regimes": "逐机独立随机数；同一时刻共用随机数；均沿用既有外部对照定义。",
+  "physical_state": "有状态资源初态为E，逐期x[t+1]=x[t]-d[t]，0<=x<=E、0<=d<=P；保持整年状态。",
+  "source_identity": "原生工具附带测试系统；与PJM主实验的40300个年度场景分别保留。"
+}

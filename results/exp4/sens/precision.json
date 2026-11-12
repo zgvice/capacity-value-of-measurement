@@ -1,0 +1,15 @@
+{
+  "resolution": [
+    128,
+    64
+  ],
+  "numerical_trigger_MW": 1.0,
+  "converged": true,
+  "maximum_change_MW": 0.17763649224258415,
+  "names": [
+    "正态1",
+    "LSE B"
+  ],
+  "tail_level": 0.99,
+  "true_duration_hours": 14.5
+}

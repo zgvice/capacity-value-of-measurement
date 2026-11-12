@@ -1,0 +1,363 @@
+{
+  "settings": {
+    "training_dates": [
+      "2022-06-14",
+      "2022-06-15",
+      "2022-06-16",
+      "2025-07-28",
+      "2025-07-29",
+      "2025-08-11",
+      "2026-01-25",
+      "2026-05-18",
+      "2026-05-19",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-09-01",
+      "2026-09-17",
+      "2026-10-13",
+      "2026-10-14"
+    ],
+    "all_dates": [
+      "2022-06-14",
+      "2022-06-15",
+      "2022-06-16",
+      "2022-12-23",
+      "2022-12-24",
+      "2025-06-23",
+      "2025-06-24",
+      "2025-06-25",
+      "2025-07-28",
+      "2025-07-29",
+      "2025-08-11",
+      "2026-01-25",
+      "2026-05-18",
+      "2026-05-19",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-09-01",
+      "2026-09-17",
+      "2026-10-13",
+      "2026-10-14"
+    ],
+    "statistics": 955,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_share": 0.5,
+    "rho15": 0.8408964152537145,
+    "daily_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "call_design": [
+      {
+        "date": "2022-06-14",
+        "start_hour": 16.333333333333332,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          1101,
+          1102,
+          1103,
+          1104,
+          1105,
+          1108
+        ]
+      },
+      {
+        "date": "2022-06-15",
+        "start_hour": 11.333333333333334,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          1101,
+          1102,
+          1103,
+          1104,
+          1105,
+          1108
+        ]
+      },
+      {
+        "date": "2022-06-16",
+        "start_hour": 13.0,
+        "end_hour": 17.0,
+        "baseline_input_days": [
+          1101,
+          1102,
+          1103,
+          1104,
+          1105,
+          1108
+        ]
+      },
+      {
+        "date": "2022-12-23",
+        "start_hour": 18.0,
+        "end_hour": 22.25,
+        "baseline_input_days": [
+          1291,
+          1292,
+          1293,
+          1294,
+          1297,
+          1298,
+          1299,
+          1300
+        ]
+      },
+      {
+        "date": "2022-12-24",
+        "start_hour": 6.0,
+        "end_hour": 20.5,
+        "baseline_input_days": [
+          1295,
+          1296
+        ]
+      },
+      {
+        "date": "2025-06-23",
+        "start_hour": 15.0,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          2204,
+          2207,
+          2208,
+          2209,
+          2210,
+          2211
+        ]
+      },
+      {
+        "date": "2025-06-24",
+        "start_hour": 15.0,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          2207,
+          2208,
+          2209,
+          2210,
+          2211
+        ]
+      },
+      {
+        "date": "2025-06-25",
+        "start_hour": 15.0,
+        "end_hour": 19.0,
+        "baseline_input_days": [
+          2207,
+          2208,
+          2209,
+          2210,
+          2211
+        ]
+      },
+      {
+        "date": "2025-07-28",
+        "start_hour": 15.75,
+        "end_hour": 21.0,
+        "baseline_input_days": [
+          2239,
+          2242,
+          2243,
+          2244,
+          2245,
+          2246
+        ]
+      },
+      {
+        "date": "2025-07-29",
+        "start_hour": 14.0,
+        "end_hour": 20.75,
+        "baseline_input_days": [
+          2242,
+          2243,
+          2244,
+          2245,
+          2246
+        ]
+      },
+      {
+        "date": "2025-08-11",
+        "start_hour": 10.0,
+        "end_hour": 20.0,
+        "baseline_input_days": [
+          2253,
+          2256,
+          2257,
+          2258,
+          2259,
+          2260
+        ]
+      },
+      {
+        "date": "2026-01-25",
+        "start_hour": 14.5,
+        "end_hour": 19.0,
+        "baseline_input_days": [
+          2422,
+          2423,
+          2429
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "start_hour": 15.0,
+        "end_hour": 21.0,
+        "baseline_input_days": [
+          2533,
+          2536,
+          2537,
+          2538,
+          2539,
+          2540
+        ]
+      },
+      {
+        "date": "2026-05-19",
+        "start_hour": 14.0,
+        "end_hour": 21.5,
+        "baseline_input_days": [
+          2536,
+          2537,
+          2538,
+          2539,
+          2540
+        ]
+      },
+      {
+        "date": "2026-07-02",
+        "start_hour": 13.5,
+        "end_hour": 21.5,
+        "baseline_input_days": [
+          2578,
+          2579,
+          2580,
+          2581,
+          2582,
+          2585,
+          2586,
+          2587
+        ]
+      },
+      {
+        "date": "2026-07-03",
+        "start_hour": 12.0,
+        "end_hour": 21.0,
+        "baseline_input_days": [
+          2579,
+          2580,
+          2581,
+          2582,
+          2585,
+          2586,
+          2587
+        ]
+      },
+      {
+        "date": "2026-09-01",
+        "start_hour": 18.25,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          2641,
+          2642,
+          2643,
+          2644,
+          2645,
+          2648
+        ]
+      },
+      {
+        "date": "2026-09-17",
+        "start_hour": 14.5,
+        "end_hour": 22.0,
+        "baseline_input_days": [
+          2655,
+          2656,
+          2657,
+          2658,
+          2659,
+          2662,
+          2663,
+          2664
+        ]
+      },
+      {
+        "date": "2026-10-13",
+        "start_hour": 15.0,
+        "end_hour": 21.0,
+        "baseline_input_days": [
+          2683,
+          2684,
+          2685,
+          2686,
+          2687,
+          2690
+        ]
+      },
+      {
+        "date": "2026-10-14",
+        "start_hour": 15.0,
+        "end_hour": 19.5,
+        "baseline_input_days": [
+          2683,
+          2684,
+          2685,
+          2686,
+          2687,
+          2690
+        ]
+      }
+    ]
+  },
+  "calibration": {
+    "calibration": {
+      "global": {
+        "statistics": 250,
+        "failure_budget": 0.012500000000000011,
+        "order_statistic": 258869,
+        "guaranteed_marginal_failure": 0.012496900570295066,
+        "old_multiplier": 4.0556269811219074,
+        "joint_multiplier": 3.7163039295912808
+      },
+      "other": {
+        "statistics": 705,
+        "failure_budget": 0.012500000000000011,
+        "order_statistic": 258869,
+        "guaranteed_marginal_failure": 0.012496900570295066,
+        "old_multiplier": 4.291706803810487,
+        "joint_multiplier": 4.093965402718486
+      }
+    },
+    "covariance_SD_max_difference_MW": 0.0,
+    "actual_error_path_retained": true,
+    "old_largest_single_point_bound_MW": 1391.0300687052911,
+    "joint_largest_single_point_bound_MW": 1326.938030893513,
+    "confidence": 0.95,
+    "power_failure_budget": 0.025000000000000022,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibrated_set_is_nested_in_original": true
+  },
+  "additional_statistics": 23,
+  "training_calls": 15,
+  "training_points": 397,
+  "training_statistics": 664,
+  "training_pooled_statistics": 149,
+  "training_pooled_dates": [
+    "2022-06-14",
+    "2022-06-15",
+    "2022-06-16",
+    "2025-07-28",
+    "2025-07-29",
+    "2025-08-11",
+    "2026-01-25",
+    "2026-05-18",
+    "2026-05-19",
+    "2026-07-02",
+    "2026-07-03",
+    "2026-09-01",
+    "2026-09-17",
+    "2026-10-13",
+    "2026-10-14"
+  ],
+  "confidence_family": "两套资料的固定统计全集共同校准；二十次资料保留十五次资料的全部约束。"
+}

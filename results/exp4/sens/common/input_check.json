@@ -1,0 +1,363 @@
+{
+  "parameters": {
+    "load_mw": 2000.0,
+    "nomination_mw": 1000.0,
+    "response_mean_ratio": 1.0,
+    "response_sd_ratio": 0.1,
+    "response_rho15": 0.0,
+    "error_mean_rate": 0.0,
+    "error_sd_rate": 0.1444,
+    "bias_bound_rate": 0.04,
+    "verification_coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_error_budget_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "load_daily_variance_share": 0.5,
+    "load_rho15": 0.8408964152537145,
+    "verified_min_duration_hours": 0.0,
+    "true_duration_hours": 14.5,
+    "maximum_extension_hours": null,
+    "tail_level": 0.95,
+    "risk_budget_mwh": 8760.0,
+    "system_surplus_mw": 1000.0,
+    "future_paths": 64,
+    "quadrature_nodes": 32,
+    "load_seed": 2026110313,
+    "future_seed": 2026110417,
+    "capacity_tolerance_mw": 0.1,
+    "reference_tolerance_mw": 0.0001,
+    "solver_tolerance": 1e-08,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibration_batch": 4096,
+    "schedule_iterations": 6,
+    "duration_comparison_fraction": 0.5,
+    "time_tolerance_hours": 1e-10,
+    "hour_bin_tolerance": 1e-09,
+    "duration_check_tolerance_hours": 1e-06,
+    "covariance_relative_tolerance": 1e-11,
+    "transport_iterations": 500,
+    "transport_solver_tolerance": 1e-10,
+    "transport_gap_mwh": 0.002,
+    "empirical_users": [
+      "LSE A",
+      "LSE B",
+      "LSE C"
+    ],
+    "normal_sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "history_power_seed": 2026110421,
+    "individual_load_seed": 2026110521,
+    "common_error_amplitude": 0.7071067811865476,
+    "individual_error_amplitude": 0.7071067811865476,
+    "state_power_ratio": 1.5
+  },
+  "prototype_names": [
+    "正态1",
+    "LSE A",
+    "LSE B",
+    "LSE C",
+    "正态2",
+    "正态3",
+    "正态4"
+  ],
+  "source": "hubei/meter_series.csv；实验二正态参照及固定历史分位",
+  "normal_single_history_max_difference_MW": 3.001332515850663e-11,
+  "baseline_common_variance_fraction": 0.5,
+  "prototype_clipped_history_points": {
+    "正态1": 0,
+    "LSE A": 0,
+    "LSE B": 0,
+    "LSE C": 4,
+    "正态2": 0,
+    "正态3": 1,
+    "正态4": 1
+  },
+  "records_per_customer": 544,
+  "original_input_days": 71,
+  "portfolios": [
+    {
+      "name": "正态1户",
+      "members": [
+        "正态1"
+      ],
+      "weights": [
+        1.0
+      ],
+      "sampled_correlation": [
+        [
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 99.53836239280797,
+      "sampled_SD_MW": 99.53836239280795,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "正态2户",
+      "members": [
+        "正态1",
+        "正态2"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "sampled_correlation": [
+        [
+          1.0,
+          -0.00029394601349319393
+        ],
+        [
+          -0.00029394601349319393,
+          0.9999999999999999
+        ]
+      ],
+      "independent_node_SD_MW": 70.38425103615853,
+      "sampled_SD_MW": 70.373905690857,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "正态3户",
+      "members": [
+        "正态1",
+        "正态2",
+        "正态3"
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "sampled_correlation": [
+        [
+          1.0,
+          -0.0002939460134932047,
+          0.0005630319057322808
+        ],
+        [
+          -0.0002939460134932047,
+          1.0,
+          -0.00036188163614209125
+        ],
+        [
+          0.0005630319057322809,
+          -0.0003618816361420913,
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 57.4685003221822,
+      "sampled_SD_MW": 57.46672268394276,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "正态4户",
+      "members": [
+        "正态1",
+        "正态2",
+        "正态3",
+        "正态4"
+      ],
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "sampled_correlation": [
+        [
+          1.0,
+          -0.00029394601349319393,
+          0.0005630319057322995,
+          -0.0005739507566907298
+        ],
+        [
+          -0.00029394601349319393,
+          0.9999999999999999,
+          -0.0003618816361420926,
+          0.00048246883110813376
+        ],
+        [
+          0.0005630319057322995,
+          -0.0003618816361420926,
+          1.0,
+          0.0009960024486385852
+        ],
+        [
+          -0.0005739507566907298,
+          0.00048246883110813376,
+          0.0009960024486385852,
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 49.769181196403984,
+      "sampled_SD_MW": 49.779279891241664,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "LSE A",
+      "members": [
+        "LSE A"
+      ],
+      "weights": [
+        1.0
+      ],
+      "sampled_correlation": [
+        [
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 117.1937277136632,
+      "sampled_SD_MW": 117.19372771366321,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "LSE B",
+      "members": [
+        "LSE B"
+      ],
+      "weights": [
+        1.0
+      ],
+      "sampled_correlation": [
+        [
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 149.14835920612177,
+      "sampled_SD_MW": 149.14835920612177,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "LSE C",
+      "members": [
+        "LSE C"
+      ],
+      "weights": [
+        1.0
+      ],
+      "sampled_correlation": [
+        [
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 185.15678111018175,
+      "sampled_SD_MW": 185.15678111018173,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "LSE A＋LSE B",
+      "members": [
+        "LSE A",
+        "LSE B"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "sampled_correlation": [
+        [
+          0.9999999999999999,
+          0.0012268143337499859
+        ],
+        [
+          0.0012268143337499857,
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 94.84145041766095,
+      "sampled_SD_MW": 94.897958965909,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "LSE A＋LSE C",
+      "members": [
+        "LSE A",
+        "LSE C"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "sampled_correlation": [
+        [
+          0.9999999999999999,
+          -0.0004650962371885749
+        ],
+        [
+          -0.0004650962371885749,
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 109.56436853113789,
+      "sampled_SD_MW": 109.54133804358167,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "LSE B＋LSE C",
+      "members": [
+        "LSE B",
+        "LSE C"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "sampled_correlation": [
+        [
+          1.0,
+          -0.0004827666880751675
+        ],
+        [
+          -0.00048276668807516746,
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 118.87836918985944,
+      "sampled_SD_MW": 118.850328816638,
+      "sum_check_MW": 0.0
+    },
+    {
+      "name": "LSE A＋LSE B＋LSE C",
+      "members": [
+        "LSE A",
+        "LSE B",
+        "LSE C"
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "sampled_correlation": [
+        [
+          0.9999999999999998,
+          0.0012268143337499818,
+          -0.0004650962371885648
+        ],
+        [
+          0.0012268143337499818,
+          1.0,
+          -0.0004827666880751771
+        ],
+        [
+          -0.0004650962371885648,
+          -0.0004827666880751771,
+          1.0
+        ]
+      ],
+      "independent_node_SD_MW": 88.35700089245668,
+      "sampled_SD_MW": 88.35451041998672,
+      "sum_check_MW": 0.0
+    }
+  ],
+  "cores": 22,
+  "future_paths": 64,
+  "quarter_points": 35040,
+  "generation": "单户边际沿用原拟合；各户功率独立随机流；基线负荷含同一共同扰动及各户独立扰动。"
+}

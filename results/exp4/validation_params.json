@@ -1,0 +1,14 @@
+{
+  "future_power_seed": 2026110513,
+  "true_duration_hours": 14.5,
+  "boundary_duration_hours": 12.0,
+  "annual_atoms": 40300,
+  "annual_paths": 1788,
+  "annual_hours": 8760,
+  "quarter_points": 35040,
+  "risk_budget_MWh": 8760.0,
+  "tail_level": 0.95,
+  "source": "沿用原客户分布、官方年度场景及邀约；独立改变功率轨迹种子。12小时为事先选定的客户能力检验。",
+  "risk_evaluation": "将核定净容量加回同标准系统基准，在该原认证边界核算真实物理规律下的新增缺供尾部风险。",
+  "true_capability_used_by": "作者事后风险核对；ISO仍使用电表与基线资料。"
+}

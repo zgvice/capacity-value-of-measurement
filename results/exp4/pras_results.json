@@ -1,0 +1,102 @@
+{
+    "julia_version": "1.10.10",
+    "status": "completed",
+    "cases": [
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 0,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 367578.92125
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 1,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 383655.494
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 2,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 367741.845
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 3,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 383809.80075
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 4,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 1577.86225
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 5,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 7830.31975
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 6,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 1582.64175
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 7,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 7835.09925
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 8,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 334126.0455
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 9,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 363454.7075
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 10,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 333928.245
+        },
+        {
+            "hours": 8760,
+            "steps": 105120,
+            "case": 11,
+            "minutes": 5,
+            "max_shortfall_difference_MW": 0,
+            "native_unserved_MWh": 363256.907
+        }
+    ]
+}
