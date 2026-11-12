@@ -1,0 +1,80 @@
+[
+  {
+    "original_reference": "inputs/public/official_http/76f0f94032f59563121ad20431bcfc16c9e260dc3e9ce93904a5281829251c91/alm-history.xlsx",
+    "archived_file": "inputs/calls/76f0f94032_alm-history.xlsx",
+    "sha256": "76f0f94032f59563121ad20431bcfc16c9e260dc3e9ce93904a5281829251c91",
+    "bytes": 41477
+  },
+  {
+    "original_reference": "inputs/public/reports/ba9c78d3360933cb169b2cb8a44ef621eddd203f13ed53338ee85219490391c4/dispatched-demand-response-oct-13-14-2026.pdf",
+    "archived_file": "inputs/calls/ba9c78d336_dispatched-demand-response-oct-13-14-2026.pdf",
+    "sha256": "ba9c78d3360933cb169b2cb8a44ef621eddd203f13ed53338ee85219490391c4",
+    "bytes": 943283
+  },
+  {
+    "original_reference": "inputs/public/reports/085f39c658d89aa349f410a94dc33992bc0af96be9ccb1b51a5f245c0f911b5a/2019-2020-dsr-activity-report.pdf",
+    "archived_file": "inputs/calls/085f39c658_2019-2020-dsr-activity-report.pdf",
+    "sha256": "085f39c658d89aa349f410a94dc33992bc0af96be9ccb1b51a5f245c0f911b5a",
+    "bytes": 2382242
+  },
+  {
+    "original_reference": "inputs/public/reports/c1dde9958e1d42d177ff6d982d537015e56cd6360ae3e456662372aba5a687f5/estimated-demand-response-june-14-15-16-2022.pdf",
+    "archived_file": "inputs/calls/c1dde9958e_estimated-demand-response-june-14-15-16-2022.pdf",
+    "sha256": "c1dde9958e1d42d177ff6d982d537015e56cd6360ae3e456662372aba5a687f5",
+    "bytes": 1432005
+  },
+  {
+    "original_reference": "inputs/public/reports/f104f0b98df02667dc010a34e699c65c6dbb7ca45e45f475df6d17685f3756d3/estimated-demand-response-december-23-24-2022.pdf",
+    "archived_file": "inputs/calls/f104f0b98d_estimated-demand-response-december-23-24-2022.pdf",
+    "sha256": "f104f0b98df02667dc010a34e699c65c6dbb7ca45e45f475df6d17685f3756d3",
+    "bytes": 1676172
+  },
+  {
+    "original_reference": "inputs/public/reports/7774b8a74a03a6a85a6f74259aac8875a07a664c484a8eca740aff06d5ff0d76/dispatched-demand-response-june-23-24-25-2025.pdf",
+    "archived_file": "inputs/calls/7774b8a74a_dispatched-demand-response-june-23-24-25-2025.pdf",
+    "sha256": "7774b8a74a03a6a85a6f74259aac8875a07a664c484a8eca740aff06d5ff0d76",
+    "bytes": 1363124
+  },
+  {
+    "original_reference": "inputs/public/reports/0b4d11650295d24186451693075cbd92a296a0124691252fdfc501339bb25a77/dispatched-demand-response-July-28-29-2025.pdf",
+    "archived_file": "inputs/calls/0b4d116502_dispatched-demand-response-July-28-29-2025.pdf",
+    "sha256": "0b4d11650295d24186451693075cbd92a296a0124691252fdfc501339bb25a77",
+    "bytes": 954551
+  },
+  {
+    "original_reference": "inputs/public/reports/83fa0d97c65233d18fc5f4e7f39ca91942cb3dd57cb02ba999472d916126537b/dispatched-demand-response-August-11-2025.pdf",
+    "archived_file": "inputs/calls/83fa0d97c6_dispatched-demand-response-August-11-2025.pdf",
+    "sha256": "83fa0d97c65233d18fc5f4e7f39ca91942cb3dd57cb02ba999472d916126537b",
+    "bytes": 878475
+  },
+  {
+    "original_reference": "inputs/public/reports/b8637eb6cf8ea54cf8fae538d1a592c3c031226b8f9485a1b0f029b106aa2843/dispatched-demand-response-January-25-2026.pdf",
+    "archived_file": "inputs/calls/b8637eb6cf_dispatched-demand-response-January-25-2026.pdf",
+    "sha256": "b8637eb6cf8ea54cf8fae538d1a592c3c031226b8f9485a1b0f029b106aa2843",
+    "bytes": 897629
+  },
+  {
+    "original_reference": "inputs/public/reports/2773f5c6d3401a81f476d7b42789abf636396cdf2b86eca68c61963a938f83a8/estimated-demand-response-may-18-19-2026.pdf",
+    "archived_file": "inputs/calls/2773f5c6d3_estimated-demand-response-may-18-19-2026.pdf",
+    "sha256": "2773f5c6d3401a81f476d7b42789abf636396cdf2b86eca68c61963a938f83a8",
+    "bytes": 205807
+  },
+  {
+    "original_reference": "inputs/public/reports/a3ad7514dd63e92b48c30daa18581bd07211f5e5e33ed5bc24a4e40d88ba1845/dispatched-demand-response-july-2-3-2026.pdf",
+    "archived_file": "inputs/calls/a3ad7514dd_dispatched-demand-response-july-2-3-2026.pdf",
+    "sha256": "a3ad7514dd63e92b48c30daa18581bd07211f5e5e33ed5bc24a4e40d88ba1845",
+    "bytes": 945759
+  },
+  {
+    "original_reference": "inputs/public/reports/45b21bc4360596aed152b0964614c359d5a2024e12f1b590e920e45cd1464671/dispatched-demand-response-sep-1-2026.pdf",
+    "archived_file": "inputs/calls/45b21bc436_dispatched-demand-response-sep-1-2026.pdf",
+    "sha256": "45b21bc4360596aed152b0964614c359d5a2024e12f1b590e920e45cd1464671",
+    "bytes": 865071
+  },
+  {
+    "original_reference": "inputs/public/reports/870edc925c03c9b10d2fc3ef62cf08fdf57d9a6e69b1c97e57d32aa43d04ebd8/dispatched-demand-response-sep-17-2026.pdf",
+    "archived_file": "inputs/calls/870edc925c_dispatched-demand-response-sep-17-2026.pdf",
+    "sha256": "870edc925c03c9b10d2fc3ef62cf08fdf57d9a6e69b1c97e57d32aa43d04ebd8",
+    "bytes": 872193
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "27bra-hourly-load-scenarios.xlsx",
+  "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/27bra-hourly-load-scenarios.xlsx",
+  "downloaded_utc": "2026-10-29T07:29:42.999075+00:00",
+  "bytes": 43112533,
+  "sha256": "2d7aad31bb37b0547e8ac4f6c6bd91c2d489cfa53e33e1c9db7ca1fb6f1abe34",
+  "seconds": 62.07525110000279,
+  "headers": {
+    "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "Content-Length": "43112533",
+    "ETag": "4e84847440554fbeb7aa74e6c705247b",
+    "Last-Modified": "Fri, 01 Aug 2025 20:40:58 GMT"
+  }
+}
