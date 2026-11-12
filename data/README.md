@@ -1,6 +1,6 @@
 # Submission data
 
-Customer_Labels.csv gives the customer industries and their corresponding single-customer LSE cases. The codes in the observed tables are submission identifiers. Portfolio labels A+B, A+C, B+C and A+B+C identify resources combined under a single provider. The Normal reference is a simulation benchmark.
+Customer_Labels.csv gives the customer industries and their corresponding single-customer LSE cases. The codes in the observed tables are submission identifiers. Portfolio codes A+B, A+C, B+C and A+B+C identify customer mixes submitted by LSE D. A, B and C stand for the specialty steel, cement and building materials profiles. In portfolio data, member keys such as LSE A refer to the corresponding customer profile. The Normal reference is a simulation benchmark.
 
 D01 contains 743 15-minute observations across 28 customer events on 19 Hubei call days in 2024. The event dates, times, observed loads, targets and other numerical fields are retained at the original precision. Source S codes identify source documents within this extract. The actual-to-target consumption ratios and within-event time order underlie D02 and I12. The records originate from instructions to increase consumption.
 

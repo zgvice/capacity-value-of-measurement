@@ -16,16 +16,16 @@ OUTPUT = FIGURES / "figB01_empirical_aggregation.pdf"
 
 # Colors and line types follow the archived English portfolio figure.
 SINGLES = {
-    "LSE A": ("LSE A", "#446E9A", "o"),
-    "LSE B": ("LSE B", "#4C9691", "s"),
-    "LSE C": ("LSE C", "#B18D57", "^"),
+    "LSE A": ("Specialty steel", "#446E9A", "o"),
+    "LSE B": ("Cement", "#4C9691", "s"),
+    "LSE C": ("Building materials", "#B18D57", "^"),
 }
-PORTFOLIO = ("Portfolio", "#8A688D", "D")
+PORTFOLIO = ("LSE D portfolio", "#8A688D", "D")
 PANELS = (
-    ("A+B", ("LSE A", "LSE B")),
-    ("A+C", ("LSE A", "LSE C")),
-    ("B+C", ("LSE B", "LSE C")),
-    ("A+B+C", tuple(SINGLES)),
+    ("A+B", "Specialty steel + Cement", ("LSE A", "LSE B")),
+    ("A+C", "Specialty steel + Building materials", ("LSE A", "LSE C")),
+    ("B+C", "Cement + Building materials", ("LSE B", "LSE C")),
+    ("A+B+C", "All three industries", tuple(SINGLES)),
 )
 
 
@@ -61,10 +61,10 @@ def main():
         "legend.frameon": False, "figure.facecolor": "white",
     })
     fig, axes = plt.subplots(2, 2, sharex=True, sharey=True, figsize=(6.2, 4.6))
-    fig.subplots_adjust(left=0.12, right=0.98, bottom=0.11, top=0.89, wspace=0.15, hspace=0.30)
-    for letter, (title, members), ax in zip("abcd", PANELS, axes.flat):
+    fig.subplots_adjust(left=0.12, right=0.98, bottom=0.11, top=0.875, wspace=0.15, hspace=0.30)
+    for letter, (key, title, members), ax in zip("abcd", PANELS, axes.flat):
         _, color, marker = PORTFOLIO
-        draw_series(ax, groups[title], color, marker, portfolio=True)
+        draw_series(ax, groups[key], color, marker, portfolio=True)
         for member in members:
             _, color, marker = SINGLES[member]
             draw_series(ax, groups[member], color, marker, portfolio=False)
@@ -84,7 +84,7 @@ def main():
     label, color, marker = PORTFOLIO
     handles.append(Line2D([], [], label=label, color=color, marker=marker,
                           markerfacecolor="white", markersize=3.8, linewidth=1.8))
-    fig.legend(handles=handles, loc="upper center", ncol=4, bbox_to_anchor=(0.55, 0.995),
+    fig.legend(handles=handles, loc="upper center", ncol=4, bbox_to_anchor=(0.52, 0.995),
                handlelength=2.1, columnspacing=1.25)
     fig.supylabel("Net accredited allowance (MW)", x=0.02, fontsize=9)
     fig.supxlabel("Complete call records per customer", x=0.55, y=0.02, fontsize=9)
