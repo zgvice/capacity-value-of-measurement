@@ -1,0 +1,16 @@
+{
+  "rts_file": "pras/PRASFiles.jl/src/Systems/rts.pras",
+  "N": 256,
+  "power_mw": 300,
+  "energy_mwh": 1200,
+  "load_scale": 1.15,
+  "seed": 2026102901,
+  "parameter_sources": {
+    "rts_file": "PRAS 0.8.0源程序附带的rts.pras测试系统；全部8784小时、153台机组。",
+    "N": "既定外部工具核对的256条年度停机路径。",
+    "power_mw": "既定外部测试资源300兆瓦；与主实验客户规模分别设置。",
+    "energy_mwh": "既定外部测试有状态资源初始可调电量1200兆瓦时。",
+    "load_scale": "既定外部测试负荷缩放1.15，作者情景。",
+    "seed": "既定外部停机模拟种子2026102901。"
+  }
+}

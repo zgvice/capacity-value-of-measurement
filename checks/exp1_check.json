@@ -1,0 +1,123 @@
+{
+  "parameters": {
+    "load_mw": 5000.0,
+    "power_mw": 500.0,
+    "extension_hours": [
+      0.0,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "invitation_extension_hours": 4.0,
+    "risk_level": 0.95,
+    "risk_budget_mwh": 8760.0,
+    "system_surplus_mw": 1000.0,
+    "reference_tolerance_mw": 0.0001,
+    "capacity_tolerance_mw": 0.0001,
+    "accounting_tolerance_mwh": 1e-06,
+    "monotonicity_tolerance_mwh": 1e-07,
+    "diagnostic_start_hour": 17,
+    "diagnostic_end_hour": 21,
+    "leading_hours_count": 5
+  },
+  "no_resource_reference_MW": 378.6853328347206,
+  "no_resource_reference_bracket": {
+    "lower_MW": 378.6852955818176,
+    "upper_MW": 378.6853700876236,
+    "calls": 25
+  },
+  "annual_atoms": 40300,
+  "annual_hours": 8760,
+  "call_templates": 20,
+  "common_history": {
+    "points": 544,
+    "interval_minutes": 15,
+    "delivered_power_MW": 500.0,
+    "baseline_source": "inputs/exp1_shared_input.csv:基线相对参照",
+    "simulated_untreated_source": "inputs/exp1_shared_input.csv:正常用电相对参照",
+    "observed_fields": [
+      "基线",
+      "电表",
+      "调用起止"
+    ],
+    "same_records_for_all_extensions": true
+  },
+  "capacity_rows": [
+    {
+      "最多续调_小时": 0.0,
+      "缺供预算_兆瓦时": 8760.0,
+      "无资源增载_兆瓦": 378.6853328347206,
+      "容量边界_兆瓦": 435.49764151646684,
+      "净增加_兆瓦": 56.81230868174623,
+      "下界_兆瓦": 435.4976153296022,
+      "上界_兆瓦": 435.49766770333156,
+      "下界风险_兆瓦时": 8759.995180220123,
+      "上界风险_兆瓦时": 8760.00109118442,
+      "比不续调多认_兆瓦": 0.0
+    },
+    {
+      "最多续调_小时": 1.0,
+      "缺供预算_兆瓦时": 8760.0,
+      "无资源增载_兆瓦": 378.6853328347206,
+      "容量边界_兆瓦": 460.8671617728803,
+      "净增加_兆瓦": 82.1818289381597,
+      "下界_兆瓦": 460.86713558601565,
+      "上界_兆瓦": 460.867187959745,
+      "下界风险_兆瓦时": 8759.995609722591,
+      "上界风险_兆瓦时": 8760.000071657842,
+      "比不续调多认_兆瓦": 25.369520256413466
+    },
+    {
+      "最多续调_小时": 2.0,
+      "缺供预算_兆瓦时": 8760.0,
+      "无资源增载_兆瓦": 378.6853328347206,
+      "容量边界_兆瓦": 499.9538331105149,
+      "净增加_兆瓦": 121.26850027579428,
+      "下界_兆瓦": 499.9538069236502,
+      "上界_兆瓦": 499.95385929737955,
+      "下界风险_兆瓦时": 8759.999620043787,
+      "上界风险_兆瓦时": 8760.002862652987,
+      "比不续调多认_兆瓦": 64.45619159404805
+    },
+    {
+      "最多续调_小时": 4.0,
+      "缺供预算_兆瓦时": 8760.0,
+      "无资源增载_兆瓦": 378.6853328347206,
+      "容量边界_兆瓦": 555.9870720550309,
+      "净增加_兆瓦": 177.3017392203103,
+      "下界_兆瓦": 555.9870458681662,
+      "上界_兆瓦": 555.9870982418955,
+      "下界风险_兆瓦时": 8759.997852812072,
+      "上界风险_兆瓦时": 8760.0167311771,
+      "比不续调多认_兆瓦": 120.48943053856408
+    }
+  ],
+  "common_load_MW": 555.9870720550309,
+  "common_tail_saving_MWh": 17260.307345702357,
+  "diagnostic_interval_share": 0.7566232084043816,
+  "masked_capacity_gain_MW": {
+    "晚间区间内": 99.17719834770003,
+    "晚间区间外": 17.170308178679193
+  },
+  "leading_hours": {
+    "07-29 18:00": 109.59821155497501,
+    "07-29 19:00": 108.42838632412615,
+    "07-22 19:00": 103.45403622913838,
+    "07-27 19:00": 101.9516905905575,
+    "07-28 19:00": 99.86895949697917
+  },
+  "cores": 22,
+  "delivery_check": {
+    "annual_risk_roots_checked": 4,
+    "cores": 22,
+    "complete_quarter_hour_records_preserved": true
+  },
+  "cleanup": {
+    "retired_programs_removed": 10,
+    "old_result_files_removed": 10,
+    "old_result_bytes_removed": 92829023,
+    "obsolete_audits_removed": 2,
+    "reader_entry": "results/exp1/report.md",
+    "maximum_capacity_change_MW": 0.0
+  }
+}

@@ -1,0 +1,902 @@
+{
+  "parameters": {
+    "load_mw": 2000.0,
+    "nomination_mw": 1000.0,
+    "response_mean_ratio": 1.0,
+    "response_sd_ratio": 0.1,
+    "response_rho15": 0.0,
+    "error_mean_rate": 0.0,
+    "error_sd_rate": 0.1444,
+    "bias_bound_rate": 0.04,
+    "verification_coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_error_budget_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "load_daily_variance_share": 0.5,
+    "load_rho15": 0.8408964152537145,
+    "verified_min_duration_hours": 0.0,
+    "true_duration_hours": 14.5,
+    "maximum_extension_hours": 4.0,
+    "tail_level": 0.95,
+    "risk_budget_mwh": 8760.0,
+    "system_surplus_mw": 1000.0,
+    "future_paths": 64,
+    "quadrature_nodes": 32,
+    "load_seed": 2026110313,
+    "future_seed": 2026110417,
+    "capacity_tolerance_mw": 0.1,
+    "reference_tolerance_mw": 0.0001,
+    "solver_tolerance": 1e-08,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibration_batch": 4096,
+    "schedule_iterations": 6,
+    "duration_comparison_fraction": 0.5,
+    "time_tolerance_hours": 1e-10,
+    "hour_bin_tolerance": 1e-09,
+    "duration_check_tolerance_hours": 1e-06,
+    "covariance_relative_tolerance": 1e-11,
+    "transport_iterations": 500,
+    "transport_solver_tolerance": 1e-10,
+    "transport_gap_mwh": 0.002
+  },
+  "historical_points": 544,
+  "historical_calls": 20,
+  "history_search_upper_hours": 14.5,
+  "history_calibration": {
+    "calibration": {
+      "global": {
+        "statistics": 227,
+        "failure_budget": 0.012500000000000011,
+        "order_statistic": 258869,
+        "guaranteed_marginal_failure": 0.012496900570295066,
+        "old_multiplier": 4.033013651906132,
+        "joint_multiplier": 3.693527491071343
+      },
+      "other": {
+        "statistics": 705,
+        "failure_budget": 0.012500000000000011,
+        "order_statistic": 258869,
+        "guaranteed_marginal_failure": 0.012496900570295066,
+        "old_multiplier": 4.291706803810487,
+        "joint_multiplier": 4.093965402718486
+      }
+    },
+    "covariance_SD_max_difference_MW": 1.1368683772161603e-13,
+    "actual_error_path_retained": true,
+    "old_largest_single_point_bound_MW": 1391.030068705291,
+    "joint_largest_single_point_bound_MW": 1326.938030893513,
+    "confidence": 0.95,
+    "power_failure_budget": 0.025000000000000022,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibrated_set_is_nested_in_original": true,
+    "latest_call_measured_mean_MW": 761.3173264795947,
+    "old_latest_call_mean_bound_MW": 980.5159986820869,
+    "joint_latest_call_mean_bound_MW": 897.979305092581,
+    "mean_bias_bound_MW": 80.0
+  },
+  "no_resource_reference_MW": 378.6853328347206,
+  "plans": [
+    {
+      "trigger_reference_MW": 378.6853328347206,
+      "call_blocks": 1284731,
+      "merged_touching_calls": 84
+    },
+    {
+      "trigger_reference_MW": 556.4410763841998,
+      "call_blocks": 2295207,
+      "merged_touching_calls": 4673
+    }
+  ],
+  "capacity_cases": [
+    {
+      "label": "最近1次调用",
+      "duration_hours": 0.0,
+      "net_lower_MW": 0.0,
+      "net_upper_MW": 0.0
+    },
+    {
+      "label": "全部20次调用",
+      "net_lower_MW": 122.4173852012409,
+      "net_upper_MW": 122.49216676657636,
+      "total_lower_MW": 501.1027180359615,
+      "total_upper_MW": 501.177499601297,
+      "duration_hours": 8.06233572861033,
+      "risk_lower_boundary_MWh": 8755.700680551938,
+      "risk_upper_boundary_MWh": 8760.26475382486,
+      "root_evaluations": 14,
+      "feasible_plan_count": 2
+    },
+    {
+      "net_lower_MW": 222.62468275075378,
+      "net_upper_MW": 222.69946431608923,
+      "total_lower_MW": 601.3100155854744,
+      "total_upper_MW": 601.3847971508098,
+      "duration_hours": 14.5,
+      "risk_lower_boundary_MWh": 8757.923367276782,
+      "risk_upper_boundary_MWh": 8763.832707875381,
+      "root_evaluations": 14,
+      "feasible_plan_count": 2,
+      "label": "真实持续能力已知，未来配对未知"
+    },
+    {
+      "total_lower_MW": 601.5405113491761,
+      "total_upper_MW": 601.554868293921,
+      "net_lower_MW": 222.85517851445547,
+      "net_upper_MW": 222.8695354592004,
+      "risk_lower_MWh": 8759.834246674785,
+      "risk_upper_MWh": 8760.969524936912,
+      "root_evaluations": 7,
+      "duration_hours": 14.5,
+      "label": "完整信息",
+      "risk_lower_boundary_MWh": 8759.834246674785,
+      "risk_upper_boundary_MWh": 8760.969524936912
+    }
+  ],
+  "duration_comparison": [
+    {
+      "label": "全部20次调用",
+      "net_lower_MW": 122.4173852012409,
+      "net_upper_MW": 122.49216676657636,
+      "total_lower_MW": 501.1027180359615,
+      "total_upper_MW": 501.177499601297,
+      "duration_hours": 8.06233572861033,
+      "risk_lower_boundary_MWh": 8755.700680551938,
+      "risk_upper_boundary_MWh": 8760.26475382486,
+      "root_evaluations": 14,
+      "feasible_plan_count": 2
+    },
+    {
+      "net_lower_MW": 222.62468275075378,
+      "net_upper_MW": 222.69946431608923,
+      "total_lower_MW": 601.3100155854744,
+      "total_upper_MW": 601.3847971508098,
+      "duration_hours": 14.5,
+      "risk_lower_boundary_MWh": 8757.923367276782,
+      "risk_upper_boundary_MWh": 8763.832707875381,
+      "root_evaluations": 14,
+      "feasible_plan_count": 2
+    }
+  ],
+  "invitation_comparison": {
+    "parameters": {
+      "load_mw": 2000.0,
+      "nomination_mw": 1000.0,
+      "response_mean_ratio": 1.0,
+      "response_sd_ratio": 0.1,
+      "response_rho15": 0.0,
+      "error_mean_rate": 0.0,
+      "error_sd_rate": 0.1444,
+      "bias_bound_rate": 0.04,
+      "verification_coverage": 0.95,
+      "error_budget_share": 0.5,
+      "global_error_budget_share": 0.5,
+      "baseline_days": 10,
+      "error_calibration_days": 10,
+      "load_daily_variance_share": 0.5,
+      "load_rho15": 0.8408964152537145,
+      "verified_min_duration_hours": 0.0,
+      "true_duration_hours": 14.5,
+      "maximum_extension_hours": null,
+      "tail_level": 0.95,
+      "risk_budget_mwh": 8760.0,
+      "system_surplus_mw": 1000.0,
+      "future_paths": 64,
+      "quadrature_nodes": 32,
+      "load_seed": 2026110313,
+      "future_seed": 2026110417,
+      "capacity_tolerance_mw": 0.1,
+      "reference_tolerance_mw": 0.0001,
+      "solver_tolerance": 1e-08,
+      "calibration_draws": 262144,
+      "calibration_seed": 2026110419,
+      "calibration_batch": 4096,
+      "schedule_iterations": 6,
+      "duration_comparison_fraction": 0.5,
+      "time_tolerance_hours": 1e-10,
+      "hour_bin_tolerance": 1e-09,
+      "duration_check_tolerance_hours": 1e-06,
+      "covariance_relative_tolerance": 1e-11,
+      "transport_iterations": 500,
+      "transport_solver_tolerance": 1e-10,
+      "transport_gap_mwh": 0.002
+    },
+    "plans": [
+      {
+        "trigger_reference_MW": 378.6853328347206,
+        "call_blocks": 1284731,
+        "merged_touching_calls": 84,
+        "service_beyond_original_cutoff_blocks": 219563,
+        "max_effective_continuous_service_hours": 14.5,
+        "touching_calls_remaining": 0
+      },
+      {
+        "trigger_reference_MW": 556.4410763841998,
+        "call_blocks": 2295207,
+        "merged_touching_calls": 4673,
+        "service_beyond_original_cutoff_blocks": 443662,
+        "max_effective_continuous_service_hours": 14.5,
+        "touching_calls_remaining": 0
+      },
+      {
+        "trigger_reference_MW": 654.9283979309973,
+        "call_blocks": 4355497,
+        "merged_touching_calls": 25766,
+        "service_beyond_original_cutoff_blocks": 1801510,
+        "max_effective_continuous_service_hours": 14.5,
+        "touching_calls_remaining": 0
+      }
+    ],
+    "capacity_cases": [
+      {
+        "net_lower_MW": 123.80068271884653,
+        "net_upper_MW": 123.86814905125618,
+        "total_lower_MW": 502.48601555356714,
+        "total_upper_MW": 502.5534818859768,
+        "duration_hours": 8.06233572861033,
+        "risk_lower_boundary_MWh": 8758.393451264656,
+        "risk_upper_boundary_MWh": 8762.473226579225,
+        "root_evaluations": 12,
+        "feasible_plan_count": 3
+      },
+      {
+        "total_lower_MW": 653.2435317791516,
+        "total_upper_MW": 653.2691997862205,
+        "net_lower_MW": 274.55819894443096,
+        "net_upper_MW": 274.5838669514999,
+        "risk_lower_MWh": 8759.999384495506,
+        "risk_upper_MWh": 8782.443892271664,
+        "root_evaluations": 3,
+        "duration_hours": 14.5,
+        "risk_lower_boundary_MWh": 8759.999384495506,
+        "risk_upper_boundary_MWh": 8782.443892271664
+      },
+      {
+        "total_lower_MW": 653.2514402574769,
+        "total_upper_MW": 653.2691997862205,
+        "net_lower_MW": 274.5661074227563,
+        "net_upper_MW": 274.5838669514999,
+        "risk_lower_MWh": 8755.358955479689,
+        "risk_upper_MWh": 8770.886731746388,
+        "root_evaluations": 7,
+        "duration_hours": 14.5,
+        "risk_lower_boundary_MWh": 8755.358955479689,
+        "risk_upper_boundary_MWh": 8770.886731746388
+      }
+    ]
+  },
+  "history_group_comparison": {
+    "rows": [
+      {
+        "资料": "较早一半记录",
+        "调用次数": 10,
+        "全部15分钟点数": 277,
+        "确认持续时长_小时": 5.000562482716991,
+        "net_lower_MW": 34.99773532409108,
+        "net_upper_MW": 35.07251688942654,
+        "total_lower_MW": 413.6830681588117,
+        "total_upper_MW": 413.75784972414715,
+        "duration_hours": 5.000562482716991,
+        "risk_lower_boundary_MWh": 8748.782495803285,
+        "risk_upper_boundary_MWh": 8760.497686319088,
+        "root_evaluations": 14,
+        "feasible_plan_count": 2
+      },
+      {
+        "资料": "较近一半记录",
+        "调用次数": 10,
+        "全部15分钟点数": 267,
+        "确认持续时长_小时": 7.162283703162611,
+        "net_lower_MW": 81.9605583547584,
+        "net_upper_MW": 82.03533992009386,
+        "total_lower_MW": 460.645891189479,
+        "total_upper_MW": 460.7206727548145,
+        "duration_hours": 7.162283703162611,
+        "risk_lower_boundary_MWh": 8757.500530369443,
+        "risk_upper_boundary_MWh": 8763.844906836588,
+        "root_evaluations": 14,
+        "feasible_plan_count": 2
+      },
+      {
+        "资料": "全部已有记录",
+        "调用次数": 20,
+        "全部15分钟点数": 544,
+        "确认持续时长_小时": 8.06233572861033,
+        "net_lower_MW": 122.4173852012409,
+        "net_upper_MW": 122.49216676657636,
+        "total_lower_MW": 501.1027180359615,
+        "total_upper_MW": 501.177499601297,
+        "duration_hours": 8.06233572861033,
+        "risk_lower_boundary_MWh": 8755.700680551938,
+        "risk_upper_boundary_MWh": 8760.26475382486,
+        "root_evaluations": 14,
+        "feasible_plan_count": 2
+      }
+    ],
+    "separate_constraints_duration_hours": 7.162283703162614
+  },
+  "numerical_check": {
+    "default_invitation_extension_hours": 4.0,
+    "customer_duration_hours": 14.5,
+    "history_search_upper_hours": 14.5,
+    "inferred_duration_hours": 8.06233572861033,
+    "history_unchanged_when_invitation_changes": true,
+    "history_caps_identical_above_longest_invitation": true,
+    "capacity_roots": [
+      {
+        "case": "20次历史",
+        "net_lower_MW": 122.4173852012409,
+        "net_upper_MW": 122.49216676657636,
+        "risk_lower_MWh": 8755.700680551938,
+        "risk_upper_MWh": 8760.26475382486
+      },
+      {
+        "case": "真实时长已知",
+        "net_lower_MW": 222.62468275075378,
+        "net_upper_MW": 222.69946431608923,
+        "risk_lower_MWh": 8757.923367276782,
+        "risk_upper_MWh": 8763.832707875381
+      },
+      {
+        "case": "完整信息",
+        "net_lower_MW": 222.85517851445547,
+        "net_upper_MW": 222.8695354592004,
+        "risk_lower_MWh": 8759.834246674785,
+        "risk_upper_MWh": 8760.969524936912
+      }
+    ],
+    "independent_annual_replay_discrepancy_MWh": 3.7834979593753815e-10,
+    "response_end_rule": "min(ISO invitation end, invitation start + customer duration)",
+    "customer_duration_source": "author-chosen simulation parameter; independent of historical invitation duration",
+    "primary_comparison": "same ISO invitation rules; only historical information changes"
+  },
+  "delivery_check": {
+    "history_duration_hours": 8.06233572861033,
+    "risk_roots_checked": 3,
+    "nomination_scaling_max_difference_MW": 2.2737367544323206e-13,
+    "cores": 22,
+    "parameters_from": "code/core/normal_case_parameters.py"
+  },
+  "history_curve": [
+    {
+      "历史调用次数": 1,
+      "确认持续时长_小时": 0.0,
+      "净容量下界_兆瓦": 0.0,
+      "净容量上界_兆瓦": 0.0,
+      "占申报量下界_百分比": 0.0
+    },
+    {
+      "历史调用次数": 2,
+      "确认持续时长_小时": 5.87087103482817,
+      "净容量下界_兆瓦": 48.75754334581529,
+      "净容量上界_兆瓦": 48.83232491115075,
+      "占申报量下界_百分比": 4.875754334581529
+    },
+    {
+      "历史调用次数": 3,
+      "确认持续时长_小时": 5.87087103482817,
+      "净容量下界_兆瓦": 48.75754334581529,
+      "净容量上界_兆瓦": 48.83232491115075,
+      "占申报量下界_百分比": 4.875754334581529
+    },
+    {
+      "历史调用次数": 4,
+      "确认持续时长_小时": 5.87087103482817,
+      "净容量下界_兆瓦": 48.75754334581529,
+      "净容量上界_兆瓦": 48.83232491115075,
+      "占申报量下界_百分比": 4.875754334581529
+    },
+    {
+      "历史调用次数": 5,
+      "确认持续时长_小时": 7.053106693196195,
+      "净容量下界_兆瓦": 78.37104321865638,
+      "净容量上界_兆瓦": 78.44582478399184,
+      "占申报量下界_百分比": 7.837104321865637
+    },
+    {
+      "历史调用次数": 6,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 7,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 8,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 9,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 10,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 11,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 12,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 13,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 14,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 15,
+      "确认持续时长_小时": 7.162283703162611,
+      "净容量下界_兆瓦": 81.9605583547584,
+      "净容量上界_兆瓦": 82.03533992009386,
+      "占申报量下界_百分比": 8.196055835475839
+    },
+    {
+      "历史调用次数": 16,
+      "确认持续时长_小时": 7.17785615395177,
+      "净容量下界_兆瓦": 82.4840293121066,
+      "净容量上界_兆瓦": 82.55881087744206,
+      "占申报量下界_百分比": 8.24840293121066
+    },
+    {
+      "历史调用次数": 17,
+      "确认持续时长_小时": 7.17785615395177,
+      "净容量下界_兆瓦": 82.4840293121066,
+      "净容量上界_兆瓦": 82.55881087744206,
+      "占申报量下界_百分比": 8.24840293121066
+    },
+    {
+      "历史调用次数": 18,
+      "确认持续时长_小时": 7.17785615395177,
+      "净容量下界_兆瓦": 82.4840293121066,
+      "净容量上界_兆瓦": 82.55881087744206,
+      "占申报量下界_百分比": 8.24840293121066
+    },
+    {
+      "历史调用次数": 19,
+      "确认持续时长_小时": 8.06233572861033,
+      "净容量下界_兆瓦": 122.4173852012409,
+      "净容量上界_兆瓦": 122.49216676657636,
+      "占申报量下界_百分比": 12.241738520124091
+    },
+    {
+      "历史调用次数": 20,
+      "确认持续时长_小时": 8.06233572861033,
+      "净容量下界_兆瓦": 122.4173852012409,
+      "净容量上界_兆瓦": 122.49216676657636,
+      "占申报量下界_百分比": 12.241738520124091
+    }
+  ],
+  "cleanup": {
+    "removed_audit_and_legacy_results": [
+      {
+        "name": "命题2_32路径容量核对.csv",
+        "bytes": 2526
+      },
+      {
+        "name": "命题2_本地资料核对.csv",
+        "bytes": 3801
+      },
+      {
+        "name": "命题2_调用安排对照.json",
+        "bytes": 25802
+      },
+      {
+        "name": "命题2_功率与时长对照.json",
+        "bytes": 2205
+      },
+      {
+        "name": "命题2_固定真实能力容量参照.csv",
+        "bytes": 830
+      },
+      {
+        "name": "命题2_既有调用真值.npz",
+        "bytes": 21555
+      },
+      {
+        "name": "命题2_既有历史容量缓存.json",
+        "bytes": 12939
+      },
+      {
+        "name": "命题2_既有历史数值加密.csv",
+        "bytes": 1254
+      },
+      {
+        "name": "命题2_既有历史资料核对.json",
+        "bytes": 1022
+      },
+      {
+        "name": "命题2_拟合客户核对.json",
+        "bytes": 2744
+      },
+      {
+        "name": "命题2_年度引擎核对.json",
+        "bytes": 404
+      },
+      {
+        "name": "命题2_容量台阶原因.json",
+        "bytes": 23070
+      },
+      {
+        "name": "命题2_私有真值核对.npz",
+        "bytes": 30855
+      },
+      {
+        "name": "命题2_限制时段核对.json",
+        "bytes": 1376
+      },
+      {
+        "name": "命题2_正态组复算.json",
+        "bytes": 2549
+      },
+      {
+        "name": "命题2_正态组精简核验.json",
+        "bytes": 5147
+      },
+      {
+        "name": "命题2_正态组零容量解释.json",
+        "bytes": 2438
+      },
+      {
+        "name": "命题2_正态组年度容量缓存.json",
+        "bytes": 11839
+      },
+      {
+        "name": "实验二历史重放核对.json",
+        "bytes": 345
+      },
+      {
+        "name": "实验二有限记录认证核对.json",
+        "bytes": 4659
+      },
+      {
+        "name": "实验二总体认证核对.json",
+        "bytes": 1662
+      },
+      {
+        "name": "旧实验二\\固定历史观测.npz",
+        "bytes": 23414
+      },
+      {
+        "name": "旧实验二\\观测定义.json",
+        "bytes": 365515
+      },
+      {
+        "name": "旧实验二\\候选观测概率.npz",
+        "bytes": 15719560
+      },
+      {
+        "name": "旧实验二\\计算进度_0.json",
+        "bytes": 45458
+      },
+      {
+        "name": "旧实验二\\计算进度_1.json",
+        "bytes": 45306
+      },
+      {
+        "name": "旧实验二\\计算进度_2.json",
+        "bytes": 37683
+      },
+      {
+        "name": "旧实验二\\计算进度_3.json",
+        "bytes": 37720
+      },
+      {
+        "name": "旧实验二\\实际历史任务.csv",
+        "bytes": 8908
+      },
+      {
+        "name": "旧实验二\\有限记录限制性解释.json",
+        "bytes": 72797
+      },
+      {
+        "name": "旧实验二\\有限记录相容规律见证.npz",
+        "bytes": 28250
+      },
+      {
+        "name": "旧实验二\\有限记录资料与认证容量.csv",
+        "bytes": 31842
+      },
+      {
+        "name": "旧实验二\\有限记录资料增益.csv",
+        "bytes": 10078
+      },
+      {
+        "name": "旧实验二\\真实观测总体概率.npz",
+        "bytes": 35503
+      },
+      {
+        "name": "旧实验二\\总体限制性解释.json",
+        "bytes": 61124
+      },
+      {
+        "name": "旧实验二\\总体资料与认证容量.csv",
+        "bytes": 9377
+      },
+      {
+        "name": "旧实验二\\总体资料增益.csv",
+        "bytes": 2807
+      },
+      {
+        "name": "旧实验二\\最弱物理参照.npz",
+        "bytes": 30391
+      },
+      {
+        "name": "旧实验二\\population_witness_0_curve_8760.npz",
+        "bytes": 10271
+      },
+      {
+        "name": "旧实验二\\population_witness_0_curve_87600.npz",
+        "bytes": 1788
+      },
+      {
+        "name": "旧实验二\\population_witness_0_joint_8760.npz",
+        "bytes": 11978
+      },
+      {
+        "name": "旧实验二\\population_witness_0_joint_87600.npz",
+        "bytes": 1808
+      },
+      {
+        "name": "旧实验二\\population_witness_0_marginals_8760.npz",
+        "bytes": 11974
+      },
+      {
+        "name": "旧实验二\\population_witness_0_marginals_87600.npz",
+        "bytes": 1798
+      },
+      {
+        "name": "旧实验二\\population_witness_0_paired_totals_8760.npz",
+        "bytes": 10317
+      },
+      {
+        "name": "旧实验二\\population_witness_0_paired_totals_87600.npz",
+        "bytes": 1794
+      },
+      {
+        "name": "旧实验二\\population_witness_0_total_8760.npz",
+        "bytes": 5162
+      },
+      {
+        "name": "旧实验二\\population_witness_0_total_87600.npz",
+        "bytes": 1768
+      },
+      {
+        "name": "旧实验二\\population_witness_0_validation_8760.npz",
+        "bytes": 6905
+      },
+      {
+        "name": "旧实验二\\population_witness_0_validation_87600.npz",
+        "bytes": 1780
+      },
+      {
+        "name": "旧实验二\\population_witness_1_curve_8760.npz",
+        "bytes": 13619
+      },
+      {
+        "name": "旧实验二\\population_witness_1_curve_87600.npz",
+        "bytes": 1805
+      },
+      {
+        "name": "旧实验二\\population_witness_1_joint_8760.npz",
+        "bytes": 10265
+      },
+      {
+        "name": "旧实验二\\population_witness_1_joint_87600.npz",
+        "bytes": 1789
+      },
+      {
+        "name": "旧实验二\\population_witness_1_marginals_8760.npz",
+        "bytes": 11972
+      },
+      {
+        "name": "旧实验二\\population_witness_1_marginals_87600.npz",
+        "bytes": 1789
+      },
+      {
+        "name": "旧实验二\\population_witness_1_paired_totals_8760.npz",
+        "bytes": 12016
+      },
+      {
+        "name": "旧实验二\\population_witness_1_paired_totals_87600.npz",
+        "bytes": 1813
+      },
+      {
+        "name": "旧实验二\\population_witness_1_total_8760.npz",
+        "bytes": 5158
+      },
+      {
+        "name": "旧实验二\\population_witness_1_total_87600.npz",
+        "bytes": 1770
+      },
+      {
+        "name": "旧实验二\\population_witness_1_validation_8760.npz",
+        "bytes": 6894
+      },
+      {
+        "name": "旧实验二\\population_witness_1_validation_87600.npz",
+        "bytes": 1779
+      },
+      {
+        "name": "旧实验二\\population_witness_2_curve_8760.npz",
+        "bytes": 10301
+      },
+      {
+        "name": "旧实验二\\population_witness_2_curve_87600.npz",
+        "bytes": 1797
+      },
+      {
+        "name": "旧实验二\\population_witness_2_marginals_8760.npz",
+        "bytes": 11995
+      },
+      {
+        "name": "旧实验二\\population_witness_2_marginals_87600.npz",
+        "bytes": 1797
+      },
+      {
+        "name": "旧实验二\\population_witness_2_paired_totals_8760.npz",
+        "bytes": 10293
+      },
+      {
+        "name": "旧实验二\\population_witness_2_paired_totals_87600.npz",
+        "bytes": 1801
+      },
+      {
+        "name": "旧实验二\\population_witness_2_total_8760.npz",
+        "bytes": 5168
+      },
+      {
+        "name": "旧实验二\\population_witness_2_total_87600.npz",
+        "bytes": 1778
+      },
+      {
+        "name": "旧实验二\\population_witness_2_validation_8760.npz",
+        "bytes": 6871
+      },
+      {
+        "name": "旧实验二\\population_witness_2_validation_87600.npz",
+        "bytes": 1779
+      },
+      {
+        "name": "旧实验二\\population_witness_3_curve_8760.npz",
+        "bytes": 10302
+      },
+      {
+        "name": "旧实验二\\population_witness_3_curve_87600.npz",
+        "bytes": 1798
+      },
+      {
+        "name": "旧实验二\\population_witness_3_marginals_8760.npz",
+        "bytes": 13589
+      },
+      {
+        "name": "旧实验二\\population_witness_3_marginals_87600.npz",
+        "bytes": 1808
+      },
+      {
+        "name": "旧实验二\\population_witness_3_paired_totals_8760.npz",
+        "bytes": 8586
+      },
+      {
+        "name": "旧实验二\\population_witness_3_paired_totals_87600.npz",
+        "bytes": 1793
+      },
+      {
+        "name": "旧实验二\\population_witness_3_total_8760.npz",
+        "bytes": 5170
+      },
+      {
+        "name": "旧实验二\\population_witness_3_total_87600.npz",
+        "bytes": 1779
+      },
+      {
+        "name": "旧实验二\\population_witness_3_validation_8760.npz",
+        "bytes": 6884
+      },
+      {
+        "name": "旧实验二\\population_witness_3_validation_87600.npz",
+        "bytes": 1780
+      }
+    ],
+    "obsolete_result_files": 10,
+    "obsolete_scripts": 6
+  },
+  "source": {
+    "parameters": {
+      "load_mw": 2000.0,
+      "nomination_mw": 1000.0,
+      "response_mean_ratio": 1.0,
+      "response_sd_ratio": 0.1,
+      "response_rho15": 0.0,
+      "error_mean_rate": 0.0,
+      "error_sd_rate": 0.1444,
+      "bias_bound_rate": 0.04,
+      "verification_coverage": 0.95,
+      "error_budget_share": 0.5,
+      "global_error_budget_share": 0.5,
+      "baseline_days": 10,
+      "error_calibration_days": 10,
+      "load_daily_variance_share": 0.5,
+      "load_rho15": 0.8408964152537145,
+      "verified_min_duration_hours": 0.0,
+      "true_duration_hours": 14.5,
+      "maximum_extension_hours": 4.0,
+      "tail_level": 0.95,
+      "risk_budget_mwh": 8760.0,
+      "system_surplus_mw": 1000.0,
+      "future_paths": 64,
+      "quadrature_nodes": 32,
+      "load_seed": 2026110313,
+      "future_seed": 2026110417,
+      "capacity_tolerance_mw": 0.1,
+      "reference_tolerance_mw": 0.0001,
+      "solver_tolerance": 1e-08,
+      "calibration_draws": 262144,
+      "calibration_seed": 2026110419,
+      "calibration_batch": 4096,
+      "schedule_iterations": 6,
+      "duration_comparison_fraction": 0.5,
+      "time_tolerance_hours": 1e-10,
+      "hour_bin_tolerance": 1e-09,
+      "duration_check_tolerance_hours": 1e-06,
+      "covariance_relative_tolerance": 1e-11,
+      "transport_iterations": 500,
+      "transport_solver_tolerance": 1e-10,
+      "transport_gap_mwh": 0.002
+    },
+    "error_mean_MW": 0.0,
+    "error_SD_MW": 288.8,
+    "mean_bias_bound_MW": 80.0,
+    "power_prediction_bound_MW": 1391.100790208765,
+    "min_meter_MW": 209.4458153827727,
+    "maximum_relevant_duration_hours": 14.5,
+    "historical_search_upper_hours": 14.5,
+    "historical_longest_invitation_hours": 14.5,
+    "true_duration_hours": 14.5,
+    "original_annual_atoms": 40300,
+    "fixed_call_count": 20,
+    "quarter_points": 544,
+    "latest_call_mean_measured_MW": 761.3173264795947,
+    "latest_call_mean_error_bound_MW": 980.5159986820869,
+    "largest_single_point_error_bound_MW": 1391.030068705291,
+    "true_error_in_verification_set": true,
+    "sources": {
+      "error_mean_rate": "参数入口或本次配置的误差中心率：0%",
+      "error_sd_rate": "集中参数给定的标准差率14.44%；公开资料来源见参数表"
+    }
+  }
+}

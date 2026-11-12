@@ -1,0 +1,30 @@
+{
+  "single_annual_loss_max_difference_MWh": 0.0,
+  "risk": {
+    "lower_MWh": 8735.608097171038,
+    "upper_MWh": 8735.608097171038
+  },
+  "expected": {
+    "net_lower_MW": 276.28413470839155,
+    "net_upper_MW": 276.34206029711663,
+    "total_lower_MW": 654.9694675431122,
+    "total_upper_MW": 655.0273931318372,
+    "duration_hours": 18.5,
+    "risk_lower_boundary_MWh": 8735.608097171038,
+    "risk_upper_boundary_MWh": 8782.473310430583,
+    "root_evaluations": 14,
+    "feasible_plan_count": 3
+  },
+  "heterogeneous_duration_direct_integration_max_difference_MWh": 7.275957614183426e-12,
+  "checked_annual_groups": [
+    20,
+    219,
+    1787
+  ],
+  "checked_resource_paths": 2,
+  "checked_individual_duration_hours": [
+    9.508920498,
+    10.204519653,
+    14.255603101
+  ]
+}

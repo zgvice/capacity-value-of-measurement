@@ -1,0 +1,38 @@
+{
+  "input_path": "inputs/annual/margins/raw_system_joint_panel_diagnostic.csv",
+  "input_sha256": "ba62637088652fc17ab187b2ab92a5cbfed80e808d03c49ca7f17c1413c3318d",
+  "interpretation": "descriptive headroom-proxy shape, not true supply/coverage",
+  "train_cutoff_utc": "2022-06-01T04:00Z",
+  "signed_schedule_interpretation": "positive imports by archived official definition; not actual interchange",
+  "outage_scope": "RTO same-day as previously joined; no added fault draws",
+  "variants": {
+    "all_numeric": "all finite signed proxies retained; no >230GW exclusion",
+    "quality_flagged": "reuse frozen prior 147-hour quality sensitivity; flags not definitive deletion rule"
+  },
+  "scales": {
+    "all_numeric_committed": 47879.56550000001,
+    "all_numeric_offered": 54668.31149999999,
+    "quality_flagged_committed": 47871.069,
+    "quality_flagged_offered": 54664.0025
+  },
+  "thresholds": {
+    "winter": [
+      93874.02249999999,
+      107211.4525
+    ],
+    "spring": [
+      78186.811,
+      91553.874
+    ],
+    "summer": [
+      97628.03450000001,
+      128080.03439999999
+    ],
+    "fall": [
+      81860.093,
+      98193.604
+    ]
+  },
+  "rows": 144,
+  "source_sample_not_confirmatory_holdout": true
+}

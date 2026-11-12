@@ -1,0 +1,1048 @@
+{
+  "parameters": {
+    "load_mw": 2000.0,
+    "nomination_mw": 1000.0,
+    "response_mean_ratio": 1.0,
+    "response_sd_ratio": 0.1,
+    "response_rho15": 0.0,
+    "error_mean_rate": 0.0,
+    "error_sd_rate": 0.1444,
+    "bias_bound_rate": 0.04,
+    "verification_coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_error_budget_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "load_daily_variance_share": 0.5,
+    "load_rho15": 0.8408964152537145,
+    "verified_min_duration_hours": 0.0,
+    "true_duration_hours": 14.5,
+    "maximum_extension_hours": null,
+    "tail_level": 0.95,
+    "risk_budget_mwh": 8760.0,
+    "system_surplus_mw": 1000.0,
+    "future_paths": 64,
+    "quadrature_nodes": 32,
+    "load_seed": 2026110313,
+    "future_seed": 2026110417,
+    "capacity_tolerance_mw": 0.1,
+    "reference_tolerance_mw": 0.0001,
+    "solver_tolerance": 1e-08,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibration_batch": 4096,
+    "schedule_iterations": 6,
+    "duration_comparison_fraction": 0.5,
+    "time_tolerance_hours": 1e-10,
+    "hour_bin_tolerance": 1e-09,
+    "duration_check_tolerance_hours": 1e-06,
+    "covariance_relative_tolerance": 1e-11,
+    "transport_iterations": 500,
+    "transport_solver_tolerance": 1e-10,
+    "transport_gap_mwh": 0.002,
+    "empirical_users": [
+      "LSE A",
+      "LSE B",
+      "LSE C"
+    ],
+    "normal_sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "history_power_seed": 2026110421,
+    "individual_load_seed": 2026110521,
+    "common_error_amplitude": 0.02,
+    "individual_error_amplitude": 0.2,
+    "state_power_ratio": 1.5
+  },
+  "groups": {
+    "正态1户": {
+      "name": "正态1户",
+      "kind": "normal",
+      "members": [
+        "正态1"
+      ],
+      "weights": [
+        1.0
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "power_bounds_MW": [
+        1391.100790208765
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 0.0,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 3
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 8.062334728610336,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              8.062336729
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 15
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.8791148401207424,
+      "realized_aggregate_error_to_verified_bound_max": 0.8791148401207424
+    },
+    "LSE B": {
+      "name": "LSE B",
+      "kind": "empirical_single",
+      "members": [
+        "LSE B"
+      ],
+      "weights": [
+        1.0
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "power_bounds_MW": [
+        1570.182394924663
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 0.0,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 3
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 10.253408212269289,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              10.253410212
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 16
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.7796164646581039,
+      "realized_aggregate_error_to_verified_bound_max": 0.7796164646581039
+    },
+    "LSE A": {
+      "name": "LSE A",
+      "kind": "empirical_single",
+      "members": [
+        "LSE A"
+      ],
+      "weights": [
+        1.0
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "power_bounds_MW": [
+        1316.898848610449
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 2.250598405544471,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              2.250600406
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 11
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 13.041847052293729,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              13.041849052
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 18
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.6386185339181853,
+      "realized_aggregate_error_to_verified_bound_max": 0.6386185339181853
+    },
+    "LSE C": {
+      "name": "LSE C",
+      "kind": "empirical_single",
+      "members": [
+        "LSE C"
+      ],
+      "weights": [
+        1.0
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "power_bounds_MW": [
+        1568.2392736336124
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 0.0,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 3
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 11.005517624414631,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              11.005519624
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 18
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.7941944599022568,
+      "realized_aggregate_error_to_verified_bound_max": 0.7941944599022568
+    },
+    "LSE B＋LSE C": {
+      "name": "LSE B＋LSE C",
+      "kind": "empirical_pair",
+      "members": [
+        "LSE B",
+        "LSE C"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.9879050222663603,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        },
+        "other": {
+          "multiplier": 4.372355550487869,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        }
+      },
+      "power_bounds_MW": [
+        785.0911974623315,
+        784.1196368168062
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 0.21378999886105968,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              0.0,
+              0.427847895
+            ],
+            [
+              0.213791,
+              0.213791998
+            ],
+            [
+              0.213791999,
+              0.213790998
+            ],
+            [
+              0.427318429,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 27
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 13.505999789620725,
+            "1": 10.420444257874452,
+            "2": 10.212559669805533,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              10.21256167,
+              13.512010014
+            ],
+            [
+              13.506000791,
+              13.506001788
+            ],
+            [
+              13.50600179,
+              13.506000788
+            ],
+            [
+              13.511995153,
+              10.420446258
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 108
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.743627686341231,
+      "realized_aggregate_error_to_verified_bound_max": 0.8345482473502248
+    },
+    "LSE A＋LSE B": {
+      "name": "LSE A＋LSE B",
+      "kind": "empirical_pair",
+      "members": [
+        "LSE A",
+        "LSE B"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.9879050222663603,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        },
+        "other": {
+          "multiplier": 4.372355550487869,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        }
+      },
+      "power_bounds_MW": [
+        658.4494243052245,
+        785.0911974623315
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 2.501006873055772,
+            "1": 0.0,
+            "2": 1.2666483395443495,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              1.26665034,
+              2.501854168
+            ],
+            [
+              2.501007681,
+              2.501008873
+            ],
+            [
+              2.501008681,
+              2.501008034
+            ],
+            [
+              2.502210594,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 54
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 14.025557433379365,
+            "1": 10.212559669805533,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              14.046995078
+            ],
+            [
+              14.025558241,
+              14.025559433
+            ],
+            [
+              14.025559241,
+              14.025558595
+            ],
+            [
+              14.056033605,
+              10.21256167
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 119
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.7220670574220679,
+      "realized_aggregate_error_to_verified_bound_max": 0.6804271693566051
+    },
+    "正态2户": {
+      "name": "正态2户",
+      "kind": "normal",
+      "members": [
+        "正态1",
+        "正态2"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.9879050222663603,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        },
+        "other": {
+          "multiplier": 4.372355550487869,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        }
+      },
+      "power_bounds_MW": [
+        703.7647928252939,
+        703.7647928252939
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 3.0226402523115334,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              0.0,
+              3.045283505
+            ],
+            [
+              3.022641252,
+              3.022642252
+            ],
+            [
+              3.022642252,
+              3.022641252
+            ],
+            [
+              3.045283505,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 42
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 9.420167574980864,
+            "1": 9.172565313225732,
+            "2": 8.022385068421427,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.022387068,
+              9.423671483
+            ],
+            [
+              9.420168575,
+              9.420169575
+            ],
+            [
+              9.420169575,
+              9.420168575
+            ],
+            [
+              9.423671483,
+              9.172567313
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 108
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.8142207027662441,
+      "realized_aggregate_error_to_verified_bound_max": 0.7998978005993224
+    },
+    "LSE A＋LSE C": {
+      "name": "LSE A＋LSE C",
+      "kind": "empirical_pair",
+      "members": [
+        "LSE A",
+        "LSE C"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.9879050222663603,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        },
+        "other": {
+          "multiplier": 4.372355550487869,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        }
+      },
+      "power_bounds_MW": [
+        658.4494243052245,
+        784.1196368168062
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 3.05061308900883,
+            "1": 0.0,
+            "2": 1.2666483395443495,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              1.26665034,
+              3.093117299
+            ],
+            [
+              3.050613898,
+              3.050615089
+            ],
+            [
+              3.050614898,
+              3.050614249
+            ],
+            [
+              3.110889272,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 54
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 13.508210961271262,
+            "1": 10.420444257874452,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              13.515108798
+            ],
+            [
+              13.50821177,
+              13.508212961
+            ],
+            [
+              13.50821277,
+              13.508212122
+            ],
+            [
+              13.517992239,
+              10.420446258
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 117
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.743627686341231,
+      "realized_aggregate_error_to_verified_bound_max": 0.6933371403110731
+    },
+    "LSE A＋LSE B＋LSE C": {
+      "name": "LSE A＋LSE B＋LSE C",
+      "kind": "empirical_triple",
+      "members": [
+        "LSE A",
+        "LSE B",
+        "LSE C"
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 4.062368882256894,
+          "failure_budget": 0.0031250000000000028,
+          "rank": 261326
+        },
+        "other": {
+          "multiplier": 4.435131216921167,
+          "failure_budget": 0.0031250000000000028,
+          "rank": 261326
+        }
+      },
+      "power_bounds_MW": [
+        438.9662828701496,
+        523.3941316415543,
+        522.7464245445374
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 4.020902322396827,
+            "1": 0.0,
+            "2": 1.2632418021460976,
+            "3": 0.0,
+            "4": 1.2632418021460976,
+            "5": 0.0,
+            "6": 1.2632418021460976,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              1.263243802,
+              0.0,
+              4.059386709
+            ],
+            [
+              1.263243802,
+              4.059313218,
+              0.0
+            ],
+            [
+              4.020901939,
+              4.020904322,
+              4.020904322
+            ],
+            [
+              4.020904132,
+              4.020904322,
+              4.020902481
+            ],
+            [
+              4.070720935,
+              0.0,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 129
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 14.251970897466764,
+            "1": 10.417583683437293,
+            "2": 10.417583683437293,
+            "3": 10.417583683437293,
+            "4": 10.204517653014062,
+            "5": 10.204517653014062,
+            "6": 9.50891849805819,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              10.204519653,
+              14.255603101
+            ],
+            [
+              9.508920498,
+              14.255596169,
+              10.417585683
+            ],
+            [
+              14.251970514,
+              14.251972897,
+              14.251972897
+            ],
+            [
+              14.251972707,
+              14.251972897,
+              14.251971056
+            ],
+            [
+              14.256672306,
+              10.204519653,
+              10.417585683
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 335
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.7331022427173264,
+      "realized_aggregate_error_to_verified_bound_max": 0.6730629749342207
+    },
+    "正态3户": {
+      "name": "正态3户",
+      "kind": "normal",
+      "members": [
+        "正态1",
+        "正态2",
+        "正态3"
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 4.062368882256894,
+          "failure_budget": 0.0031250000000000028,
+          "rank": 261326
+        },
+        "other": {
+          "multiplier": 4.435131216921167,
+          "failure_budget": 0.0031250000000000028,
+          "rank": 261326
+        }
+      },
+      "power_bounds_MW": [
+        472.2892394036094,
+        472.2892394036094,
+        472.2892394036094
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 4.25469266316347,
+            "1": 2.50824289056968,
+            "2": 2.50824289056968,
+            "3": 2.50824289056968,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              0.0,
+              0.0,
+              4.264081989
+            ],
+            [
+              0.0,
+              4.264081989,
+              2.508244891
+            ],
+            [
+              4.254692663,
+              4.254694663,
+              4.254694663
+            ],
+            [
+              4.254694663,
+              4.254694663,
+              4.254692663
+            ],
+            [
+              4.264081989,
+              0.0,
+              2.508244891
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 137
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 12.756528225454025,
+            "1": 10.439463099095905,
+            "2": 10.439463099095905,
+            "3": 10.439463099095905,
+            "4": 9.169360245596083,
+            "5": 9.169360245596083,
+            "6": 8.012381552473618,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              8.012383552,
+              9.169362246,
+              12.769588676
+            ],
+            [
+              8.012383552,
+              12.769588676,
+              10.439465099
+            ],
+            [
+              12.756528225,
+              12.756530225,
+              12.756530225
+            ],
+            [
+              12.756530225,
+              12.756530225,
+              12.756528225
+            ],
+            [
+              12.769588676,
+              9.169362246,
+              10.439465099
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 315
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.7992959093342661,
+      "realized_aggregate_error_to_verified_bound_max": 0.6945736022285105
+    },
+    "正态4户": {
+      "name": "正态4户",
+      "kind": "normal",
+      "members": [
+        "正态1",
+        "正态2",
+        "正态3",
+        "正态4"
+      ],
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 4.130405694166337,
+          "failure_budget": 0.0025000000000000022,
+          "rank": 261490
+        },
+        "other": {
+          "multiplier": 4.48814861357678,
+          "failure_budget": 0.0025000000000000022,
+          "rank": 261490
+        }
+      },
+      "power_bounds_MW": [
+        355.8448996662792,
+        355.8448996662792,
+        355.8448996662792,
+        355.8448996662792
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 4.261516354306007,
+            "1": 2.5055433967646357,
+            "2": 2.5055433967646357,
+            "3": 2.5055433967646357,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.0,
+            "8": 2.5055433967646357,
+            "9": 2.5055433967646357,
+            "10": 2.5055433967646357,
+            "11": 2.5055433967646357,
+            "12": 0.0,
+            "13": 0.0,
+            "14": 0.0,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              0.0,
+              0.0,
+              2.505545397,
+              4.296070417
+            ],
+            [
+              0.0,
+              0.0,
+              4.296070417,
+              0.0
+            ],
+            [
+              0.0,
+              4.296070417,
+              2.505545397,
+              0.0
+            ],
+            [
+              4.261515354,
+              4.261518354,
+              4.261518354,
+              4.261518354
+            ],
+            [
+              4.261518354,
+              4.261518354,
+              4.261518354,
+              4.261515354
+            ],
+            [
+              4.296070417,
+              0.0,
+              2.505545397,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 217
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 13.02166315571482,
+            "1": 10.436697023667191,
+            "2": 10.436697023667191,
+            "3": 10.436697023667191,
+            "4": 9.247988276418688,
+            "5": 9.247988276418686,
+            "6": 9.247988276418686,
+            "7": 9.247988276418686,
+            "8": 10.436697023667191,
+            "9": 10.436697023667191,
+            "10": 10.436697023667191,
+            "11": 10.436697023667191,
+            "12": 9.166686139575182,
+            "13": 9.166686139575182,
+            "14": 8.003360804254184,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              8.003362804,
+              9.16668814,
+              10.436699024,
+              13.086657623
+            ],
+            [
+              8.003362804,
+              9.16668814,
+              13.086657623,
+              9.247990276
+            ],
+            [
+              8.003362804,
+              13.086657623,
+              10.436699024,
+              9.247990276
+            ],
+            [
+              13.021662156,
+              13.021665156,
+              13.021665156,
+              13.021665156
+            ],
+            [
+              13.021665156,
+              13.021665156,
+              13.021665156,
+              13.021662156
+            ],
+            [
+              13.086657623,
+              9.16668814,
+              10.436699024,
+              9.247990276
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 764
+        }
+      ],
+      "realized_error_to_verified_bound_max": 0.7861297582416096,
+      "realized_aggregate_error_to_verified_bound_max": 0.8264869728453403
+    }
+  }
+}

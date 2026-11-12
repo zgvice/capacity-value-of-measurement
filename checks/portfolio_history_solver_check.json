@@ -1,0 +1,20 @@
+{
+  "checks": [
+    {
+      "group": "正态1户",
+      "threshold_difference_hours": 0.0,
+      "seconds": 0.27524649999941175
+    },
+    {
+      "group": "正态4户",
+      "threshold_difference_hours": 1.7763568394002505e-15,
+      "seconds": 72.94921400000021
+    },
+    {
+      "group": "LSE A＋LSE B＋LSE C",
+      "threshold_difference_hours": 0.0,
+      "seconds": 12.866626600000018
+    }
+  ],
+  "highs_version": "1.15.1"
+}

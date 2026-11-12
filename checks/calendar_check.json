@@ -1,0 +1,12 @@
+{
+  "hours": 64944,
+  "dates": 2706,
+  "start": "2019-06-01",
+  "end": "2026-10-27",
+  "missing_UTC_hours": 0,
+  "DST_23h_days": 7,
+  "DST_25h_days": 7,
+  "centers_frozen_before_future_risk": true,
+  "condition_rule": "training-season 75th percentile of daily system peak; customer simulation label, not identified customer stress",
+  "raw_sha256": "9b3cbc1ceb4c0e8921670650b45721d7b8e406e5f7ffa13f81a32d910bde689f"
+}

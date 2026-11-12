@@ -1,0 +1,100 @@
+{
+  "checks": [
+    {
+      "name": "正态1户",
+      "case": "各户持续能力",
+      "test_q_MW": 502.48601555356714,
+      "maximum_loss_difference_MWh": 8.731149137020111e-11,
+      "sparse_seconds": 5.403751599998941,
+      "original_seconds": 1.1671012999995583
+    },
+    {
+      "name": "正态1户",
+      "case": "各户持续能力",
+      "test_q_MW": 654.9694675431122,
+      "maximum_loss_difference_MWh": 4.656612873077393e-10,
+      "sparse_seconds": 0.16968880000058562,
+      "original_seconds": 0.9693827999999485
+    },
+    {
+      "name": "正态1户",
+      "case": "历史能力下界",
+      "test_q_MW": 502.48601555356714,
+      "maximum_loss_difference_MWh": 9.458744898438454e-11,
+      "sparse_seconds": 0.17060210000090592,
+      "original_seconds": 0.9240334000005532
+    },
+    {
+      "name": "正态1户",
+      "case": "历史能力下界",
+      "test_q_MW": 654.9694675431122,
+      "maximum_loss_difference_MWh": 4.656612873077393e-10,
+      "sparse_seconds": 0.14704989999881946,
+      "original_seconds": 0.9553052999999636
+    },
+    {
+      "name": "LSE A＋LSE B＋LSE C",
+      "case": "各户持续能力",
+      "test_q_MW": 502.48601555356714,
+      "maximum_loss_difference_MWh": 7.275957614183426e-11,
+      "sparse_seconds": 5.395879300000161,
+      "original_seconds": 3.7578551000005973
+    },
+    {
+      "name": "LSE A＋LSE B＋LSE C",
+      "case": "各户持续能力",
+      "test_q_MW": 654.9694675431122,
+      "maximum_loss_difference_MWh": 8.731149137020111e-10,
+      "sparse_seconds": 0.45733300000028976,
+      "original_seconds": 4.097014899998612
+    },
+    {
+      "name": "LSE A＋LSE B＋LSE C",
+      "case": "历史能力下界",
+      "test_q_MW": 502.48601555356714,
+      "maximum_loss_difference_MWh": 8.003553375601768e-11,
+      "sparse_seconds": 0.9139200999998138,
+      "original_seconds": 6.338367599999401
+    },
+    {
+      "name": "LSE A＋LSE B＋LSE C",
+      "case": "历史能力下界",
+      "test_q_MW": 654.9694675431122,
+      "maximum_loss_difference_MWh": 1.5425030142068863e-09,
+      "sparse_seconds": 0.8091552999994747,
+      "original_seconds": 6.460306299999502
+    },
+    {
+      "name": "正态4户",
+      "case": "各户持续能力",
+      "test_q_MW": 502.48601555356714,
+      "maximum_loss_difference_MWh": 8.003553375601768e-11,
+      "sparse_seconds": 0.8434293999998772,
+      "original_seconds": 5.890732300000309
+    },
+    {
+      "name": "正态4户",
+      "case": "各户持续能力",
+      "test_q_MW": 654.9694675431122,
+      "maximum_loss_difference_MWh": 9.022187441587448e-10,
+      "sparse_seconds": 0.5221053000004758,
+      "original_seconds": 6.385335499999201
+    },
+    {
+      "name": "正态4户",
+      "case": "历史能力下界",
+      "test_q_MW": 502.48601555356714,
+      "maximum_loss_difference_MWh": 1.0913936421275139e-10,
+      "sparse_seconds": 1.1137732000006508,
+      "original_seconds": 9.987076699999307
+    },
+    {
+      "name": "正态4户",
+      "case": "历史能力下界",
+      "test_q_MW": 654.9694675431122,
+      "maximum_loss_difference_MWh": 1.0477378964424133e-09,
+      "sparse_seconds": 0.9420938000002934,
+      "original_seconds": 9.803296399999454
+    }
+  ]
+}

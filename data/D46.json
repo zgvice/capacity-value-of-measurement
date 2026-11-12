@@ -1,0 +1,1200 @@
+{
+  "parameters": {
+    "load_mw": 2000.0,
+    "nomination_mw": 1000.0,
+    "response_mean_ratio": 1.0,
+    "response_sd_ratio": 0.1,
+    "response_rho15": 0.0,
+    "error_mean_rate": 0.0,
+    "error_sd_rate": 0.1444,
+    "bias_bound_rate": 0.04,
+    "verification_coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_error_budget_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "load_daily_variance_share": 0.5,
+    "load_rho15": 0.8408964152537145,
+    "verified_min_duration_hours": 0.0,
+    "true_duration_hours": 14.5,
+    "maximum_extension_hours": null,
+    "tail_level": 0.95,
+    "risk_budget_mwh": 8760.0,
+    "system_surplus_mw": 1000.0,
+    "future_paths": 64,
+    "quadrature_nodes": 32,
+    "load_seed": 2026110313,
+    "future_seed": 2026110417,
+    "capacity_tolerance_mw": 0.1,
+    "reference_tolerance_mw": 0.0001,
+    "solver_tolerance": 1e-08,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibration_batch": 4096,
+    "schedule_iterations": 6,
+    "duration_comparison_fraction": 0.5,
+    "time_tolerance_hours": 1e-10,
+    "hour_bin_tolerance": 1e-09,
+    "duration_check_tolerance_hours": 1e-06,
+    "covariance_relative_tolerance": 1e-11,
+    "transport_iterations": 500,
+    "transport_solver_tolerance": 1e-10,
+    "transport_gap_mwh": 0.002,
+    "empirical_users": [
+      "LSE A",
+      "LSE B",
+      "LSE C"
+    ],
+    "normal_sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "history_power_seed": 2026110421,
+    "individual_load_seed": 2026110521,
+    "common_error_amplitude": 0.02,
+    "individual_error_amplitude": 0.2,
+    "state_power_ratio": 1.5
+  },
+  "groups": {
+    "正态1户": {
+      "name": "正态1户",
+      "kind": "normal",
+      "members": [
+        "正态1"
+      ],
+      "weights": [
+        1.0
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2514402574769,
+        "total_upper_MW": 653.2691997862205,
+        "net_lower_MW": 274.5661074227563,
+        "net_upper_MW": 274.5838669514999,
+        "risk_lower_MWh": 8755.358955479689,
+        "risk_upper_MWh": 8770.886731746388,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.2435317791516,
+        "total_upper_MW": 653.2691997862205,
+        "net_lower_MW": 274.55819894443096,
+        "net_upper_MW": 274.5838669514999,
+        "risk_lower_MWh": 8759.999384495506,
+        "risk_upper_MWh": 8782.443892271664,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 0.0,
+          "net_upper_MW": 0.0,
+          "lower_power_capacity": {
+            "net_lower_MW": 0.0,
+            "net_upper_MW": 0.0,
+            "total_lower_MW": 378.6852955818176,
+            "total_upper_MW": 378.6853700876236
+          },
+          "feasible_candidate_capacity": {
+            "net_lower_MW": 0.0,
+            "net_upper_MW": 0.0,
+            "total_lower_MW": 378.6852955818176,
+            "total_upper_MW": 378.6853700876236
+          },
+          "witness_duration_hours": [
+            0.0
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 123.80068271884653,
+          "net_upper_MW": 123.86814905125618,
+          "lower_power_capacity": {
+            "net_lower_MW": 123.80068271884653,
+            "net_upper_MW": 123.86814905125618,
+            "total_lower_MW": 502.48601555356714,
+            "total_upper_MW": 502.5534818859768,
+            "duration_hours": 8.06233572861033,
+            "risk_lower_boundary_MWh": 8758.393451264656,
+            "risk_upper_boundary_MWh": 8762.473226579225,
+            "root_evaluations": 12,
+            "feasible_plan_count": 3
+          },
+          "feasible_candidate_capacity": {
+            "net_lower_MW": 123.80068271884653,
+            "net_upper_MW": 123.86814905125618,
+            "total_lower_MW": 502.48601555356714,
+            "total_upper_MW": 502.5534818859768,
+            "duration_hours": 8.06233572861033,
+            "risk_lower_boundary_MWh": 8758.393451264656,
+            "risk_upper_boundary_MWh": 8762.473226579225,
+            "root_evaluations": 12,
+            "feasible_plan_count": 3
+          },
+          "witness_duration_hours": [
+            8.062336729
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "正态1",
+          "initial_state_MWh": 13140000.0,
+          "annual_consumption_upper_MWh": 1964233.613917788,
+          "minimum_state_lower_MWh": 11175766.386082212,
+          "terminal_lower_MWh": 11175766.386082212,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "正态2户": {
+      "name": "正态2户",
+      "kind": "normal",
+      "members": [
+        "正态1",
+        "正态2"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2520113468689,
+        "total_upper_MW": 653.2694953902522,
+        "net_lower_MW": 274.5666785121483,
+        "net_upper_MW": 274.58416255553163,
+        "risk_lower_MWh": 8755.640562289704,
+        "risk_upper_MWh": 8770.926793134537,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.248408616116,
+        "total_upper_MW": 653.2694953902522,
+        "net_lower_MW": 274.56307578139536,
+        "net_upper_MW": 274.58416255553163,
+        "risk_lower_MWh": 8759.998871114702,
+        "risk_upper_MWh": 8778.43749576191,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 15.040786015600588,
+          "net_upper_MW": 15.281639966281318,
+          "lower_power_capacity": {
+            "total_lower_MW": 393.7261188503212,
+            "total_upper_MW": 393.7502042453893,
+            "net_lower_MW": 15.040786015600588,
+            "net_upper_MW": 15.064871410668673,
+            "risk_lower_MWh": 8759.99152796363,
+            "risk_upper_MWh": 8765.80115644666,
+            "root_evaluations": 5
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 393.916972801002,
+            "total_upper_MW": 393.96697280100193,
+            "net_lower_MW": 15.231639966281364,
+            "net_upper_MW": 15.281639966281318,
+            "risk_lower_MWh": 8753.988704672616,
+            "risk_upper_MWh": 8766.011293754706,
+            "root_evaluations": 9
+          },
+          "witness_duration_hours": [
+            0.0,
+            3.045283505
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 199.59946812103544,
+          "net_upper_MW": 199.7992674257141,
+          "lower_power_capacity": {
+            "total_lower_MW": 578.284800955756,
+            "total_upper_MW": 578.304780886224,
+            "net_lower_MW": 199.59946812103544,
+            "net_upper_MW": 199.61944805150335,
+            "risk_lower_MWh": 8759.723334221937,
+            "risk_upper_MWh": 8761.522792082178,
+            "root_evaluations": 6
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 578.4004244458861,
+            "total_upper_MW": 578.4846002604347,
+            "net_lower_MW": 199.71509161116546,
+            "net_upper_MW": 199.7992674257141,
+            "risk_lower_MWh": 8755.747635667896,
+            "risk_upper_MWh": 8763.32694768541,
+            "root_evaluations": 10
+          },
+          "witness_duration_hours": [
+            8.022387068,
+            9.423671483
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "正态1",
+          "initial_state_MWh": 6570000.0,
+          "annual_consumption_upper_MWh": 982116.806958894,
+          "minimum_state_lower_MWh": 5587883.193041106,
+          "terminal_lower_MWh": 5587883.193041106,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "正态2",
+          "initial_state_MWh": 6570000.0,
+          "annual_consumption_upper_MWh": 982116.806958894,
+          "minimum_state_lower_MWh": 5587883.193041106,
+          "terminal_lower_MWh": 5587883.193041106,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "正态3户": {
+      "name": "正态3户",
+      "kind": "normal",
+      "members": [
+        "正态1",
+        "正态2",
+        "正态3"
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2520984530497,
+        "total_upper_MW": 653.2695833059432,
+        "net_lower_MW": 274.5667656183291,
+        "net_upper_MW": 274.5842504712226,
+        "risk_lower_MWh": 8755.652750307823,
+        "risk_upper_MWh": 8770.93939056853,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.2497698207673,
+        "total_upper_MW": 653.2695833059432,
+        "net_lower_MW": 274.56443698604664,
+        "net_upper_MW": 274.5842504712226,
+        "risk_lower_MWh": 8759.999796936665,
+        "risk_upper_MWh": 8777.324189924399,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 25.29491514375212,
+          "net_upper_MW": 25.452438770323226,
+          "lower_power_capacity": {
+            "total_lower_MW": 403.98024797847273,
+            "total_upper_MW": 403.99600034112984,
+            "net_lower_MW": 25.29491514375212,
+            "net_upper_MW": 25.31066750640923,
+            "risk_lower_MWh": 8759.999218982777,
+            "risk_upper_MWh": 8762.933023566535,
+            "root_evaluations": 6
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 404.115777222015,
+            "total_upper_MW": 404.13777160504384,
+            "net_lower_MW": 25.430444387294415,
+            "net_upper_MW": 25.452438770323226,
+            "risk_lower_MWh": 8759.915635212414,
+            "risk_upper_MWh": 8764.006080595322,
+            "root_evaluations": 7
+          },
+          "witness_duration_hours": [
+            0.0,
+            0.0,
+            4.264081989
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 272.65481011089366,
+          "net_upper_MW": 272.7332920050013,
+          "lower_power_capacity": {
+            "total_lower_MW": 651.3401429456143,
+            "total_upper_MW": 651.4186248397219,
+            "net_lower_MW": 272.65481011089366,
+            "net_upper_MW": 272.7332920050013,
+            "risk_lower_MWh": 8759.993268028038,
+            "risk_upper_MWh": 8830.63820690749,
+            "root_evaluations": 6
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 651.3826059490868,
+            "total_upper_MW": 651.4186248397219,
+            "net_lower_MW": 272.6972731143662,
+            "net_upper_MW": 272.7332920050013,
+            "risk_lower_MWh": 8756.153564276414,
+            "risk_upper_MWh": 8788.539770106294,
+            "root_evaluations": 9
+          },
+          "witness_duration_hours": [
+            8.012383552,
+            9.169362246,
+            12.769588676
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "正态1",
+          "initial_state_MWh": 4380000.0,
+          "annual_consumption_upper_MWh": 654744.537972596,
+          "minimum_state_lower_MWh": 3725255.462027404,
+          "terminal_lower_MWh": 3725255.462027404,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "正态2",
+          "initial_state_MWh": 4380000.0,
+          "annual_consumption_upper_MWh": 654744.537972596,
+          "minimum_state_lower_MWh": 3725255.462027404,
+          "terminal_lower_MWh": 3725255.462027404,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "正态3",
+          "initial_state_MWh": 4380000.0,
+          "annual_consumption_upper_MWh": 654744.537972596,
+          "minimum_state_lower_MWh": 3725255.462027404,
+          "terminal_lower_MWh": 3725255.462027404,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "LSE A": {
+      "name": "LSE A",
+      "kind": "empirical_single",
+      "members": [
+        "LSE A"
+      ],
+      "weights": [
+        1.0
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2495272652085,
+        "total_upper_MW": 653.2673059238748,
+        "net_lower_MW": 274.5641944304879,
+        "net_upper_MW": 274.5819730891542,
+        "risk_lower_MWh": 8754.340582527471,
+        "risk_upper_MWh": 8769.885194344164,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.2079588083608,
+        "total_upper_MW": 653.2579588083607,
+        "net_lower_MW": 274.5226259736402,
+        "net_upper_MW": 274.57262597364013,
+        "risk_lower_MWh": 8738.14313458037,
+        "risk_upper_MWh": 8781.856720445341,
+        "root_evaluations": 5
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 10.496477533331074,
+          "net_upper_MW": 10.546488693500123,
+          "lower_power_capacity": {
+            "total_lower_MW": 389.1818103680517,
+            "total_upper_MW": 389.23181036805164,
+            "net_lower_MW": 10.496477533331074,
+            "net_upper_MW": 10.546477533331029,
+            "risk_lower_MWh": 8752.982428662068,
+            "risk_upper_MWh": 8767.017575060378,
+            "root_evaluations": 5
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 389.1818215282208,
+            "total_upper_MW": 389.23182152822073,
+            "net_lower_MW": 10.496488693500169,
+            "net_upper_MW": 10.546488693500123,
+            "risk_lower_MWh": 8752.982427168916,
+            "risk_upper_MWh": 8767.017568592186,
+            "root_evaluations": 9
+          },
+          "witness_duration_hours": [
+            2.250600406
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 273.18253917087384,
+          "net_upper_MW": 273.1987145347333,
+          "lower_power_capacity": {
+            "total_lower_MW": 651.8678720055944,
+            "total_upper_MW": 651.8840473694539,
+            "net_lower_MW": 273.18253917087384,
+            "net_upper_MW": 273.1987145347333,
+            "risk_lower_MWh": 8759.998928318519,
+            "risk_upper_MWh": 8774.48851220965,
+            "root_evaluations": 3
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 651.8530468530339,
+            "total_upper_MW": 651.8840473694539,
+            "net_lower_MW": 273.1677140183133,
+            "net_upper_MW": 273.1987145347333,
+            "risk_lower_MWh": 8746.717249984835,
+            "risk_upper_MWh": 8774.486413443155,
+            "root_evaluations": 8
+          },
+          "witness_duration_hours": [
+            13.041849052
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "LSE A",
+          "initial_state_MWh": 13140000.0,
+          "annual_consumption_upper_MWh": 2038783.7203533722,
+          "minimum_state_lower_MWh": 11101216.279646628,
+          "terminal_lower_MWh": 11101216.279646628,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "LSE B": {
+      "name": "LSE B",
+      "kind": "empirical_single",
+      "members": [
+        "LSE B"
+      ],
+      "weights": [
+        1.0
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2498541850287,
+        "total_upper_MW": 653.2676295744967,
+        "net_lower_MW": 274.56452135030804,
+        "net_upper_MW": 274.5822967397761,
+        "risk_lower_MWh": 8754.521509920249,
+        "risk_upper_MWh": 8770.061849546042,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.2026946196314,
+        "total_upper_MW": 653.2676295744967,
+        "net_lower_MW": 274.5173617849108,
+        "net_upper_MW": 274.5822967397761,
+        "risk_lower_MWh": 8759.997252521844,
+        "risk_upper_MWh": 8816.744520415512,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 0.0,
+          "net_upper_MW": 0.0,
+          "lower_power_capacity": {
+            "net_lower_MW": 0.0,
+            "net_upper_MW": 0.0,
+            "total_lower_MW": 378.6852955818176,
+            "total_upper_MW": 378.6853700876236
+          },
+          "feasible_candidate_capacity": {
+            "net_lower_MW": 0.0,
+            "net_upper_MW": 0.0,
+            "total_lower_MW": 378.6852955818176,
+            "total_upper_MW": 378.6853700876236
+          },
+          "witness_duration_hours": [
+            0.0
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 237.8010231011931,
+          "net_upper_MW": 237.83947192833102,
+          "lower_power_capacity": {
+            "total_lower_MW": 616.4863559359137,
+            "total_upper_MW": 616.5363559359137,
+            "net_lower_MW": 237.8010231011931,
+            "net_upper_MW": 237.85102310119305,
+            "risk_lower_MWh": 8757.814722938752,
+            "risk_upper_MWh": 8762.18528133245,
+            "root_evaluations": 5
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 616.5114388885386,
+            "total_upper_MW": 616.5248047630516,
+            "net_lower_MW": 237.82610605381797,
+            "net_upper_MW": 237.83947192833102,
+            "risk_lower_MWh": 8759.99956706091,
+            "risk_upper_MWh": 8761.167887347605,
+            "root_evaluations": 13
+          },
+          "witness_duration_hours": [
+            10.253410212
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "LSE B",
+          "initial_state_MWh": 13140000.0,
+          "annual_consumption_upper_MWh": 2237786.293719923,
+          "minimum_state_lower_MWh": 10902213.706280077,
+          "terminal_lower_MWh": 10902213.706280077,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "LSE C": {
+      "name": "LSE C",
+      "kind": "empirical_single",
+      "members": [
+        "LSE C"
+      ],
+      "weights": [
+        1.0
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2673645009324,
+        "total_upper_MW": 653.2851273922467,
+        "net_lower_MW": 274.58203166621183,
+        "net_upper_MW": 274.59979455752614,
+        "risk_lower_MWh": 8755.719594899772,
+        "risk_upper_MWh": 8771.248373898954,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.224259851434,
+        "total_upper_MW": 653.2851273922467,
+        "net_lower_MW": 274.5389270167134,
+        "net_upper_MW": 274.59979455752614,
+        "risk_lower_MWh": 8759.999861815426,
+        "risk_upper_MWh": 8813.208379985786,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 0.0,
+          "net_upper_MW": 0.0,
+          "lower_power_capacity": {
+            "net_lower_MW": 0.0,
+            "net_upper_MW": 0.0,
+            "total_lower_MW": 378.6852955818176,
+            "total_upper_MW": 378.6853700876236
+          },
+          "feasible_candidate_capacity": {
+            "net_lower_MW": 0.0,
+            "net_upper_MW": 0.0,
+            "total_lower_MW": 378.6852955818176,
+            "total_upper_MW": 378.6853700876236
+          },
+          "witness_duration_hours": [
+            0.0
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 269.02351218176204,
+          "net_upper_MW": 269.0453554930831,
+          "lower_power_capacity": {
+            "total_lower_MW": 647.7088450164827,
+            "total_upper_MW": 647.7306883278037,
+            "net_lower_MW": 269.02351218176204,
+            "net_upper_MW": 269.0453554930831,
+            "risk_lower_MWh": 8759.998583288296,
+            "risk_upper_MWh": 8780.140258294925,
+            "root_evaluations": 3
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 647.7087922709622,
+            "total_upper_MW": 647.7306883278037,
+            "net_lower_MW": 269.02345943624164,
+            "net_upper_MW": 269.0453554930831,
+            "risk_lower_MWh": 8759.945086763377,
+            "risk_upper_MWh": 8780.135401908312,
+            "root_evaluations": 17
+          },
+          "witness_duration_hours": [
+            11.005519624
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "LSE C",
+          "initial_state_MWh": 13140000.0,
+          "annual_consumption_upper_MWh": 2472368.003500537,
+          "minimum_state_lower_MWh": 10667631.996499464,
+          "terminal_lower_MWh": 10667631.996499464,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "A+B": {
+      "name": "A+B",
+      "kind": "empirical_pair",
+      "members": [
+        "LSE A",
+        "LSE B"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2519664146434,
+        "total_upper_MW": 653.2697206818154,
+        "net_lower_MW": 274.56663357992284,
+        "net_upper_MW": 274.58438784709483,
+        "risk_lower_MWh": 8755.349487818736,
+        "risk_upper_MWh": 8770.871736947802,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.2297025644591,
+        "total_upper_MW": 653.2697206818154,
+        "net_lower_MW": 274.5443697297385,
+        "net_upper_MW": 274.58438784709483,
+        "risk_lower_MWh": 8759.99991360477,
+        "risk_upper_MWh": 8794.984230304497,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 11.485968805341997,
+          "net_upper_MW": 11.557452010899908,
+          "lower_power_capacity": {
+            "total_lower_MW": 390.1713016400626,
+            "total_upper_MW": 390.2427848456205,
+            "net_lower_MW": 11.485968805341997,
+            "net_upper_MW": 11.557452010899908,
+            "risk_lower_MWh": 8759.999348330495,
+            "risk_upper_MWh": 8779.046135894834,
+            "root_evaluations": 5
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 390.19278484562057,
+            "total_upper_MW": 390.2427848456205,
+            "net_lower_MW": 11.507452010899954,
+            "net_upper_MW": 11.557452010899908,
+            "risk_lower_MWh": 8753.337376657179,
+            "risk_upper_MWh": 8766.662620405596,
+            "root_evaluations": 9
+          },
+          "witness_duration_hours": [
+            2.502210594,
+            0.0
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 274.1988014081868,
+          "net_upper_MW": 274.23336757934726,
+          "lower_power_capacity": {
+            "total_lower_MW": 652.8841342429074,
+            "total_upper_MW": 652.9187004140679,
+            "net_lower_MW": 274.1988014081868,
+            "net_upper_MW": 274.23336757934726,
+            "risk_lower_MWh": 8759.991404241027,
+            "risk_upper_MWh": 8790.332269326816,
+            "root_evaluations": 6
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 652.8982268659885,
+            "total_upper_MW": 652.9187004140679,
+            "net_lower_MW": 274.21289403126787,
+            "net_upper_MW": 274.23336757934726,
+            "risk_lower_MWh": 8758.402777202627,
+            "risk_upper_MWh": 8776.371203699628,
+            "root_evaluations": 8
+          },
+          "witness_duration_hours": [
+            9.751459715,
+            14.046995078
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "LSE A",
+          "initial_state_MWh": 6570000.0,
+          "annual_consumption_upper_MWh": 1019391.8601766861,
+          "minimum_state_lower_MWh": 5550608.139823314,
+          "terminal_lower_MWh": 5550608.139823314,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "LSE B",
+          "initial_state_MWh": 6570000.0,
+          "annual_consumption_upper_MWh": 1118893.1468599616,
+          "minimum_state_lower_MWh": 5451106.853140038,
+          "terminal_lower_MWh": 5451106.853140038,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "A+C": {
+      "name": "A+C",
+      "kind": "empirical_pair",
+      "members": [
+        "LSE A",
+        "LSE C"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2619282798371,
+        "total_upper_MW": 653.2795829283571,
+        "net_lower_MW": 274.5765954451165,
+        "net_upper_MW": 274.59425009363645,
+        "risk_lower_MWh": 8755.70906113541,
+        "risk_upper_MWh": 8771.14252948882,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.2414288736693,
+        "total_upper_MW": 653.2795829283571,
+        "net_lower_MW": 274.5560960389487,
+        "net_upper_MW": 274.59425009363645,
+        "risk_lower_MWh": 8759.999662553762,
+        "risk_upper_MWh": 8793.3624517819,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 15.245986832624965,
+          "net_upper_MW": 15.72251759925382,
+          "lower_power_capacity": {
+            "total_lower_MW": 393.9313196673456,
+            "total_upper_MW": 393.97897274400844,
+            "net_lower_MW": 15.245986832624965,
+            "net_upper_MW": 15.293639909287833,
+            "risk_lower_MWh": 8759.924150384595,
+            "risk_upper_MWh": 8771.35976017682,
+            "root_evaluations": 5
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 394.3578504339745,
+            "total_upper_MW": 394.40785043397443,
+            "net_lower_MW": 15.672517599253865,
+            "net_upper_MW": 15.72251759925382,
+            "risk_lower_MWh": 8754.057556218206,
+            "risk_upper_MWh": 8765.942442692789,
+            "root_evaluations": 9
+          },
+          "witness_duration_hours": [
+            3.110889272,
+            0.0
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 273.7028364939358,
+          "net_upper_MW": 273.7302095186129,
+          "lower_power_capacity": {
+            "total_lower_MW": 652.3881693286564,
+            "total_upper_MW": 652.4155423533335,
+            "net_lower_MW": 273.7028364939358,
+            "net_upper_MW": 273.7302095186129,
+            "risk_lower_MWh": 8759.165361781383,
+            "risk_upper_MWh": 8783.480707470873,
+            "root_evaluations": 6
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 652.3897231739963,
+            "total_upper_MW": 652.4155423533335,
+            "net_lower_MW": 273.70439033927573,
+            "net_upper_MW": 273.7302095186129,
+            "risk_lower_MWh": 8752.970105988503,
+            "risk_upper_MWh": 8775.900651422166,
+            "root_evaluations": 8
+          },
+          "witness_duration_hours": [
+            9.751459715,
+            13.515108798
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "LSE A",
+          "initial_state_MWh": 6570000.0,
+          "annual_consumption_upper_MWh": 1019391.8601766861,
+          "minimum_state_lower_MWh": 5550608.139823314,
+          "terminal_lower_MWh": 5550608.139823314,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "LSE C",
+          "initial_state_MWh": 6570000.0,
+          "annual_consumption_upper_MWh": 1236184.0017502685,
+          "minimum_state_lower_MWh": 5333815.998249732,
+          "terminal_lower_MWh": 5333815.998249732,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "B+C": {
+      "name": "B+C",
+      "kind": "empirical_pair",
+      "members": [
+        "LSE B",
+        "LSE C"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2623853611619,
+        "total_upper_MW": 653.2801354388687,
+        "net_lower_MW": 274.5770525264413,
+        "net_upper_MW": 274.5948026041481,
+        "risk_lower_MWh": 8755.650503951314,
+        "risk_upper_MWh": 8771.167368412649,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.2331201908089,
+        "total_upper_MW": 653.2801354388687,
+        "net_lower_MW": 274.5477873560883,
+        "net_upper_MW": 274.5948026041481,
+        "risk_lower_MWh": 8759.999581269703,
+        "risk_upper_MWh": 8801.10716966029,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 0.742454501559962,
+          "net_upper_MW": 1.5339853330722804,
+          "lower_power_capacity": {
+            "total_lower_MW": 379.4277873362806,
+            "total_upper_MW": 379.5069404194318,
+            "net_lower_MW": 0.742454501559962,
+            "net_upper_MW": 0.8216075847112165,
+            "risk_lower_MWh": 8759.662023240911,
+            "risk_upper_MWh": 8789.078957390519,
+            "root_evaluations": 4
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 380.206907331031,
+            "total_upper_MW": 380.2193181677929,
+            "net_lower_MW": 1.521574496310393,
+            "net_upper_MW": 1.5339853330722804,
+            "risk_lower_MWh": 8758.746755103839,
+            "risk_upper_MWh": 8763.265480182848,
+            "root_evaluations": 7
+          },
+          "witness_duration_hours": [
+            0.427318429,
+            0.0
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 273.6943880665606,
+          "net_upper_MW": 273.7217602463105,
+          "lower_power_capacity": {
+            "total_lower_MW": 652.3797209012812,
+            "total_upper_MW": 652.4070930810311,
+            "net_lower_MW": 273.6943880665606,
+            "net_upper_MW": 273.7217602463105,
+            "risk_lower_MWh": 8759.023444189552,
+            "risk_upper_MWh": 8783.337909700258,
+            "root_evaluations": 6
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 652.3813582826369,
+            "total_upper_MW": 652.4070930810311,
+            "net_lower_MW": 273.6960254479163,
+            "net_upper_MW": 273.7217602463105,
+            "risk_lower_MWh": 8752.972933186265,
+            "risk_upper_MWh": 8775.82607427398,
+            "root_evaluations": 8
+          },
+          "witness_duration_hours": [
+            10.21256167,
+            13.512010014
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "LSE B",
+          "initial_state_MWh": 6570000.0,
+          "annual_consumption_upper_MWh": 1118893.1468599616,
+          "minimum_state_lower_MWh": 5451106.853140038,
+          "terminal_lower_MWh": 5451106.853140038,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "LSE C",
+          "initial_state_MWh": 6570000.0,
+          "annual_consumption_upper_MWh": 1236184.0017502685,
+          "minimum_state_lower_MWh": 5333815.998249732,
+          "terminal_lower_MWh": 5333815.998249732,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "A+B+C": {
+      "name": "A+B+C",
+      "kind": "empirical_triple",
+      "members": [
+        "LSE A",
+        "LSE B",
+        "LSE C"
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2597138550062,
+        "total_upper_MW": 653.2773906477745,
+        "net_lower_MW": 274.5743810202856,
+        "net_upper_MW": 274.5920578130539,
+        "risk_lower_MWh": 8755.628551134887,
+        "risk_upper_MWh": 8771.081263181484,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.2417171409654,
+        "total_upper_MW": 653.2773906477745,
+        "net_lower_MW": 274.5563843062448,
+        "net_upper_MW": 274.5920578130539,
+        "risk_lower_MWh": 8759.999436124512,
+        "risk_upper_MWh": 8791.192784837103,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 22.941809195610233,
+          "net_upper_MW": 23.511322039942,
+          "lower_power_capacity": {
+            "total_lower_MW": 401.62714203033084,
+            "total_upper_MW": 401.684093314764,
+            "net_lower_MW": 22.941809195610233,
+            "net_upper_MW": 22.998760480043416,
+            "risk_lower_MWh": 8759.971259383263,
+            "risk_upper_MWh": 8771.11053581386,
+            "root_evaluations": 5
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 402.15506838710706,
+            "total_upper_MW": 402.1966548746626,
+            "net_lower_MW": 23.469735552386453,
+            "net_upper_MW": 23.511322039942,
+            "risk_lower_MWh": 8754.099665949776,
+            "risk_upper_MWh": 8762.158112593643,
+            "root_evaluations": 6
+          },
+          "witness_duration_hours": [
+            4.070720935,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 274.2571323199876,
+          "net_upper_MW": 274.3404717985359,
+          "lower_power_capacity": {
+            "total_lower_MW": 652.9424651547082,
+            "total_upper_MW": 653.0258046332565,
+            "net_lower_MW": 274.2571323199876,
+            "net_upper_MW": 274.3404717985359,
+            "risk_lower_MWh": 8759.996070670659,
+            "risk_upper_MWh": 8833.345217982102,
+            "root_evaluations": 6
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 653.0061712336906,
+            "total_upper_MW": 653.0258046332565,
+            "net_lower_MW": 274.32083839896995,
+            "net_upper_MW": 274.3404717985359,
+            "risk_lower_MWh": 8759.643088560508,
+            "risk_upper_MWh": 8776.881467931382,
+            "root_evaluations": 8
+          },
+          "witness_duration_hours": [
+            9.508920498,
+            10.204519653,
+            14.255603101
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "LSE A",
+          "initial_state_MWh": 4380000.0,
+          "annual_consumption_upper_MWh": 679594.573451124,
+          "minimum_state_lower_MWh": 3700405.426548876,
+          "terminal_lower_MWh": 3700405.426548876,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "LSE B",
+          "initial_state_MWh": 4380000.0,
+          "annual_consumption_upper_MWh": 745928.7645733076,
+          "minimum_state_lower_MWh": 3634071.2354266923,
+          "terminal_lower_MWh": 3634071.2354266923,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "LSE C",
+          "initial_state_MWh": 4380000.0,
+          "annual_consumption_upper_MWh": 824122.6678335123,
+          "minimum_state_lower_MWh": 3555877.332166488,
+          "terminal_lower_MWh": 3555877.332166488,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    },
+    "正态4户": {
+      "name": "正态4户",
+      "kind": "normal",
+      "members": [
+        "正态1",
+        "正态2",
+        "正态3",
+        "正态4"
+      ],
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "full_information": {
+        "total_lower_MW": 653.2518621072355,
+        "total_upper_MW": 653.2696174174815,
+        "net_lower_MW": 274.5665292725149,
+        "net_upper_MW": 274.5842845827609,
+        "risk_lower_MWh": 8755.415199276866,
+        "risk_upper_MWh": 8770.938132491727,
+        "root_evaluations": 7
+      },
+      "known_duration": {
+        "total_lower_MW": 653.2509364456834,
+        "total_upper_MW": 653.2696174174815,
+        "net_lower_MW": 274.56560361096274,
+        "net_upper_MW": 274.5842845827609,
+        "risk_lower_MWh": 8759.999490249966,
+        "risk_upper_MWh": 8776.332953564384,
+        "root_evaluations": 3
+      },
+      "history_cases": [
+        {
+          "count": 1,
+          "net_lower_MW": 24.951225940171923,
+          "net_upper_MW": 25.36883682408785,
+          "lower_power_capacity": {
+            "total_lower_MW": 403.63655877489253,
+            "total_upper_MW": 403.6783198632841,
+            "net_lower_MW": 24.951225940171923,
+            "net_upper_MW": 24.992987028563505,
+            "risk_lower_MWh": 8759.96148051597,
+            "risk_upper_MWh": 8767.696270121505,
+            "root_evaluations": 5
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 404.0313289504972,
+            "total_upper_MW": 404.05416965880846,
+            "net_lower_MW": 25.345996115776586,
+            "net_upper_MW": 25.36883682408785,
+            "risk_lower_MWh": 8759.976692520637,
+            "risk_upper_MWh": 8764.18012115818,
+            "root_evaluations": 7
+          },
+          "witness_duration_hours": [
+            0.0,
+            0.0,
+            4.296070417,
+            0.0
+          ]
+        },
+        {
+          "count": 20,
+          "net_lower_MW": 272.096479006178,
+          "net_upper_MW": 272.4225833637763,
+          "lower_power_capacity": {
+            "total_lower_MW": 650.7818118408986,
+            "total_upper_MW": 650.8144222766584,
+            "net_lower_MW": 272.096479006178,
+            "net_upper_MW": 272.1290894419378,
+            "risk_lower_MWh": 8759.578171711608,
+            "risk_upper_MWh": 8789.354362826263,
+            "root_evaluations": 6
+          },
+          "feasible_candidate_capacity": {
+            "total_lower_MW": 651.0687402249478,
+            "total_upper_MW": 651.1079161984969,
+            "net_lower_MW": 272.38340739022715,
+            "net_upper_MW": 272.4225833637763,
+            "risk_lower_MWh": 8753.19128195021,
+            "risk_upper_MWh": 8788.913547561247,
+            "root_evaluations": 9
+          },
+          "witness_duration_hours": [
+            8.003362804,
+            9.16668814,
+            13.086657623,
+            9.247990276
+          ]
+        }
+      ],
+      "physical_state_check": [
+        {
+          "user": "正态1",
+          "initial_state_MWh": 3285000.0,
+          "annual_consumption_upper_MWh": 491058.403479447,
+          "minimum_state_lower_MWh": 2793941.596520553,
+          "terminal_lower_MWh": 2793941.596520553,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "正态2",
+          "initial_state_MWh": 3285000.0,
+          "annual_consumption_upper_MWh": 491058.403479447,
+          "minimum_state_lower_MWh": 2793941.596520553,
+          "terminal_lower_MWh": 2793941.596520553,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "正态3",
+          "initial_state_MWh": 3285000.0,
+          "annual_consumption_upper_MWh": 491058.403479447,
+          "minimum_state_lower_MWh": 2793941.596520553,
+          "terminal_lower_MWh": 2793941.596520553,
+          "verified_for_true_duration_hours": 14.5
+        },
+        {
+          "user": "正态4",
+          "initial_state_MWh": 3285000.0,
+          "annual_consumption_upper_MWh": 491058.403479447,
+          "minimum_state_lower_MWh": 2793941.596520553,
+          "terminal_lower_MWh": 2793941.596520553,
+          "verified_for_true_duration_hours": 14.5
+        }
+      ]
+    }
+  },
+  "plan_thresholds_MW": [
+    378.6853328347206,
+    556.4410763841998,
+    654.9283979309973
+  ],
+  "annual_atoms": 40300,
+  "annual_groups": 1788,
+  "cores": 22
+}

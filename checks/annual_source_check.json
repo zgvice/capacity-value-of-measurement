@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "sources": [
+    {
+      "file": "inputs\\pjm\\27bra-hourly-load-scenarios.xlsx",
+      "sha256": "2d7aad31bb37b0547e8ac4f6c6bd91c2d489cfa53e33e1c9db7ca1fb6f1abe34",
+      "bytes": 43112533
+    },
+    {
+      "file": "inputs\\pjm\\27bra-info-for-loss-of-load-hours.xlsx",
+      "sha256": "e88e3cfbe2fbe32029e52a9c5188a2786b3cf97f1bbfd43c60cf66e62ab39da4",
+      "bytes": 1426319
+    },
+    {
+      "file": "inputs\\pjm\\27bra-montecarlo-by-date.xlsx",
+      "sha256": "3727006ecd1d22a50ed171716a7c2cf266568f7bf8f8e75d0ad6a53c2eb530dc",
+      "bytes": 5847059
+    }
+  ],
+  "profiles": 403,
+  "complete_annual_atoms": 40300,
+  "hours_per_atom": 8760,
+  "max_shortage_reconstruction_error_MW": 0.0,
+  "max_grouped_shortage_error_MW": 0.0,
+  "performance_date_mismatches": 0,
+  "pressure_array_max_error": 0.0,
+  "headroom_shape_max_error": 2.220446049250313e-16,
+  "raw_model_metrics": {
+    "EUE_MWh": 1798.6851051314516,
+    "LOLH_hours": 0.35228287841191075,
+    "LOLE_days": 0.1
+  },
+  "display_EUE_MWh": 1809.2860894912055,
+  "raw_model_EUE_unchanged_by_publisher_display_conversion": true,
+  "nonshortage_margin_is_declared_completion": true
+}

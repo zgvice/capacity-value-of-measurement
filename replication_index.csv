@@ -1,0 +1,91 @@
+﻿dataset_id,description,source_relative_path,procedure_relative_path,availability
+D01,Three anonymized customers: cleaned observed event records,data/D01.csv,,Included in this package
+D02,Empirical customer power distributions,data/D02.csv,code/core/customer_profiles.py,Included in this package
+D03,Original all-source metering reconciliation (internal archive),,,Internal archive
+D04,Common 544-reading history,results/exp1/shared_records.csv,code/core/prepare_presentation_data.py,Included in this package
+D05,Continuation-capability capacity results,results/exp1/capacity.csv,code/core/run_experiment_one.py,Included in this package
+D06,Timing of avoided unserved energy,results/exp1/plot/shortfall_timing.csv,code/core/prepare_presentation_data.py,Included in this package
+D07,Representative continuation paths,results/exp1/plot/call_trace.csv,code/core/prepare_presentation_data.py,Included in this package
+D08,Continuation margin sensitivity,results/exp1/margin_sensitivity.csv,code/core/supplement_experiment_one.py,Included in this package
+D09,Sequential evidence and capacity,results/exp2/plot/evidence_capacity.csv,code/core/prepare_presentation_data.py,Included in this package
+D10,Historical call dates and original sources,results/exp2/plot/call_dates_sources.csv,code/core/prepare_presentation_data.py,Included in this package
+D11,Restrictions excluding the old duration,results/exp2/plot/excluded_constraints.csv,code/core/prepare_presentation_data.py,Included in this package
+D12,Alternative verification rules,results/exp2/plot/verification_capacity.csv,code/core/prepare_presentation_data.py,Included in this package
+D13,Complete portfolio evidence sequences,data/D13.csv,code/core/refine_portfolio_history_curve.py,Included in this package
+D14,Portfolio power distributions,data/D14.csv,code/core/run_portfolio_comparison.py,Included in this package
+D15,Constituent feasible durations,data/D15.csv,code/core/prepare_presentation_data.py,Included in this package
+D16,Fixed total of 12 customer-call records,results/exp3/plot/fixed_record_budget.csv,code/core/prepare_presentation_data.py,Included in this package
+D17,Common-error comparisons,results/exp4/sens/common/common_error_comparison.csv,code/core/common_error_sensitivity.py,Included in this package
+D18,All regional and product instructions on five dates,data/D18.csv,code/core/run_experiment_four.py,Included in this package
+D19,All task-by-customer deliveries,data/D19.csv,code/core/run_experiment_four.py,Included in this package
+D20,Complete representative event paths,data/D20.csv,code/core/run_experiment_four.py,Included in this package
+D21,Five-date holdout and full-history awards,data/D21.csv,code/core/run_experiment_four.py,Included in this package
+D22,Independent annual risks at eight awards,data/D22.csv,code/core/experiment_four_validation.py,Included in this package
+D23,Awards and risks for a true 12-hour customer,data/D23.csv,code/core/experiment_four_validation.py,Included in this package
+D24,Matched complete-year PRAS comparisons,results/exp4/pras_comparison.csv,code/core/experiment_four_native.jl,Included in this package
+D25,Independent complete-year payback LP,results/exp4/payback_check.json,code/core/check_experiment_four_physics.py,Included in this package
+D26,Complete-year generator-outage comparisons,results/exp4/outage_dependence.csv,code/core/experiment_four_outages.py,Included in this package
+D27,Core-parameter comparison summary,data/D27.csv,code/core/run_core_sensitivity.py,Included in this package
+D28,All 144 capacity and risk boundaries,data/D28.csv,code/core/run_core_sensitivity.py,Included in this package
+D29,All 104 historical-feasibility results,data/D29.csv,code/core/run_core_sensitivity.py,Included in this package
+D30,All 88 true-duration comparisons,data/D30.csv,code/core/run_duration_sensitivity.py,Included in this package
+D31,99-percent-tail numerical refinement,data/D31.csv,code/core/run_core_sensitivity.py,Included in this package
+D32,99-percent-tail information decomposition,data/D32.csv,code/core/run_core_sensitivity.py,Included in this package
+D33,All individual empirical event diagnostics,data/D33.csv,code/core/validate_customer_records.py,Included in this package
+D34,All 2660 official baseline-meter pairs,data/D34.csv,,Included in this package
+D35,All 84 customer-day-segment diagnostics,data/D35.csv,code/core/validate_customer_records.py,Included in this package
+D36,Independent historical coverage and settings,data/D36.json,code/core/run_experiment_four.py,Included in this package
+D37,Operating-duration and payback sensitivities,results/exp4/annual_sensitivity.csv,code/core/experiment_four_physics.py,Included in this package
+D38,Non-shortage margin sensitivities,results/exp4/margin_sensitivity.csv,code/core/experiment_four_physics.py,Included in this package
+D39,True 12-hour customer event deliveries,results/exp4/short_duration_delivery.csv,code/core/experiment_four_validation.py,Included in this package
+D40,Empirical event-diagnostic summary,data/D40.csv,code/core/validate_customer_records.py,Included in this package
+P01,Data processing,code/core/data_processing.py,code/core/data_processing.py,Included in this package
+P02,Continuation-capability experiment,code/core/run_experiment_one.py,code/core/run_experiment_one.py,Included in this package
+P03,Sequential historical evidence,code/core/run_experiment_two.py,code/core/run_experiment_two.py,Included in this package
+P04,Customer portfolios,code/core/run_portfolio_comparison.py,code/core/run_portfolio_comparison.py,Included in this package
+P05,Portfolio evidence sequences,code/core/refine_portfolio_history_curve.py,code/core/refine_portfolio_history_curve.py,Included in this package
+P06,Five-date holdout and historical coverage,code/core/run_experiment_four.py,code/core/run_experiment_four.py,Included in this package
+P07,Independent annual risk and duration,code/core/experiment_four_validation.py,code/core/experiment_four_validation.py,Included in this package
+P08,Operating sensitivities,code/core/experiment_four_physics.py,code/core/experiment_four_physics.py,Included in this package
+P09,Generator-outage dependence,code/core/experiment_four_outages.py,code/core/experiment_four_outages.py,Included in this package
+P10,Joint parameter sensitivities,code/core/run_core_sensitivity.py,code/core/run_core_sensitivity.py,Included in this package
+P11,True-duration comparisons,code/core/run_duration_sensitivity.py,code/core/run_duration_sensitivity.py,Included in this package
+P12,Empirical event and baseline diagnostics,code/core/validate_customer_records.py,code/core/validate_customer_records.py,Included in this package
+P13,Result-table and plot-input assembly,code/core/prepare_presentation_data.py,code/core/prepare_presentation_data.py,Included in this package
+P14,Stage execution order,code/core/pipeline.py,code/core/pipeline.py,Included in this package
+I01,AEMO empirical baseline-method report,inputs/baseline/baseline_consumption_methodology_phase_2_report_oct13.pdf,,Included in this package
+I02,PJM empirical baseline ranking tables,inputs/baseline/pjm-empirical-analysis-of-dr-baseline-methods-supplemental.pdf,,Included in this package
+I03,Original settlement workbook (internal archive),,,Internal archive
+I04,Original event workbooks (internal archive),,,Internal archive
+I05,Frozen historical instructions,inputs/frozen/call_tasks.csv,,Included in this package
+I06,Official annual atom probabilities,inputs/annual/official_atoms.csv.gz,code/core/check_annual_sources.py,Included in this package
+I07,Annual background arrays,inputs/annual/background_arrays.npz,code/core/check_annual_sources.py,Included in this package
+I08,Exact merged annual path groups,inputs/annual/exact_path_groups.npz,code/core/check_annual_sources.py,Included in this package
+I09,Seasonal and system-pressure shape parameters,inputs/annual/local_shape_parameters.csv,code/core/data_processing.py,Included in this package
+I10,Historical maximum-statistic calibration,inputs/frozen/historical_error_max.npz,,Included in this package
+I11,Customer baseline calendar,inputs/frozen/customer_calendar.npz,,Included in this package
+I12,Frozen empirical power-ratio distributions,data/I12.json,code/core/customer_profiles.py,Included in this package
+I13,Official annual shortage paths,inputs/annual/official_known_h.npz,code/core/check_annual_sources.py,Included in this package
+I14,Within-day load shape,inputs/frozen/daily_load_shape.csv,,Included in this package
+I15,Official hourly load scenarios,inputs/pjm/27bra-hourly-load-scenarios.xlsx,,Included in this package
+I16,Official loss-of-load-hour information,inputs/pjm/27bra-info-for-loss-of-load-hours.xlsx,,Included in this package
+I17,Official Monte Carlo scenarios by date,inputs/pjm/27bra-montecarlo-by-date.xlsx,,Included in this package
+I18,External adequacy-system configuration,code/adequacy/experiment_config.json,code/core/experiment_four_outages.py,Included in this package
+P15,Normal-customer and history parameters,code/core/normal_case_parameters.py,code/core/normal_case_parameters.py,Included in this package
+P16,Shared settings,code/core/common_settings.py,code/core/common_settings.py,Included in this package
+P17,Portfolio settings,code/core/portfolio_inputs.py,code/core/portfolio_inputs.py,Included in this package
+P18,Event and physical-sensitivity settings,code/core/experiment_four_parameters.py,code/core/experiment_four_parameters.py,Included in this package
+P19,Core-parameter sensitivity settings,code/core/sensitivity_parameters.py,code/core/sensitivity_parameters.py,Included in this package
+D41,Independent reconstruction of official annual inputs,checks/annual_source_check.json,code/core/check_annual_sources.py,Included in this package
+D42,Official EUE display-scale reconciliation,inputs/annual/official_eue_scale_explanation_v2.json,,Included in this package
+D43,Minimum complete-call package: global certificates and duration boundary,checks/min_records/certificate.json,code/core/minimum_record_package.py,Included in this package
+D44,Minimum package and full-history capacity comparison,checks/min_records/record_package_comparison.csv,code/core/minimum_record_package.py,Included in this package
+P20,Minimum complete-call package reproduction,code/core/minimum_record_package.py,code/core/minimum_record_package.py,Included in this package
+D45,Call-ending rules under three information conditions,results/exp2/call_rule_comparison.csv,code/core/run_experiment_two.py,Included in this package
+D46,Matched known-duration and full-information portfolio calculations,data/D46.json,code/core/run_portfolio_comparison.py,Included in this package
+D47,Complete submission sequence with four-hour maximum call extension,results/exp2/record_count_capacity.csv,code/core/run_experiment_two.py,Included in this package
+D48,Historical evidence and older-versus-newer record diagnostics,checks/exp2_check.json,code/core/run_experiment_two.py,Included in this package
+D49,Continuation diagnostics with common annual tail weights,checks/exp1_check.json,code/core/run_experiment_one.py,Included in this package
+D50,Representative event plot: simulated interval paths,data/Event_Plot_Paths.csv,,Included in this package
+D51,Representative event plot: simulated event summaries,data/Event_Plot_Summary.csv,,Included in this package
+I19,Core-parameter figure settings,data/Sensitivity_Parameters.json,,Included in this package

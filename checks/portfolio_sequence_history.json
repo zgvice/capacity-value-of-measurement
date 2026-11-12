@@ -1,0 +1,6399 @@
+{
+  "parameters": {
+    "load_mw": 2000.0,
+    "nomination_mw": 1000.0,
+    "response_mean_ratio": 1.0,
+    "response_sd_ratio": 0.1,
+    "response_rho15": 0.0,
+    "error_mean_rate": 0.0,
+    "error_sd_rate": 0.1444,
+    "bias_bound_rate": 0.04,
+    "verification_coverage": 0.95,
+    "error_budget_share": 0.5,
+    "global_error_budget_share": 0.5,
+    "baseline_days": 10,
+    "error_calibration_days": 10,
+    "load_daily_variance_share": 0.5,
+    "load_rho15": 0.8408964152537145,
+    "verified_min_duration_hours": 0.0,
+    "true_duration_hours": 14.5,
+    "maximum_extension_hours": null,
+    "tail_level": 0.95,
+    "risk_budget_mwh": 8760.0,
+    "system_surplus_mw": 1000.0,
+    "future_paths": 64,
+    "quadrature_nodes": 32,
+    "load_seed": 2026110313,
+    "future_seed": 2026110417,
+    "capacity_tolerance_mw": 0.1,
+    "reference_tolerance_mw": 0.0001,
+    "solver_tolerance": 1e-08,
+    "calibration_draws": 262144,
+    "calibration_seed": 2026110419,
+    "calibration_batch": 4096,
+    "schedule_iterations": 6,
+    "duration_comparison_fraction": 0.5,
+    "time_tolerance_hours": 1e-10,
+    "hour_bin_tolerance": 1e-09,
+    "duration_check_tolerance_hours": 1e-06,
+    "covariance_relative_tolerance": 1e-11,
+    "transport_iterations": 500,
+    "transport_solver_tolerance": 1e-10,
+    "transport_gap_mwh": 0.002,
+    "empirical_users": [
+      "LSE A",
+      "LSE B",
+      "LSE C"
+    ],
+    "normal_sizes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "history_power_seed": 2026110421,
+    "individual_load_seed": 2026110521,
+    "common_error_amplitude": 0.02,
+    "individual_error_amplitude": 0.2,
+    "state_power_ratio": 1.5
+  },
+  "groups": {
+    "正态1户": {
+      "name": "正态1户",
+      "kind": "normal",
+      "members": [
+        "正态1"
+      ],
+      "weights": [
+        1.0
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "power_bounds_MW": [
+        1391.100790208765
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 0.0,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 3,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.87087003482817,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              5.87087203482817
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 5.87087003482817,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              5.87087203482817
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 5.87087003482817,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              5.87087203482817
+            ]
+          ],
+          "lower_certificate_count": 4,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 7.053105693196195,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.053107693196195
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 8,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 9,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 11,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 12,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 13,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 14,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 7.162282703162611,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.162284703162611
+            ]
+          ],
+          "lower_certificate_count": 15,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 7.17785515395177,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.17785715395177
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 7.17785515395177,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.17785715395177
+            ]
+          ],
+          "lower_certificate_count": 17,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 7.17785515395177,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.17785715395177
+            ]
+          ],
+          "lower_certificate_count": 18,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 8.062334728610331,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              8.06233672861033
+            ]
+          ],
+          "lower_certificate_count": 19,
+          "reused_from_count": null,
+          "source": "实验2已经核验的同一正态历史持续能力"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 8.062334728610336,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              8.062336729
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 15,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "LSE A": {
+      "name": "LSE A",
+      "kind": "empirical_single",
+      "members": [
+        "LSE A"
+      ],
+      "weights": [
+        1.0
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "power_bounds_MW": [
+        1316.898848610449
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 2.250598405544471,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              2.250600406
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 11,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.527665778852601,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              5.527667779
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 12,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 6.287841521599939,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              6.287843522
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 11,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 6.287841521599939,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              6.287843522
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 11,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 6.287841521599939,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              6.287843522
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 4,
+          "linear_programs": 11,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 7.068978602490796,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.068980602
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "linear_programs": 12,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 7.143865024844568,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.143867025
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": null,
+          "linear_programs": 12,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 7.143865024844568,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.143867025
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 7,
+          "linear_programs": 12,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 7.143865024844568,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.143867025
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 8,
+          "linear_programs": 12,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 9.76656462622718,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.766566626
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 10,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 9.76656462622718,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.766566626
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 10,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 9.76656462622718,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.766566626
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 10,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 9.76656462622718,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.766566626
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 10,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 9.76656462622718,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.766566626
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 10,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 9.76656462622718,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.766566626
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 10,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 13.041847052293729,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              13.041849052
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 16,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 13.041847052293729,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              13.041849052
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 16,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 13.041847052293729,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              13.041849052
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 16,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 13.041847052293729,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              13.041849052
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 18,
+          "linear_programs": 16,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 13.041847052293729,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              13.041849052
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 18,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "LSE B": {
+      "name": "LSE B",
+      "kind": "empirical_single",
+      "members": [
+        "LSE B"
+      ],
+      "weights": [
+        1.0
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "power_bounds_MW": [
+        1570.182394924663
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 0.0,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 3,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 4.056691348711465,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              4.056693349
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 10,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 4.113304315714536,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              4.113306316
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 13,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 4.113304315714536,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              4.113306316
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 13,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 5.0760033334163195,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              5.076005333
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "linear_programs": 12,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 7.034439193267429,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.034441193
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "linear_programs": 12,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 7.085849718685501,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.085851719
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": null,
+          "linear_programs": 13,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 7.085849718685501,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.085851719
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 7,
+          "linear_programs": 13,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 7.085849718685501,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.085851719
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 8,
+          "linear_programs": 13,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 9.038393788913085,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.038395789
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 14,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 9.038393788913085,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.038395789
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 9.038393788913085,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.038395789
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 9.038393788913085,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.038395789
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 9.038393788913085,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.038395789
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 9.038393788913085,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.038395789
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 10.253408212269289,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              10.253410212
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 13,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 10.253408212269289,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              10.253410212
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 13,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 10.253408212269289,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              10.253410212
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 13,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 10.253408212269289,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              10.253410212
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 18,
+          "linear_programs": 13,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 10.253408212269289,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              10.253410212
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 16,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "LSE C": {
+      "name": "LSE C",
+      "kind": "empirical_single",
+      "members": [
+        "LSE C"
+      ],
+      "weights": [
+        1.0
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.693527491071343,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        },
+        "other": {
+          "multiplier": 4.093965402718486,
+          "failure_budget": 0.012500000000000011,
+          "rank": 258869
+        }
+      },
+      "power_bounds_MW": [
+        1568.2392736336124
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 0.0,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 3,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.835336710242325,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              5.83533871
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 8,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 7.253139665078945,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.253141665
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 9,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 7.253139665078945,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              7.253141665
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 9,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 8.254972223613864,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              8.254974224
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "linear_programs": 14,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 8.254972223613864,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              8.254974224
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": 5,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 8.254972223613864,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              8.254974224
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": 6,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 8.254972223613864,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              8.254974224
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": 7,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 8.254972223613864,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              8.254974224
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": 8,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 9.508736642236704,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.508738642
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 14,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 9.508736642236704,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.508738642
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 9.508736642236704,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.508738642
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 9.508736642236704,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.508738642
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 9.508736642236704,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.508738642
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 9.508736642236704,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              9.508738642
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 14,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 11.005517624414631,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              11.005519624
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 15,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 11.005517624414631,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              11.005519624
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 15,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 11.005517624414631,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              11.005519624
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 15,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 11.005517624414631,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              11.005519624
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 18,
+          "linear_programs": 15,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 11.005517624414631,
+            "1": 0.0
+          },
+          "candidates": [
+            [
+              11.005519624
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 18,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "正态2户": {
+      "name": "正态2户",
+      "kind": "normal",
+      "members": [
+        "正态1",
+        "正态2"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.9879050222663603,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        },
+        "other": {
+          "multiplier": 4.372355550487869,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        }
+      },
+      "power_bounds_MW": [
+        703.7647928252939,
+        703.7647928252939
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 3.0226402523115334,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              0.0,
+              3.045283505
+            ],
+            [
+              3.022641252,
+              3.022642252
+            ],
+            [
+              3.022642252,
+              3.022641252
+            ],
+            [
+              3.045283505,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 42,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.855325040000243,
+            "1": 0.0,
+            "2": 5.855325040000243,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              5.85532704,
+              0.0
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 29,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 7.27040590025669,
+            "1": 7.250243930555014,
+            "2": 5.855325040000243,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              5.85532704,
+              7.290814801
+            ],
+            [
+              7.2704069,
+              7.2704079
+            ],
+            [
+              7.2704079,
+              7.2704069
+            ],
+            [
+              7.29056887,
+              7.250245931
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 78,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 7.27040590025669,
+            "1": 7.250243930555014,
+            "2": 5.855325040000243,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              5.85532704,
+              7.290814801
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 78,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 8.024042781866815,
+            "1": 7.250243930555015,
+            "2": 7.020834899090963,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.020836899,
+              8.048088564
+            ],
+            [
+              8.024043782,
+              8.024044782
+            ],
+            [
+              8.024044782,
+              8.024043782
+            ],
+            [
+              8.048088564,
+              7.250245931
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "linear_programs": 86,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 8.024042781866815,
+            "1": 7.751628229784574,
+            "2": 7.131213350920079,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.131215351,
+              8.048088564
+            ],
+            [
+              8.024043782,
+              8.024044782
+            ],
+            [
+              8.024044782,
+              8.024043782
+            ],
+            [
+              8.048088564,
+              7.75163023
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "linear_programs": 94,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 8.024042781866815,
+            "1": 7.751628229784574,
+            "2": 7.131213350920079,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.131215351,
+              8.048088564
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": 6,
+          "linear_programs": 94,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 8.024042781866815,
+            "1": 7.751628229784574,
+            "2": 7.131213350920079,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.131215351,
+              8.048088564
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": 7,
+          "linear_programs": 94,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 8.024042781866815,
+            "1": 7.751628229784574,
+            "2": 7.131213350920079,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.131215351,
+              8.048088564
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": 8,
+          "linear_programs": 94,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 8.156294318004441,
+            "1": 8.07068243956282,
+            "2": 7.138282167268535,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.138284167,
+              8.312591636
+            ],
+            [
+              8.156295318,
+              8.156296318
+            ],
+            [
+              8.156296318,
+              8.156295318
+            ],
+            [
+              8.241907196,
+              8.07068444
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 88,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 8.156294318004441,
+            "1": 8.07068243956282,
+            "2": 7.138282167268535,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.138284167,
+              8.312591636
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 88,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 8.156294318004441,
+            "1": 8.07068243956282,
+            "2": 7.138282167268535,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.138284167,
+              8.312591636
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 88,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 8.156294318004441,
+            "1": 8.07068243956282,
+            "2": 7.138282167268535,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.138284167,
+              8.312591636
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 88,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 8.156294318004441,
+            "1": 8.07068243956282,
+            "2": 7.138282167268535,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.138284167,
+              8.312591636
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 88,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 8.156294318004441,
+            "1": 8.07068243956282,
+            "2": 7.138282167268535,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.138284167,
+              8.312591636
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 88,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 8.166095928759185,
+            "1": 8.106019673698853,
+            "2": 7.154721930849438,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.154723931,
+              8.332194858
+            ],
+            [
+              8.166096929,
+              8.166097929
+            ],
+            [
+              8.166097929,
+              8.166096929
+            ],
+            [
+              8.226173184,
+              8.106021674
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 90,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 8.166095928759185,
+            "1": 8.106019673698853,
+            "2": 7.154721930849438,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.154723931,
+              8.332194858
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 90,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 8.166095928759185,
+            "1": 8.106019673698853,
+            "2": 7.154721930849438,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.154723931,
+              8.332194858
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 90,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 9.420167574980864,
+            "1": 9.172565313225732,
+            "2": 8.022385068421427,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.022387068,
+              9.423671483
+            ],
+            [
+              9.420168575,
+              9.420169575
+            ],
+            [
+              9.420169575,
+              9.420168575
+            ],
+            [
+              9.423671483,
+              9.172567313
+            ]
+          ],
+          "lower_certificate_count": 19,
+          "reused_from_count": null,
+          "linear_programs": 105,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 9.420167574980864,
+            "1": 9.172565313225732,
+            "2": 8.022385068421427,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.022387068,
+              9.423671483
+            ],
+            [
+              9.420168575,
+              9.420169575
+            ],
+            [
+              9.420169575,
+              9.420168575
+            ],
+            [
+              9.423671483,
+              9.172567313
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 108,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "LSE A＋LSE C": {
+      "name": "LSE A＋LSE C",
+      "kind": "empirical_pair",
+      "members": [
+        "LSE A",
+        "LSE C"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.9879050222663603,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        },
+        "other": {
+          "multiplier": 4.372355550487869,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        }
+      },
+      "power_bounds_MW": [
+        658.4494243052245,
+        784.1196368168062
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 3.05061308900883,
+            "1": 0.0,
+            "2": 1.2666483395443495,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              1.26665034,
+              3.093117299
+            ],
+            [
+              3.050613898,
+              3.050615089
+            ],
+            [
+              3.050614898,
+              3.050614249
+            ],
+            [
+              3.110889272,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 54,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.84359892416208,
+            "1": 5.822650970918277,
+            "2": 5.512558867153162,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              5.512560867,
+              5.922199665
+            ],
+            [
+              5.843599733,
+              5.843600924
+            ],
+            [
+              5.843600733,
+              5.843600084
+            ],
+            [
+              5.868545767,
+              5.822652971
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 79,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 7.2501680094839855,
+            "1": 6.000646750774959,
+            "2": 6.273006828804289,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              6.273008829,
+              7.250311932
+            ],
+            [
+              7.250168819,
+              7.250170009
+            ],
+            [
+              7.250169819,
+              7.25016917
+            ],
+            [
+              7.250371276,
+              6.000648751
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 98,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 7.2501680094839855,
+            "1": 6.000646750774959,
+            "2": 6.273006828804289,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.250371276,
+              6.000648751
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 98,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 8.272253262716976,
+            "1": 7.758344169127866,
+            "2": 6.273006828804289,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              6.273008829,
+              8.290942853
+            ],
+            [
+              8.272254072,
+              8.272255263
+            ],
+            [
+              8.272255072,
+              8.272254423
+            ],
+            [
+              8.298756925,
+              7.758346169
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "linear_programs": 103,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 8.272253262716976,
+            "1": 7.758344169127866,
+            "2": 7.03779556457646,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.037797565,
+              8.290942853
+            ],
+            [
+              8.272254072,
+              8.272255263
+            ],
+            [
+              8.272255072,
+              8.272254423
+            ],
+            [
+              8.298756925,
+              7.758346169
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "linear_programs": 95,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 8.272253262716976,
+            "1": 7.758344169127866,
+            "2": 7.1191673848002575,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.119169385,
+              8.290942853
+            ],
+            [
+              8.272254072,
+              8.272255263
+            ],
+            [
+              8.272255072,
+              8.272254423
+            ],
+            [
+              8.298756925,
+              7.758346169
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": null,
+          "linear_programs": 95,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 8.272253262716976,
+            "1": 7.758344169127866,
+            "2": 7.1191673848002575,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.119169385,
+              8.290942853
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 7,
+          "linear_programs": 95,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 8.272253262716976,
+            "1": 7.758344169127866,
+            "2": 7.1191673848002575,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.119169385,
+              8.290942853
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 8,
+          "linear_programs": 95,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 9.805733276862325,
+            "1": 8.086159893003003,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              9.8513113
+            ],
+            [
+              9.805734086,
+              9.805735277
+            ],
+            [
+              9.805735086,
+              9.805734437
+            ],
+            [
+              9.872106876,
+              8.086161893
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 100,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 9.805733276862325,
+            "1": 8.086159893003003,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.872106876,
+              8.086161893
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 100,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 9.805733276862325,
+            "1": 8.086159893003003,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.872106876,
+              8.086161893
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 100,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 9.805733276862325,
+            "1": 8.086159893003003,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.872106876,
+              8.086161893
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 100,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 9.805733276862325,
+            "1": 8.086159893003003,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.872106876,
+              8.086161893
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 100,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 9.805733276862325,
+            "1": 8.086159893003003,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.872106876,
+              8.086161893
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 100,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 13.508210961271262,
+            "1": 9.076622576830259,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              13.515108798
+            ],
+            [
+              13.50821177,
+              13.508212961
+            ],
+            [
+              13.50821277,
+              13.508212122
+            ],
+            [
+              13.517992239,
+              9.076624577
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 105,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 13.508210961271262,
+            "1": 9.076622576830259,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              13.517992239,
+              9.076624577
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 105,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 13.508210961271262,
+            "1": 9.076622576830259,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              13.517992239,
+              9.076624577
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 105,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 13.508210961271262,
+            "1": 10.420444257874452,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              13.515108798
+            ],
+            [
+              13.50821177,
+              13.508212961
+            ],
+            [
+              13.50821277,
+              13.508212122
+            ],
+            [
+              13.517992239,
+              10.420446258
+            ]
+          ],
+          "lower_certificate_count": 19,
+          "reused_from_count": null,
+          "linear_programs": 117,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 13.508210961271262,
+            "1": 10.420444257874452,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              13.515108798
+            ],
+            [
+              13.50821177,
+              13.508212961
+            ],
+            [
+              13.50821277,
+              13.508212122
+            ],
+            [
+              13.517992239,
+              10.420446258
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 117,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "LSE A＋LSE B": {
+      "name": "LSE A＋LSE B",
+      "kind": "empirical_pair",
+      "members": [
+        "LSE A",
+        "LSE B"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.9879050222663603,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        },
+        "other": {
+          "multiplier": 4.372355550487869,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        }
+      },
+      "power_bounds_MW": [
+        658.4494243052245,
+        785.0911974623315
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 2.501006873055772,
+            "1": 0.0,
+            "2": 1.2666483395443495,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              1.26665034,
+              2.501854168
+            ],
+            [
+              2.501007681,
+              2.501008873
+            ],
+            [
+              2.501008681,
+              2.501008034
+            ],
+            [
+              2.502210594,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 54,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.760151064710196,
+            "1": 4.026399362306585,
+            "2": 5.512558867153162,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              5.512560867,
+              5.768667517
+            ],
+            [
+              5.760151872,
+              5.760153065
+            ],
+            [
+              5.760152872,
+              5.760152226
+            ],
+            [
+              5.77225771,
+              4.026401362
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 89,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 6.2737965294846765,
+            "1": 4.087088065122873,
+            "2": 6.273006828804289,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              6.273008829,
+              6.274460006
+            ],
+            [
+              6.273797337,
+              6.273798529
+            ],
+            [
+              6.273798337,
+              6.273797691
+            ],
+            [
+              6.302173117,
+              4.087090065
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 90,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 6.2737965294846765,
+            "1": 4.087088065122873,
+            "2": 6.273006828804289,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              6.302173117,
+              4.087090065
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 90,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 8.00927265491994,
+            "1": 5.046793926650927,
+            "2": 6.273006828804289,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              6.273008829,
+              8.017052392
+            ],
+            [
+              8.009273463,
+              8.009274655
+            ],
+            [
+              8.009274463,
+              8.009273816
+            ],
+            [
+              8.020331943,
+              5.046795927
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "linear_programs": 94,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 8.00927265491994,
+            "1": 7.008286240044733,
+            "2": 7.03779556457646,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.037797565,
+              8.017052392
+            ],
+            [
+              8.009273463,
+              8.009274655
+            ],
+            [
+              8.009274463,
+              8.009273816
+            ],
+            [
+              8.020331943,
+              7.00828824
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "linear_programs": 94,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 8.00927265491994,
+            "1": 7.065136014441411,
+            "2": 7.1191673848002575,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.119169385,
+              8.017052392
+            ],
+            [
+              8.009273463,
+              8.009274655
+            ],
+            [
+              8.009274463,
+              8.009273816
+            ],
+            [
+              8.020331943,
+              7.065138014
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": null,
+          "linear_programs": 86,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 8.00927265491994,
+            "1": 7.065136014441411,
+            "2": 7.1191673848002575,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.020331943,
+              7.065138014
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 7,
+          "linear_programs": 86,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 8.00927265491994,
+            "1": 7.065136014441411,
+            "2": 7.1191673848002575,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.020331943,
+              7.065138014
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 8,
+          "linear_programs": 86,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 9.804871851945219,
+            "1": 8.0772670818332,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              9.849671004
+            ],
+            [
+              9.80487266,
+              9.804873852
+            ],
+            [
+              9.80487366,
+              9.804873013
+            ],
+            [
+              9.870300582,
+              8.077269082
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 109,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 9.804871851945219,
+            "1": 8.0772670818332,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.870300582,
+              8.077269082
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 109,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 9.804871851945219,
+            "1": 8.0772670818332,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.870300582,
+              8.077269082
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 109,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 9.804871851945219,
+            "1": 8.0772670818332,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.870300582,
+              8.077269082
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 109,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 9.804871851945219,
+            "1": 8.0772670818332,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.870300582,
+              8.077269082
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 109,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 9.804871851945219,
+            "1": 8.0772670818332,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.870300582,
+              8.077269082
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 109,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 14.025557433379365,
+            "1": 9.085574478007857,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              14.046995078
+            ],
+            [
+              14.025558241,
+              14.025559433
+            ],
+            [
+              14.025559241,
+              14.025558595
+            ],
+            [
+              14.056033605,
+              9.085576478
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 114,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 14.025557433379365,
+            "1": 9.085574478007857,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              14.056033605,
+              9.085576478
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 114,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 14.025557433379365,
+            "1": 9.085574478007857,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              14.056033605,
+              9.085576478
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 114,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 14.025557433379365,
+            "1": 10.212559669805533,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              14.046995078
+            ],
+            [
+              14.025558241,
+              14.025559433
+            ],
+            [
+              14.025559241,
+              14.025558595
+            ],
+            [
+              14.056033605,
+              10.21256167
+            ]
+          ],
+          "lower_certificate_count": 19,
+          "reused_from_count": null,
+          "linear_programs": 118,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 14.025557433379365,
+            "1": 10.212559669805533,
+            "2": 9.75145771452774,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.751459715,
+              14.046995078
+            ],
+            [
+              14.025558241,
+              14.025559433
+            ],
+            [
+              14.025559241,
+              14.025558595
+            ],
+            [
+              14.056033605,
+              10.21256167
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 119,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "LSE B＋LSE C": {
+      "name": "LSE B＋LSE C",
+      "kind": "empirical_pair",
+      "members": [
+        "LSE B",
+        "LSE C"
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 3.9879050222663603,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        },
+        "other": {
+          "multiplier": 4.372355550487869,
+          "failure_budget": 0.00416666666666667,
+          "rank": 261053
+        }
+      },
+      "power_bounds_MW": [
+        785.0911974623315,
+        784.1196368168062
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 0.21378999886105968,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              0.0,
+              0.427847895
+            ],
+            [
+              0.213791,
+              0.213791998
+            ],
+            [
+              0.213791999,
+              0.213790998
+            ],
+            [
+              0.427318429,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 27,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.822650970918277,
+            "1": 5.822650970918277,
+            "2": 4.026399362306585,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              4.026401362,
+              5.857116785
+            ],
+            [
+              5.784421166,
+              5.822652971
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 65,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 7.005782190679295,
+            "1": 6.000646750774959,
+            "2": 4.087088065122873,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              4.087090065,
+              7.011574547
+            ],
+            [
+              7.005783192,
+              7.005784189
+            ],
+            [
+              7.005784191,
+              7.005783189
+            ],
+            [
+              7.011560225,
+              6.000648751
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 91,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 7.005782190679295,
+            "1": 6.000646750774959,
+            "2": 4.087088065122873,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              4.087090065,
+              7.011574547
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 91,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 8.522425016271496,
+            "1": 7.758344169127866,
+            "2": 5.046793926650927,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              5.046795927,
+              8.544880819
+            ],
+            [
+              8.522426018,
+              8.522427015
+            ],
+            [
+              8.522427016,
+              8.522426015
+            ],
+            [
+              8.54482528,
+              7.758346169
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "linear_programs": 99,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 8.522425016271496,
+            "1": 7.758344169127866,
+            "2": 7.008286240044733,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.00828824,
+              8.544880819
+            ],
+            [
+              8.522426018,
+              8.522427015
+            ],
+            [
+              8.522427016,
+              8.522426015
+            ],
+            [
+              8.54482528,
+              7.758346169
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "linear_programs": 108,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 8.522425016271496,
+            "1": 7.758344169127866,
+            "2": 7.065136014441411,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.065138014,
+              8.544880819
+            ],
+            [
+              8.522426018,
+              8.522427015
+            ],
+            [
+              8.522427016,
+              8.522426015
+            ],
+            [
+              8.54482528,
+              7.758346169
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": null,
+          "linear_programs": 99,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 8.522425016271496,
+            "1": 7.758344169127866,
+            "2": 7.065136014441411,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.065138014,
+              8.544880819
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 7,
+          "linear_programs": 99,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 8.522425016271496,
+            "1": 7.758344169127866,
+            "2": 7.065136014441411,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              7.065138014,
+              8.544880819
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 8,
+          "linear_programs": 99,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 9.792864751438126,
+            "1": 8.086159893003003,
+            "2": 8.0772670818332,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.077269082,
+              9.835785616
+            ],
+            [
+              9.792865753,
+              9.79286675
+            ],
+            [
+              9.792866751,
+              9.79286575
+            ],
+            [
+              9.835679456,
+              8.086161893
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 102,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 9.792864751438126,
+            "1": 8.086159893003003,
+            "2": 8.0772670818332,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.077269082,
+              9.835785616
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 102,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 9.792864751438126,
+            "1": 8.086159893003003,
+            "2": 8.0772670818332,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.077269082,
+              9.835785616
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 102,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 9.792864751438126,
+            "1": 8.086159893003003,
+            "2": 8.0772670818332,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.077269082,
+              9.835785616
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 102,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 9.792864751438126,
+            "1": 8.086159893003003,
+            "2": 8.0772670818332,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.077269082,
+              9.835785616
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 102,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 9.792864751438126,
+            "1": 8.086159893003003,
+            "2": 8.0772670818332,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              8.077269082,
+              9.835785616
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 102,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 13.505999789620725,
+            "1": 9.076622576830259,
+            "2": 9.085574478007857,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              9.085576478,
+              13.512010014
+            ],
+            [
+              13.506000791,
+              13.506001788
+            ],
+            [
+              13.50600179,
+              13.506000788
+            ],
+            [
+              13.511995153,
+              9.076624577
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 104,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 13.505999789620725,
+            "1": 9.076622576830259,
+            "2": 9.085574478007857,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              13.511995153,
+              9.076624577
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 104,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 13.505999789620725,
+            "1": 9.076622576830259,
+            "2": 9.085574478007857,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              13.511995153,
+              9.076624577
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 104,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 13.505999789620725,
+            "1": 10.420444257874452,
+            "2": 10.212559669805533,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              10.21256167,
+              13.512010014
+            ],
+            [
+              13.506000791,
+              13.506001788
+            ],
+            [
+              13.50600179,
+              13.506000788
+            ],
+            [
+              13.511995153,
+              10.420446258
+            ]
+          ],
+          "lower_certificate_count": 19,
+          "reused_from_count": null,
+          "linear_programs": 107,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 13.505999789620725,
+            "1": 10.420444257874452,
+            "2": 10.212559669805533,
+            "3": 0.0
+          },
+          "candidates": [
+            [
+              10.21256167,
+              13.512010014
+            ],
+            [
+              13.506000791,
+              13.506001788
+            ],
+            [
+              13.50600179,
+              13.506000788
+            ],
+            [
+              13.511995153,
+              10.420446258
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 108,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "正态3户": {
+      "name": "正态3户",
+      "kind": "normal",
+      "members": [
+        "正态1",
+        "正态2",
+        "正态3"
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 4.062368882256894,
+          "failure_budget": 0.0031250000000000028,
+          "rank": 261326
+        },
+        "other": {
+          "multiplier": 4.435131216921167,
+          "failure_budget": 0.0031250000000000028,
+          "rank": 261326
+        }
+      },
+      "power_bounds_MW": [
+        472.2892394036094,
+        472.2892394036094,
+        472.2892394036094
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 4.25469266316347,
+            "1": 2.50824289056968,
+            "2": 2.50824289056968,
+            "3": 2.50824289056968,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              0.0,
+              0.0,
+              4.264081989
+            ],
+            [
+              0.0,
+              4.264081989,
+              2.508244891
+            ],
+            [
+              4.254692663,
+              4.254694663,
+              4.254694663
+            ],
+            [
+              4.254694663,
+              4.254694663,
+              4.254692663
+            ],
+            [
+              4.264081989,
+              0.0,
+              2.508244891
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 137,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.853289924462314,
+            "1": 5.820189282287433,
+            "2": 5.851464684068088,
+            "3": 5.820189282287433,
+            "4": 5.851464684068088,
+            "5": 0.0,
+            "6": 5.851464684068088,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              5.851466684,
+              0.0,
+              5.958407089
+            ],
+            [
+              5.851466684,
+              5.851466684,
+              5.856940405
+            ],
+            [
+              5.851466684,
+              5.856940405,
+              5.851466684
+            ],
+            [
+              5.851466684,
+              5.888215807,
+              5.820191282
+            ],
+            [
+              5.853289924,
+              5.853291924,
+              5.853291924
+            ],
+            [
+              5.853291924,
+              5.853291924,
+              5.853289924
+            ],
+            [
+              5.919491209,
+              5.820191282,
+              5.820191282
+            ],
+            [
+              5.989682491,
+              0.0,
+              5.820191282
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 224,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 7.277405590605951,
+            "1": 7.05459100566801,
+            "2": 5.851464684068088,
+            "3": 5.820189282287433,
+            "4": 7.05459100566801,
+            "5": 7.05459100566801,
+            "6": 5.851464684068088,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              5.851466684,
+              7.054593006,
+              7.332220772
+            ],
+            [
+              5.851466684,
+              7.332220772,
+              5.820191282
+            ],
+            [
+              7.277405591,
+              7.277407591,
+              7.277407591
+            ],
+            [
+              7.277407591,
+              7.277407591,
+              7.277405591
+            ],
+            [
+              7.332220772,
+              7.054593006,
+              5.820191282
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 269,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 7.277405590605951,
+            "1": 7.05459100566801,
+            "2": 5.851464684068088,
+            "3": 5.820189282287433,
+            "4": 7.05459100566801,
+            "5": 7.05459100566801,
+            "6": 5.851464684068088,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              5.851466684,
+              7.332220772,
+              5.820191282
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 269,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 8.518990729357798,
+            "1": 7.05459100566801,
+            "2": 7.012744125922888,
+            "3": 6.072063722462841,
+            "4": 7.05459100566801,
+            "5": 7.05459100566801,
+            "6": 7.012744125922888,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.012746126,
+              7.054593006,
+              8.556976188
+            ],
+            [
+              7.012746126,
+              8.556976188,
+              6.072065722
+            ],
+            [
+              8.518990729,
+              8.518992729,
+              8.518992729
+            ],
+            [
+              8.518992729,
+              8.518992729,
+              8.518990729
+            ],
+            [
+              8.556976188,
+              7.054593006,
+              6.072065722
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "linear_programs": 285,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 8.518990729357798,
+            "1": 7.155627443479888,
+            "2": 7.123017233977291,
+            "3": 7.033770904076679,
+            "4": 7.155627443479888,
+            "5": 7.155627443479888,
+            "6": 7.123017233977291,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.123019234,
+              7.155629443,
+              8.556976188
+            ],
+            [
+              7.123019234,
+              8.556976188,
+              7.033772904
+            ],
+            [
+              8.518990729,
+              8.518992729,
+              8.518992729
+            ],
+            [
+              8.518992729,
+              8.518992729,
+              8.518990729
+            ],
+            [
+              8.556976188,
+              7.155629443,
+              7.033772904
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "linear_programs": 270,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 8.518990729357798,
+            "1": 7.158131903818709,
+            "2": 7.123017233977291,
+            "3": 7.0792963575168875,
+            "4": 7.158131903818709,
+            "5": 7.158131903818709,
+            "6": 7.123017233977291,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.123019234,
+              7.158133904,
+              8.556976188
+            ],
+            [
+              7.123019234,
+              8.556976188,
+              7.079298358
+            ],
+            [
+              8.518990729,
+              8.518992729,
+              8.518992729
+            ],
+            [
+              8.518992729,
+              8.518992729,
+              8.518990729
+            ],
+            [
+              8.556976188,
+              7.158133904,
+              7.079298358
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": null,
+          "linear_programs": 285,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 8.518990729357798,
+            "1": 7.158131903818709,
+            "2": 7.123017233977291,
+            "3": 7.0792963575168875,
+            "4": 7.158131903818709,
+            "5": 7.158131903818709,
+            "6": 7.123017233977291,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.123019234,
+              8.556976188,
+              7.079298358
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 7,
+          "linear_programs": 285,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 8.518990729357798,
+            "1": 7.158131903818709,
+            "2": 7.123017233977291,
+            "3": 7.0792963575168875,
+            "4": 7.158131903818709,
+            "5": 7.158131903818709,
+            "6": 7.123017233977291,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.123019234,
+              8.556976188,
+              7.079298358
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 8,
+          "linear_programs": 285,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 9.250942370556693,
+            "1": 8.751726174769846,
+            "2": 8.751726174769846,
+            "3": 8.751726174769846,
+            "4": 8.060144867257922,
+            "5": 8.060144867257922,
+            "6": 7.131913936549153,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.131915937,
+              8.060146867,
+              9.252831112
+            ],
+            [
+              7.131915937,
+              9.252831112,
+              8.751728175
+            ],
+            [
+              9.250942371,
+              9.250944371,
+              9.250944371
+            ],
+            [
+              9.250944371,
+              9.250944371,
+              9.250942371
+            ],
+            [
+              9.252831112,
+              8.060146867,
+              8.751728175
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 258,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 9.250942370556693,
+            "1": 8.751726174769846,
+            "2": 8.751726174769846,
+            "3": 8.751726174769846,
+            "4": 8.060144867257922,
+            "5": 8.060144867257922,
+            "6": 7.131913936549153,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.131915937,
+              8.060146867,
+              9.252831112
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 258,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 9.250942370556693,
+            "1": 8.751726174769846,
+            "2": 8.751726174769846,
+            "3": 8.751726174769846,
+            "4": 8.060144867257922,
+            "5": 8.060144867257922,
+            "6": 7.131913936549153,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.131915937,
+              8.060146867,
+              9.252831112
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 258,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 9.250942370556693,
+            "1": 8.751726174769846,
+            "2": 8.751726174769846,
+            "3": 8.751726174769846,
+            "4": 8.060144867257922,
+            "5": 8.060144867257922,
+            "6": 7.131913936549153,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.131915937,
+              8.060146867,
+              9.252831112
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 258,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 9.250942370556693,
+            "1": 8.751726174769846,
+            "2": 8.751726174769846,
+            "3": 8.751726174769846,
+            "4": 8.060144867257922,
+            "5": 8.060144867257922,
+            "6": 7.131913936549153,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.131915937,
+              8.060146867,
+              9.252831112
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 258,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 9.250942370556693,
+            "1": 8.751726174769846,
+            "2": 8.751726174769846,
+            "3": 8.751726174769846,
+            "4": 8.060144867257922,
+            "5": 8.060144867257922,
+            "6": 7.131913936549153,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.131915937,
+              8.060146867,
+              9.252831112
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 258,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 12.756528225454026,
+            "1": 9.050865198602915,
+            "2": 9.050865198602915,
+            "3": 9.050865198602915,
+            "4": 8.096697366298946,
+            "5": 8.096697366298946,
+            "6": 7.148410792660499,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.148412793,
+              8.096699366,
+              12.769588676
+            ],
+            [
+              7.148412793,
+              12.769588676,
+              9.050867199
+            ],
+            [
+              12.756528225,
+              12.756530225,
+              12.756530225
+            ],
+            [
+              12.756530225,
+              12.756530225,
+              12.756528225
+            ],
+            [
+              12.769588676,
+              8.096699366,
+              9.050867199
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 268,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 12.756528225454026,
+            "1": 9.050865198602915,
+            "2": 9.050865198602915,
+            "3": 9.050865198602915,
+            "4": 8.096697366298946,
+            "5": 8.096697366298946,
+            "6": 7.148410792660499,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.148412793,
+              8.096699366,
+              12.769588676
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 268,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 12.756528225454026,
+            "1": 9.050865198602915,
+            "2": 9.050865198602915,
+            "3": 9.050865198602915,
+            "4": 8.096697366298946,
+            "5": 8.096697366298946,
+            "6": 7.148410792660499,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.148412793,
+              8.096699366,
+              12.769588676
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 268,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 12.756528225454026,
+            "1": 10.439463099095905,
+            "2": 10.439463099095905,
+            "3": 10.439463099095905,
+            "4": 9.169360245596083,
+            "5": 9.169360245596083,
+            "6": 8.012381552473618,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              8.012383552,
+              9.169362246,
+              12.769588676
+            ],
+            [
+              8.012383552,
+              12.769588676,
+              10.439465099
+            ],
+            [
+              12.756528225,
+              12.756530225,
+              12.756530225
+            ],
+            [
+              12.756530225,
+              12.756530225,
+              12.756528225
+            ],
+            [
+              12.769588676,
+              9.169362246,
+              10.439465099
+            ]
+          ],
+          "lower_certificate_count": 19,
+          "reused_from_count": null,
+          "linear_programs": 306,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 12.756528225454025,
+            "1": 10.439463099095905,
+            "2": 10.439463099095905,
+            "3": 10.439463099095905,
+            "4": 9.169360245596083,
+            "5": 9.169360245596083,
+            "6": 8.012381552473618,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              8.012383552,
+              9.169362246,
+              12.769588676
+            ],
+            [
+              8.012383552,
+              12.769588676,
+              10.439465099
+            ],
+            [
+              12.756528225,
+              12.756530225,
+              12.756530225
+            ],
+            [
+              12.756530225,
+              12.756530225,
+              12.756528225
+            ],
+            [
+              12.769588676,
+              9.169362246,
+              10.439465099
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 315,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "LSE A＋LSE B＋LSE C": {
+      "name": "LSE A＋LSE B＋LSE C",
+      "kind": "empirical_triple",
+      "members": [
+        "LSE A",
+        "LSE B",
+        "LSE C"
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 4.062368882256894,
+          "failure_budget": 0.0031250000000000028,
+          "rank": 261326
+        },
+        "other": {
+          "multiplier": 4.435131216921167,
+          "failure_budget": 0.0031250000000000028,
+          "rank": 261326
+        }
+      },
+      "power_bounds_MW": [
+        438.9662828701496,
+        523.3941316415543,
+        522.7464245445374
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 4.020902322396827,
+            "1": 0.0,
+            "2": 1.2632418021460976,
+            "3": 0.0,
+            "4": 1.2632418021460976,
+            "5": 0.0,
+            "6": 1.2632418021460976,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              1.263243802,
+              0.0,
+              4.059386709
+            ],
+            [
+              1.263243802,
+              4.059313218,
+              0.0
+            ],
+            [
+              4.020901939,
+              4.020904322,
+              4.020904322
+            ],
+            [
+              4.020904132,
+              4.020904322,
+              4.020902481
+            ],
+            [
+              4.070720935,
+              0.0,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 129,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.827523210661279,
+            "1": 5.819790396481117,
+            "2": 5.819790396481117,
+            "3": 5.819790396481117,
+            "4": 5.509152329754911,
+            "5": 4.0187368949119735,
+            "6": 5.509152329754911,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              5.50915433,
+              4.018738895,
+              5.970244946
+            ],
+            [
+              5.50915433,
+              5.900266364,
+              5.819792396
+            ],
+            [
+              5.819792204,
+              5.841732065,
+              5.819792396
+            ],
+            [
+              5.827522827,
+              5.827525211,
+              5.827525211
+            ],
+            [
+              5.82752502,
+              5.827525211,
+              5.82752337
+            ],
+            [
+              5.845951602,
+              5.819792396,
+              5.819792396
+            ],
+            [
+              5.929167403,
+              4.018738895,
+              5.819792396
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 258,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 7.253158535250836,
+            "1": 5.819790396481117,
+            "2": 6.269661675486034,
+            "3": 5.819790396481117,
+            "4": 6.269661675486034,
+            "5": 4.080456569826309,
+            "6": 6.269661675486034,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              6.269663675,
+              4.08045857,
+              7.258977144
+            ],
+            [
+              6.269663675,
+              7.258966036,
+              5.819792396
+            ],
+            [
+              7.253158152,
+              7.253160535,
+              7.253160535
+            ],
+            [
+              7.253160344,
+              7.253160535,
+              7.253158694
+            ],
+            [
+              7.260690312,
+              4.08045857,
+              5.819792396
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 284,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 7.253158535250836,
+            "1": 5.819790396481117,
+            "2": 6.269661675486034,
+            "3": 5.819790396481117,
+            "4": 6.269661675486034,
+            "5": 4.080456569826309,
+            "6": 6.269661675486034,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.260690312,
+              4.08045857,
+              5.819792396
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 284,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 8.75134620716866,
+            "1": 7.755512934691298,
+            "2": 7.755512934691298,
+            "3": 7.755512934691298,
+            "4": 6.269661675486034,
+            "5": 5.039405301687075,
+            "6": 6.269661675486034,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              6.269663675,
+              5.039407302,
+              8.753828375
+            ],
+            [
+              6.269663675,
+              8.753823639,
+              7.755514935
+            ],
+            [
+              8.751345824,
+              8.751348207,
+              8.751348207
+            ],
+            [
+              8.751348016,
+              8.751348207,
+              8.751346366
+            ],
+            [
+              8.754558859,
+              5.039407302,
+              7.755514935
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "linear_programs": 281,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 8.75134620716866,
+            "1": 7.755512934691298,
+            "2": 7.755512934691298,
+            "3": 7.755512934691298,
+            "4": 7.0299077024835,
+            "5": 7.001670756046317,
+            "6": 7.0299077024835,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.029909702,
+              7.001672756,
+              8.753828375
+            ],
+            [
+              7.029909702,
+              8.753823639,
+              7.755514935
+            ],
+            [
+              8.751345824,
+              8.751348207,
+              8.751348207
+            ],
+            [
+              8.751348016,
+              8.751348207,
+              8.751346366
+            ],
+            [
+              8.754558859,
+              7.001672756,
+              7.755514935
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "linear_programs": 302,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 8.75134620716866,
+            "1": 7.755512934691298,
+            "2": 7.755512934691298,
+            "3": 7.755512934691298,
+            "4": 7.112920027527813,
+            "5": 7.059896408122084,
+            "6": 7.112920027527813,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.112922028,
+              7.059898408,
+              8.753828375
+            ],
+            [
+              7.112922028,
+              8.753823639,
+              7.755514935
+            ],
+            [
+              8.751345824,
+              8.751348207,
+              8.751348207
+            ],
+            [
+              8.751348016,
+              8.751348207,
+              8.751346366
+            ],
+            [
+              8.754558859,
+              7.059898408,
+              7.755514935
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": null,
+          "linear_programs": 279,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 8.75134620716866,
+            "1": 7.755512934691298,
+            "2": 7.755512934691298,
+            "3": 7.755512934691298,
+            "4": 7.112920027527813,
+            "5": 7.059896408122084,
+            "6": 7.112920027527813,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.112922028,
+              7.059898408,
+              8.753828375
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 7,
+          "linear_programs": 279,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 8.75134620716866,
+            "1": 7.755512934691298,
+            "2": 7.755512934691298,
+            "3": 7.755512934691298,
+            "4": 7.112920027527813,
+            "5": 7.059896408122084,
+            "6": 7.112920027527813,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              7.112922028,
+              7.059898408,
+              8.753828375
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 8,
+          "linear_programs": 279,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 9.825998353572269,
+            "1": 9.75298673335763,
+            "2": 9.508918498058188,
+            "3": 8.077060328326494,
+            "4": 9.508918498058188,
+            "5": 8.06817877798723,
+            "6": 9.508918498058188,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              8.068180778,
+              9.965912873
+            ],
+            [
+              9.508920498,
+              9.965645679,
+              8.077062328
+            ],
+            [
+              9.82599797,
+              9.826000354,
+              9.826000354
+            ],
+            [
+              9.826000163,
+              9.826000354,
+              9.825998513
+            ],
+            [
+              9.999998617,
+              9.752988733,
+              9.752988733
+            ],
+            [
+              9.999999808,
+              9.755972769,
+              8.077062328
+            ],
+            [
+              9.999999809,
+              8.068180778,
+              9.755980169
+            ],
+            [
+              9.999999809,
+              9.752988733,
+              9.752987732
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 320,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 9.825998353572269,
+            "1": 9.75298673335763,
+            "2": 9.508918498058188,
+            "3": 8.077060328326494,
+            "4": 9.508918498058188,
+            "5": 8.06817877798723,
+            "6": 9.508918498058188,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              8.068180778,
+              9.965912873
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 320,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 9.825998353572269,
+            "1": 9.75298673335763,
+            "2": 9.508918498058188,
+            "3": 8.077060328326494,
+            "4": 9.508918498058188,
+            "5": 8.06817877798723,
+            "6": 9.508918498058188,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              8.068180778,
+              9.965912873
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 320,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 9.825998353572269,
+            "1": 9.75298673335763,
+            "2": 9.508918498058188,
+            "3": 8.077060328326494,
+            "4": 9.508918498058188,
+            "5": 8.06817877798723,
+            "6": 9.508918498058188,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              8.068180778,
+              9.965912873
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 320,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 9.825998353572269,
+            "1": 9.75298673335763,
+            "2": 9.508918498058188,
+            "3": 8.077060328326494,
+            "4": 9.508918498058188,
+            "5": 8.06817877798723,
+            "6": 9.508918498058188,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              8.068180778,
+              9.965912873
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 320,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 9.825998353572269,
+            "1": 9.75298673335763,
+            "2": 9.508918498058188,
+            "3": 8.077060328326494,
+            "4": 9.508918498058188,
+            "5": 8.06817877798723,
+            "6": 9.508918498058188,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              8.068180778,
+              9.965912873
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 320,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 14.251970897466764,
+            "1": 9.75298673335763,
+            "2": 9.508918498058188,
+            "3": 9.066844718054151,
+            "4": 9.508918498058188,
+            "5": 9.07580871946012,
+            "6": 9.508918498058188,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              9.075810719,
+              14.255603101
+            ],
+            [
+              9.508920498,
+              14.255596169,
+              9.066846718
+            ],
+            [
+              14.251970514,
+              14.251972897,
+              14.251972897
+            ],
+            [
+              14.251972707,
+              14.251972897,
+              14.251971056
+            ],
+            [
+              14.256672306,
+              9.075810719,
+              9.755980169
+            ],
+            [
+              14.256672306,
+              9.752987735,
+              9.752988732
+            ],
+            [
+              14.256672306,
+              9.752988733,
+              9.752987732
+            ],
+            [
+              14.256672306,
+              9.755972769,
+              9.066846718
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 306,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 14.251970897466764,
+            "1": 9.75298673335763,
+            "2": 9.508918498058188,
+            "3": 9.066844718054151,
+            "4": 9.508918498058188,
+            "5": 9.07580871946012,
+            "6": 9.508918498058188,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              14.255596169,
+              9.066846718
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 306,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 14.251970897466764,
+            "1": 9.75298673335763,
+            "2": 9.508918498058188,
+            "3": 9.066844718054151,
+            "4": 9.508918498058188,
+            "5": 9.07580871946012,
+            "6": 9.508918498058188,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              14.255596169,
+              9.066846718
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 306,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 14.251970897466764,
+            "1": 10.417583683437293,
+            "2": 10.417583683437293,
+            "3": 10.417583683437293,
+            "4": 10.204517653014062,
+            "5": 10.204517653014062,
+            "6": 9.50891849805819,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              10.204519653,
+              14.255603101
+            ],
+            [
+              9.508920498,
+              14.255596169,
+              10.417585683
+            ],
+            [
+              14.251970514,
+              14.251972897,
+              14.251972897
+            ],
+            [
+              14.251972707,
+              14.251972897,
+              14.251971056
+            ],
+            [
+              14.256672306,
+              10.204519653,
+              10.417585683
+            ]
+          ],
+          "lower_certificate_count": 19,
+          "reused_from_count": null,
+          "linear_programs": 335,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 14.251970897466764,
+            "1": 10.417583683437293,
+            "2": 10.417583683437293,
+            "3": 10.417583683437293,
+            "4": 10.204517653014062,
+            "5": 10.204517653014062,
+            "6": 9.50891849805819,
+            "7": 0.0
+          },
+          "candidates": [
+            [
+              9.508920498,
+              10.204519653,
+              14.255603101
+            ],
+            [
+              9.508920498,
+              14.255596169,
+              10.417585683
+            ],
+            [
+              14.251970514,
+              14.251972897,
+              14.251972897
+            ],
+            [
+              14.251972707,
+              14.251972897,
+              14.251971056
+            ],
+            [
+              14.256672306,
+              10.204519653,
+              10.417585683
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 335,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    },
+    "正态4户": {
+      "name": "正态4户",
+      "kind": "normal",
+      "members": [
+        "正态1",
+        "正态2",
+        "正态3",
+        "正态4"
+      ],
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "calibration": {
+        "global_": {
+          "multiplier": 4.130405694166337,
+          "failure_budget": 0.0025000000000000022,
+          "rank": 261490
+        },
+        "other": {
+          "multiplier": 4.48814861357678,
+          "failure_budget": 0.0025000000000000022,
+          "rank": 261490
+        }
+      },
+      "power_bounds_MW": [
+        355.8448996662792,
+        355.8448996662792,
+        355.8448996662792,
+        355.8448996662792
+      ],
+      "cases": [
+        {
+          "count": 1,
+          "thresholds": {
+            "0": 4.261516354306007,
+            "1": 2.5055433967646357,
+            "2": 2.5055433967646357,
+            "3": 2.5055433967646357,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.0,
+            "8": 2.5055433967646357,
+            "9": 2.5055433967646357,
+            "10": 2.5055433967646357,
+            "11": 2.5055433967646357,
+            "12": 0.0,
+            "13": 0.0,
+            "14": 0.0,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              0.0,
+              0.0,
+              2.505545397,
+              4.296070417
+            ],
+            [
+              0.0,
+              0.0,
+              4.296070417,
+              0.0
+            ],
+            [
+              0.0,
+              4.296070417,
+              2.505545397,
+              0.0
+            ],
+            [
+              4.261515354,
+              4.261518354,
+              4.261518354,
+              4.261518354
+            ],
+            [
+              4.261518354,
+              4.261518354,
+              4.261518354,
+              4.261515354
+            ],
+            [
+              4.296070417,
+              0.0,
+              2.505545397,
+              0.0
+            ]
+          ],
+          "longest_historical_call_hours": 4.5,
+          "linear_programs": 217,
+          "reused_from_count": null,
+          "lower_certificate_count": 1
+        },
+        {
+          "count": 2,
+          "thresholds": {
+            "0": 5.876714615261554,
+            "1": 5.835619820348738,
+            "2": 5.848338705876471,
+            "3": 5.817206387274573,
+            "4": 5.848338705876471,
+            "5": 5.790907193976652,
+            "6": 5.848338705876471,
+            "7": 5.790907193976652,
+            "8": 5.848338705876471,
+            "9": 5.817206387274573,
+            "10": 5.848338705876471,
+            "11": 5.817206387274573,
+            "12": 5.848338705876471,
+            "13": 0.0,
+            "14": 5.848338705876471,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              5.848340706,
+              0.0,
+              5.908522755,
+              6.0
+            ],
+            [
+              5.848340706,
+              5.810182049,
+              5.848340706,
+              6.0
+            ],
+            [
+              5.848340706,
+              5.810182049,
+              6.0,
+              5.848340706
+            ],
+            [
+              5.848340706,
+              5.841314368,
+              5.817208387,
+              6.0
+            ],
+            [
+              5.848340706,
+              5.848340706,
+              5.848340706,
+              5.961841343
+            ],
+            [
+              5.848340706,
+              5.848340706,
+              6.0,
+              5.810182049
+            ],
+            [
+              5.848340706,
+              5.867613561,
+              6.0,
+              5.790909194
+            ],
+            [
+              5.848340706,
+              5.961841343,
+              5.848340706,
+              5.848340706
+            ],
+            [
+              5.848340706,
+              6.0,
+              5.848340706,
+              5.810182049
+            ],
+            [
+              5.848340706,
+              6.0,
+              5.867613561,
+              5.790909194
+            ],
+            [
+              5.872446686,
+              5.817208387,
+              5.817208387,
+              6.0
+            ],
+            [
+              5.872446686,
+              6.0,
+              5.817208387,
+              5.817208387
+            ],
+            [
+              5.876713615,
+              5.876716615,
+              5.876716615,
+              5.876716615
+            ],
+            [
+              5.876716615,
+              5.876716615,
+              5.876716615,
+              5.876713615
+            ],
+            [
+              5.925045073,
+              5.790909194,
+              6.0,
+              5.790909194
+            ],
+            [
+              5.999998,
+              5.83562182,
+              5.83562182,
+              5.83562182
+            ],
+            [
+              6.0,
+              0.0,
+              5.965954267,
+              5.790909194
+            ],
+            [
+              6.0,
+              5.790909194,
+              5.925045073,
+              5.790909194
+            ],
+            [
+              6.0,
+              5.817208387,
+              5.817208387,
+              5.872446686
+            ],
+            [
+              6.0,
+              5.83562182,
+              5.83562182,
+              5.83561982
+            ],
+            [
+              6.0,
+              5.89874588,
+              5.817208387,
+              5.790909194
+            ]
+          ],
+          "lower_certificate_count": 2,
+          "reused_from_count": null,
+          "linear_programs": 729,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 3,
+          "thresholds": {
+            "0": 7.277680378168119,
+            "1": 7.047767448202868,
+            "2": 5.848338705876471,
+            "3": 5.817206387274573,
+            "4": 7.047767448202868,
+            "5": 7.047767448202868,
+            "6": 5.848338705876471,
+            "7": 5.790907193976652,
+            "8": 7.047767448202868,
+            "9": 7.047767448202868,
+            "10": 5.848338705876471,
+            "11": 5.817206387274573,
+            "12": 7.047767448202868,
+            "13": 7.047767448202868,
+            "14": 5.848338705876471,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              5.848340706,
+              7.047769448,
+              5.817208387,
+              7.360726513
+            ],
+            [
+              5.848340706,
+              7.047769448,
+              7.360726513,
+              5.790909194
+            ],
+            [
+              5.848340706,
+              7.360726513,
+              5.817208387,
+              5.841314368
+            ],
+            [
+              5.848340706,
+              7.360726513,
+              5.848340706,
+              5.810182049
+            ],
+            [
+              5.848340706,
+              7.360726513,
+              5.867613561,
+              5.790909194
+            ],
+            [
+              5.872446686,
+              7.360726513,
+              5.817208387,
+              5.817208387
+            ],
+            [
+              7.277679378,
+              7.277682378,
+              7.277682378,
+              7.277682378
+            ],
+            [
+              7.277682378,
+              7.277682378,
+              7.277682378,
+              7.277679378
+            ],
+            [
+              7.360726513,
+              7.047769448,
+              5.817208387,
+              5.790909194
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": null,
+          "linear_programs": 636,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 4,
+          "thresholds": {
+            "0": 7.277680378168119,
+            "1": 7.047767448202868,
+            "2": 5.848338705876471,
+            "3": 5.817206387274573,
+            "4": 7.047767448202868,
+            "5": 7.047767448202868,
+            "6": 5.848338705876471,
+            "7": 5.790907193976652,
+            "8": 7.047767448202868,
+            "9": 7.047767448202868,
+            "10": 5.848338705876471,
+            "11": 5.817206387274573,
+            "12": 7.047767448202868,
+            "13": 7.047767448202868,
+            "14": 5.848338705876471,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              5.872446686,
+              7.360726513,
+              5.817208387,
+              5.817208387
+            ]
+          ],
+          "lower_certificate_count": 3,
+          "reused_from_count": 3,
+          "linear_programs": 636,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 5,
+          "thresholds": {
+            "0": 8.7743627534223,
+            "1": 7.055205171398013,
+            "2": 7.055205171398013,
+            "3": 7.055205171398013,
+            "4": 7.055205171398013,
+            "5": 7.055205171398014,
+            "6": 7.055205171398013,
+            "7": 7.055205171398013,
+            "8": 7.047767448202868,
+            "9": 7.047767448202868,
+            "10": 7.005452083470983,
+            "11": 6.062656718945121,
+            "12": 7.047767448202868,
+            "13": 7.047767448202868,
+            "14": 7.005452083470983,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.005454083,
+              7.047769448,
+              7.042975056,
+              8.847456014
+            ],
+            [
+              7.005454083,
+              7.047769448,
+              8.847456014,
+              7.055207171
+            ],
+            [
+              7.005454083,
+              7.085290421,
+              7.005454083,
+              8.847456014
+            ],
+            [
+              7.005454083,
+              7.090744504,
+              6.062658719,
+              8.847456014
+            ],
+            [
+              7.005454083,
+              8.847456014,
+              7.005454083,
+              7.085290421
+            ],
+            [
+              7.005454083,
+              8.847456014,
+              7.035537333,
+              7.055207171
+            ],
+            [
+              7.040991416,
+              8.847456014,
+              6.062658719,
+              7.055207171
+            ],
+            [
+              7.047769448,
+              7.047769448,
+              7.000659691,
+              8.847456014
+            ],
+            [
+              8.774361753,
+              8.774364753,
+              8.774364753,
+              8.774364753
+            ],
+            [
+              8.774364753,
+              8.774364753,
+              8.774364753,
+              8.774361753
+            ],
+            [
+              8.847456014,
+              7.047769448,
+              6.062658719,
+              7.055207171
+            ]
+          ],
+          "lower_certificate_count": 5,
+          "reused_from_count": null,
+          "linear_programs": 736,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 6,
+          "thresholds": {
+            "0": 8.7743627534223,
+            "1": 7.795922008278758,
+            "2": 7.795922008278756,
+            "3": 7.793983899323291,
+            "4": 7.795922008278757,
+            "5": 7.793983899323291,
+            "6": 7.793983899323291,
+            "7": 7.793983899323291,
+            "8": 7.795922008278756,
+            "9": 7.1482475472819385,
+            "10": 7.11578652762727,
+            "11": 7.026948494594087,
+            "12": 7.1482475472819385,
+            "13": 7.1482475472819385,
+            "14": 7.11578652762727,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.115788528,
+              7.148249547,
+              7.887770025,
+              8.847456014
+            ],
+            [
+              7.115788528,
+              7.148249547,
+              8.847456014,
+              7.887770025
+            ],
+            [
+              7.115788528,
+              7.843784126,
+              8.847456014,
+              7.793985899
+            ],
+            [
+              7.115788528,
+              7.887770025,
+              7.026950495,
+              8.847456014
+            ],
+            [
+              7.115788528,
+              8.847456014,
+              7.026950495,
+              7.887770025
+            ],
+            [
+              7.115788528,
+              8.847456014,
+              7.843784126,
+              7.793985899
+            ],
+            [
+              7.793985899,
+              8.847456014,
+              7.799798226,
+              7.793985899
+            ],
+            [
+              7.795922008,
+              7.795924008,
+              7.795924008,
+              8.847456014
+            ],
+            [
+              7.795922008,
+              7.795924008,
+              8.847456014,
+              7.795924008
+            ],
+            [
+              7.795922008,
+              8.847456014,
+              7.795924008,
+              7.795924008
+            ],
+            [
+              7.795924008,
+              7.795924008,
+              7.795922008,
+              8.847456014
+            ],
+            [
+              7.795924008,
+              7.795924008,
+              8.847456014,
+              7.795922008
+            ],
+            [
+              7.795924008,
+              8.847456014,
+              7.795924008,
+              7.795922008
+            ],
+            [
+              7.799798226,
+              7.793985899,
+              8.847456014,
+              7.793985899
+            ],
+            [
+              7.799798226,
+              8.847456014,
+              7.793985899,
+              7.793985899
+            ],
+            [
+              7.887770025,
+              7.148249547,
+              7.026950495,
+              8.847456014
+            ],
+            [
+              8.774361753,
+              8.774364753,
+              8.774364753,
+              8.774364753
+            ],
+            [
+              8.774364753,
+              8.774364753,
+              8.774364753,
+              8.774361753
+            ],
+            [
+              8.847456014,
+              7.148249547,
+              7.026950495,
+              7.887770025
+            ],
+            [
+              8.847456014,
+              7.148249547,
+              7.843784126,
+              7.793985899
+            ],
+            [
+              8.847456014,
+              7.793985899,
+              7.799798226,
+              7.793985899
+            ],
+            [
+              8.847456014,
+              7.795922008,
+              7.795924008,
+              7.795924008
+            ],
+            [
+              8.847456014,
+              7.795924008,
+              7.795924008,
+              7.795922008
+            ],
+            [
+              8.847456014,
+              7.843784126,
+              7.026950495,
+              7.793985899
+            ]
+          ],
+          "lower_certificate_count": 6,
+          "reused_from_count": null,
+          "linear_programs": 894,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 7,
+          "thresholds": {
+            "0": 8.7743627534223,
+            "1": 7.795922008278756,
+            "2": 7.795922008278756,
+            "3": 7.793983899323291,
+            "4": 7.795922008278757,
+            "5": 7.793983899323291,
+            "6": 7.793983899323291,
+            "7": 7.793983899323291,
+            "8": 7.795922008278756,
+            "9": 7.152127329961188,
+            "10": 7.11578652762727,
+            "11": 7.073652451785808,
+            "12": 7.152127329961188,
+            "13": 7.152127329961188,
+            "14": 7.11578652762727,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.115788528,
+              7.15212933,
+              7.887770025,
+              8.847456014
+            ],
+            [
+              7.115788528,
+              7.15212933,
+              8.847456014,
+              7.887770025
+            ],
+            [
+              7.115788528,
+              7.843784126,
+              8.847456014,
+              7.793985899
+            ],
+            [
+              7.115788528,
+              7.887770025,
+              7.073654452,
+              8.847456014
+            ],
+            [
+              7.115788528,
+              8.847456014,
+              7.073654452,
+              7.887770025
+            ],
+            [
+              7.115788528,
+              8.847456014,
+              7.843784126,
+              7.793985899
+            ],
+            [
+              7.793985899,
+              8.847456014,
+              7.799798226,
+              7.793985899
+            ],
+            [
+              7.795922008,
+              7.795924008,
+              7.795924008,
+              8.847456014
+            ],
+            [
+              7.795922008,
+              7.795924008,
+              8.847456014,
+              7.795924008
+            ],
+            [
+              7.795922008,
+              8.847456014,
+              7.795924008,
+              7.795924008
+            ],
+            [
+              7.795924008,
+              7.795924008,
+              7.795922008,
+              8.847456014
+            ],
+            [
+              7.795924008,
+              7.795924008,
+              8.847456014,
+              7.795922008
+            ],
+            [
+              7.795924008,
+              8.847456014,
+              7.795924008,
+              7.795922008
+            ],
+            [
+              7.799798226,
+              7.793985899,
+              8.847456014,
+              7.793985899
+            ],
+            [
+              7.799798226,
+              8.847456014,
+              7.793985899,
+              7.793985899
+            ],
+            [
+              7.887770025,
+              7.15212933,
+              7.073654452,
+              8.847456014
+            ],
+            [
+              8.774361753,
+              8.774364753,
+              8.774364753,
+              8.774364753
+            ],
+            [
+              8.774364753,
+              8.774364753,
+              8.774364753,
+              8.774361753
+            ],
+            [
+              8.847456014,
+              7.15212933,
+              7.073654452,
+              7.887770025
+            ],
+            [
+              8.847456014,
+              7.15212933,
+              7.843784126,
+              7.793985899
+            ],
+            [
+              8.847456014,
+              7.793985899,
+              7.799798226,
+              7.793985899
+            ],
+            [
+              8.847456014,
+              7.795922008,
+              7.795924008,
+              7.795924008
+            ],
+            [
+              8.847456014,
+              7.795924008,
+              7.795924008,
+              7.795922008
+            ],
+            [
+              8.847456014,
+              7.843784126,
+              7.073654452,
+              7.793985899
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": null,
+          "linear_programs": 874,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 8,
+          "thresholds": {
+            "0": 8.7743627534223,
+            "1": 7.795922008278756,
+            "2": 7.795922008278756,
+            "3": 7.793983899323291,
+            "4": 7.795922008278757,
+            "5": 7.793983899323291,
+            "6": 7.793983899323291,
+            "7": 7.793983899323291,
+            "8": 7.795922008278756,
+            "9": 7.152127329961188,
+            "10": 7.11578652762727,
+            "11": 7.073652451785808,
+            "12": 7.152127329961188,
+            "13": 7.152127329961188,
+            "14": 7.11578652762727,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.115788528,
+              7.887770025,
+              7.073654452,
+              8.847456014
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 7,
+          "linear_programs": 874,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 9,
+          "thresholds": {
+            "0": 8.7743627534223,
+            "1": 7.795922008278756,
+            "2": 7.795922008278756,
+            "3": 7.793983899323291,
+            "4": 7.795922008278757,
+            "5": 7.793983899323291,
+            "6": 7.793983899323291,
+            "7": 7.793983899323291,
+            "8": 7.795922008278756,
+            "9": 7.152127329961188,
+            "10": 7.11578652762727,
+            "11": 7.073652451785808,
+            "12": 7.152127329961188,
+            "13": 7.152127329961188,
+            "14": 7.11578652762727,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.115788528,
+              7.887770025,
+              7.073654452,
+              8.847456014
+            ]
+          ],
+          "lower_certificate_count": 7,
+          "reused_from_count": 8,
+          "linear_programs": 874,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 10,
+          "thresholds": {
+            "0": 9.517464377702682,
+            "1": 8.194906914332202,
+            "2": 8.194906914332202,
+            "3": 8.194906914332202,
+            "4": 8.194906914332202,
+            "5": 8.194906914332202,
+            "6": 8.194906914332202,
+            "7": 8.194906914332202,
+            "8": 8.125062290259768,
+            "9": 8.124495757602983,
+            "10": 8.124495757602983,
+            "11": 8.124495757602983,
+            "12": 8.05070938398082,
+            "13": 8.05070938398082,
+            "14": 7.126347379709754,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.12634938,
+              8.050711384,
+              8.324479487,
+              9.569862511
+            ],
+            [
+              7.12634938,
+              8.180281956,
+              9.569862511,
+              8.194908914
+            ],
+            [
+              7.12634938,
+              8.250693113,
+              8.124497758,
+              9.569862511
+            ],
+            [
+              7.12634938,
+              9.569862511,
+              8.180281956,
+              8.194908914
+            ],
+            [
+              8.050711384,
+              8.050711384,
+              9.569862511,
+              8.273768103
+            ],
+            [
+              8.055784199,
+              9.569862511,
+              8.124497758,
+              8.194908914
+            ],
+            [
+              8.12506229,
+              8.12506429,
+              8.12506429,
+              9.569862511
+            ],
+            [
+              8.12506429,
+              8.12506429,
+              8.12506229,
+              9.569862511
+            ],
+            [
+              8.126195356,
+              8.124497758,
+              8.124497758,
+              9.569862511
+            ],
+            [
+              8.129570572,
+              8.050711384,
+              9.569862511,
+              8.194908914
+            ],
+            [
+              9.517463378,
+              9.517466378,
+              9.517466378,
+              9.517466378
+            ],
+            [
+              9.517466378,
+              9.517466378,
+              9.517466378,
+              9.517463378
+            ],
+            [
+              9.569862511,
+              8.050711384,
+              8.129570572,
+              8.194908914
+            ],
+            [
+              9.569862511,
+              8.055784199,
+              8.124497758,
+              8.194908914
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": null,
+          "linear_programs": 702,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 11,
+          "thresholds": {
+            "0": 9.517464377702682,
+            "1": 8.194906914332202,
+            "2": 8.194906914332202,
+            "3": 8.194906914332202,
+            "4": 8.194906914332202,
+            "5": 8.194906914332202,
+            "6": 8.194906914332202,
+            "7": 8.194906914332202,
+            "8": 8.125062290259768,
+            "9": 8.124495757602983,
+            "10": 8.124495757602983,
+            "11": 8.124495757602983,
+            "12": 8.05070938398082,
+            "13": 8.05070938398082,
+            "14": 7.126347379709754,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.12634938,
+              8.180281956,
+              9.569862511,
+              8.194908914
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 10,
+          "linear_programs": 702,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 12,
+          "thresholds": {
+            "0": 9.517464377702682,
+            "1": 8.194906914332202,
+            "2": 8.194906914332202,
+            "3": 8.194906914332202,
+            "4": 8.194906914332202,
+            "5": 8.194906914332202,
+            "6": 8.194906914332202,
+            "7": 8.194906914332202,
+            "8": 8.125062290259768,
+            "9": 8.124495757602983,
+            "10": 8.124495757602983,
+            "11": 8.124495757602983,
+            "12": 8.05070938398082,
+            "13": 8.05070938398082,
+            "14": 7.126347379709754,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.12634938,
+              8.180281956,
+              9.569862511,
+              8.194908914
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 11,
+          "linear_programs": 702,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 13,
+          "thresholds": {
+            "0": 9.517464377702682,
+            "1": 8.194906914332202,
+            "2": 8.194906914332202,
+            "3": 8.194906914332202,
+            "4": 8.194906914332202,
+            "5": 8.194906914332202,
+            "6": 8.194906914332202,
+            "7": 8.194906914332202,
+            "8": 8.125062290259768,
+            "9": 8.124495757602983,
+            "10": 8.124495757602983,
+            "11": 8.124495757602983,
+            "12": 8.05070938398082,
+            "13": 8.05070938398082,
+            "14": 7.126347379709754,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.12634938,
+              8.180281956,
+              9.569862511,
+              8.194908914
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 12,
+          "linear_programs": 702,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 14,
+          "thresholds": {
+            "0": 9.517464377702682,
+            "1": 8.194906914332202,
+            "2": 8.194906914332202,
+            "3": 8.194906914332202,
+            "4": 8.194906914332202,
+            "5": 8.194906914332202,
+            "6": 8.194906914332202,
+            "7": 8.194906914332202,
+            "8": 8.125062290259768,
+            "9": 8.124495757602983,
+            "10": 8.124495757602983,
+            "11": 8.124495757602983,
+            "12": 8.05070938398082,
+            "13": 8.05070938398082,
+            "14": 7.126347379709754,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.12634938,
+              8.180281956,
+              9.569862511,
+              8.194908914
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 13,
+          "linear_programs": 702,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 15,
+          "thresholds": {
+            "0": 9.517464377702682,
+            "1": 8.194906914332202,
+            "2": 8.194906914332202,
+            "3": 8.194906914332202,
+            "4": 8.194906914332202,
+            "5": 8.194906914332202,
+            "6": 8.194906914332202,
+            "7": 8.194906914332202,
+            "8": 8.125062290259768,
+            "9": 8.124495757602983,
+            "10": 8.124495757602983,
+            "11": 8.124495757602983,
+            "12": 8.05070938398082,
+            "13": 8.05070938398082,
+            "14": 7.126347379709754,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.12634938,
+              8.180281956,
+              9.569862511,
+              8.194908914
+            ]
+          ],
+          "lower_certificate_count": 10,
+          "reused_from_count": 14,
+          "linear_programs": 702,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 16,
+          "thresholds": {
+            "0": 13.02166315571482,
+            "1": 9.122488577509786,
+            "2": 9.122488577509786,
+            "3": 9.122488577509786,
+            "4": 9.122488577509786,
+            "5": 9.122488577509786,
+            "6": 9.122488577509786,
+            "7": 9.122488577509786,
+            "8": 9.04078934644253,
+            "9": 9.04078934644253,
+            "10": 9.04078934644253,
+            "11": 9.04078934644253,
+            "12": 8.088411773344932,
+            "13": 8.088411773344932,
+            "14": 7.142919234514123,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.142921235,
+              8.088413773,
+              9.040791346,
+              13.086657623
+            ],
+            [
+              7.142921235,
+              8.088413773,
+              13.086657623,
+              9.122490578
+            ],
+            [
+              7.142921235,
+              13.086657623,
+              9.040791346,
+              9.122490578
+            ],
+            [
+              13.021662156,
+              13.021665156,
+              13.021665156,
+              13.021665156
+            ],
+            [
+              13.021665156,
+              13.021665156,
+              13.021665156,
+              13.021662156
+            ],
+            [
+              13.086657623,
+              8.088413773,
+              9.040791346,
+              9.122490578
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": null,
+          "linear_programs": 656,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 17,
+          "thresholds": {
+            "0": 13.02166315571482,
+            "1": 9.122488577509786,
+            "2": 9.122488577509786,
+            "3": 9.122488577509786,
+            "4": 9.122488577509786,
+            "5": 9.122488577509786,
+            "6": 9.122488577509786,
+            "7": 9.122488577509786,
+            "8": 9.04078934644253,
+            "9": 9.04078934644253,
+            "10": 9.04078934644253,
+            "11": 9.04078934644253,
+            "12": 8.088411773344932,
+            "13": 8.088411773344932,
+            "14": 7.142919234514123,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.142921235,
+              8.088413773,
+              9.040791346,
+              13.086657623
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 16,
+          "linear_programs": 656,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 18,
+          "thresholds": {
+            "0": 13.02166315571482,
+            "1": 9.122488577509786,
+            "2": 9.122488577509786,
+            "3": 9.122488577509786,
+            "4": 9.122488577509786,
+            "5": 9.122488577509786,
+            "6": 9.122488577509786,
+            "7": 9.122488577509786,
+            "8": 9.04078934644253,
+            "9": 9.04078934644253,
+            "10": 9.04078934644253,
+            "11": 9.04078934644253,
+            "12": 8.088411773344932,
+            "13": 8.088411773344932,
+            "14": 7.142919234514123,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              7.142921235,
+              8.088413773,
+              9.040791346,
+              13.086657623
+            ]
+          ],
+          "lower_certificate_count": 16,
+          "reused_from_count": 17,
+          "linear_programs": 656,
+          "source": "新增记录仍保留原上界候选；历史集合嵌套，沿用原下界证书"
+        },
+        {
+          "count": 19,
+          "thresholds": {
+            "0": 13.02166315571482,
+            "1": 10.436697023667193,
+            "2": 10.436697023667193,
+            "3": 10.436697023667193,
+            "4": 9.247988276418688,
+            "5": 9.247988276418688,
+            "6": 9.247988276418688,
+            "7": 9.247988276418688,
+            "8": 10.436697023667193,
+            "9": 10.436697023667193,
+            "10": 10.436697023667193,
+            "11": 10.436697023667193,
+            "12": 9.166686139575182,
+            "13": 9.166686139575182,
+            "14": 8.003360804254182,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              8.003362804,
+              9.16668814,
+              10.436699024,
+              13.086657623
+            ],
+            [
+              8.003362804,
+              9.16668814,
+              13.086657623,
+              9.247990276
+            ],
+            [
+              8.003362804,
+              13.086657623,
+              10.436699024,
+              9.247990276
+            ],
+            [
+              13.021662156,
+              13.021665156,
+              13.021665156,
+              13.021665156
+            ],
+            [
+              13.021665156,
+              13.021665156,
+              13.021665156,
+              13.021662156
+            ],
+            [
+              13.086657623,
+              9.16668814,
+              10.436699024,
+              9.247990276
+            ]
+          ],
+          "lower_certificate_count": 19,
+          "reused_from_count": null,
+          "linear_programs": 715,
+          "source": "完整15分钟及跨调用约束重新求解"
+        },
+        {
+          "count": 20,
+          "thresholds": {
+            "0": 13.02166315571482,
+            "1": 10.436697023667191,
+            "2": 10.436697023667191,
+            "3": 10.436697023667191,
+            "4": 9.247988276418688,
+            "5": 9.247988276418686,
+            "6": 9.247988276418686,
+            "7": 9.247988276418686,
+            "8": 10.436697023667191,
+            "9": 10.436697023667191,
+            "10": 10.436697023667191,
+            "11": 10.436697023667191,
+            "12": 9.166686139575182,
+            "13": 9.166686139575182,
+            "14": 8.003360804254184,
+            "15": 0.0
+          },
+          "candidates": [
+            [
+              8.003362804,
+              9.16668814,
+              10.436699024,
+              13.086657623
+            ],
+            [
+              8.003362804,
+              9.16668814,
+              13.086657623,
+              9.247990276
+            ],
+            [
+              8.003362804,
+              13.086657623,
+              10.436699024,
+              9.247990276
+            ],
+            [
+              13.021662156,
+              13.021665156,
+              13.021665156,
+              13.021665156
+            ],
+            [
+              13.021665156,
+              13.021665156,
+              13.021665156,
+              13.021662156
+            ],
+            [
+              13.086657623,
+              9.16668814,
+              10.436699024,
+              9.247990276
+            ]
+          ],
+          "longest_historical_call_hours": 14.5,
+          "linear_programs": 764,
+          "reused_from_count": null,
+          "lower_certificate_count": 20
+        }
+      ]
+    }
+  }
+}

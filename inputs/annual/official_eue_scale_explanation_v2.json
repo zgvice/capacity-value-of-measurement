@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "explanation_version": 2,
+  "verified_utc": "2026-10-29T07:48:59.116576+00:00",
+  "status": "documented_display_scale_conversion_reconciles_report_rounding;raw_model_unchanged",
+  "supersedes_interpretation_only": "The previous raw-EUE-versus-report comparison crossed solved/display scales. Its immutable numerical values and failed raw-scale comparison remain preserved.",
+  "original_record": {
+    "path": "inputs/annual/official_reconciliation.json",
+    "sha256": "2b14ba92790f88f4f3359efa30d0119d1c4f0cb5d816271254bf76fd1e9c4677",
+    "original_report_targets_pass": false
+  },
+  "primary_sources": [
+    {
+      "id": "S06",
+      "path": "inputs/pjm/S06_2025-pjm-elcc-rrs.pdf",
+      "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/2025-pjm-elcc-rrs.pdf",
+      "sha256": "3b41abcdb9b5b3c56c945c2246fbe8791729620956c1e7cd0e8aee50fe1cb203",
+      "pages": {
+        "36": "Metrics Calculator after Table21: final EUE adjustment for use in CETO",
+        "12": "Table4 forecast peak164186MW",
+        "42": "Table23 solved peak163224MW; baseline EUE discussion",
+        "43": "Table25 EUE1809.3MWh/year",
+        "22": "public load profiles already include the declared daily adjustment"
+      },
+      "verbatim_quote": "divided by the ratio of 50/50 Solved Peak Load to Forecast Peak Load.",
+      "support": "Explicitly divide solved-load EUE by solved/forecast peak ratio. This is a final metrics adjustment, not a rescaling of raw dispatch inputs."
+    },
+    {
+      "id": "S11",
+      "path": "inputs/pjm/S11_27bra-explanation-of-posted-files.pdf",
+      "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/27bra-explanation-of-posted-files.pdf",
+      "sha256": "27c79c9e3b176c08311ecfc3fa972f42291e99764bce613cd469fc2cdd7e8928",
+      "pages": {
+        "1": "per-unit published load description",
+        "2": "LoadRelativetoSolvedLoad denominator"
+      },
+      "support": "Input-field definitions. No separate EUE conversion rule found here; that rule is supplied by S06p36."
+    }
+  ],
+  "formula": "EUE_report_scale = EUE_raw_model / (SolvedPeak/ForecastPeak)",
+  "raw_model": {
+    "EUE_MWh": 1798.6851051314516,
+    "solved_peak_MW": 163224.0,
+    "h_source": "original output-minus-Load Margin, sign reversed",
+    "probabilities": "1/40300 on all40300 complete annual atoms"
+  },
+  "report_display_scale": {
+    "forecast_peak_MW": 164186.0,
+    "multiplier": 1.0058937411165025,
+    "EUE_MWh": 1809.2860894912055,
+    "rounded_1_decimal_MWh": 1809.3,
+    "report_target_MWh": 1809.3,
+    "difference_MWh": -0.013910508794424459,
+    "rounding_tolerance_MWh": 0.05,
+    "pass": true
+  },
+  "additional_same_input_check": {
+    "published_rows": 14197,
+    "max_public_profile_minus_LoadRelative_per_unit": 1.1102230246251565e-16,
+    "max_public_profile_times_163224_minus_Load_MW": 1.1641532182693481e-10,
+    "implication": "Published per-unit profiles reconstruct final Load on every public loss row. S06p22 says the published scenarios include daily adjustment; do not add that noise again. Full supply margins outside public loss rows remain unknown."
+  },
+  "nonchanges": {
+    "raw_XLSX": true,
+    "known_h": true,
+    "S0_raw": true,
+    "S1_raw": true,
+    "risk": true,
+    "budget": true,
+    "q_and_resource": true,
+    "original_failed_JSON": true,
+    "rerun_ingest": false
+  },
+  "scope_and_limits": "This resolves the stated EUE target to published precision using an explicit official procedure. It does not verify unpublished hourly supply, certify arbitrary candidate laws, prove coverage, or authorize rescaling response MW/physical resource/budget. Values use published rounded peak figures.",
+  "calendar_contract": "Read current snapshots/approved_plan/08: main technical v=1. Earlier CP-window reminder was stale and is withdrawn."
+}

@@ -1,0 +1,30 @@
+{
+  "distinct_days": 20,
+  "tasks_after_publication_dedup": 110,
+  "all_days": [
+    "2022-06-14",
+    "2022-06-15",
+    "2022-06-16",
+    "2022-12-23",
+    "2022-12-24",
+    "2025-06-23",
+    "2025-06-24",
+    "2025-06-25",
+    "2025-07-28",
+    "2025-07-29",
+    "2025-08-11",
+    "2026-01-25",
+    "2026-05-18",
+    "2026-05-19",
+    "2026-07-02",
+    "2026-07-03",
+    "2026-09-01",
+    "2026-09-17",
+    "2026-10-13",
+    "2026-10-14"
+  ],
+  "max_hours": 14.5,
+  "clock_handling": "literal elapsed local clock; UTC conversion only where source independently establishes it",
+  "real_customer_response_used_as_truth": false,
+  "source_sha256": "a7eb9608a3f3172aec16b5021cc8012173d38207da1e997afc0650c2e8c00791"
+}
