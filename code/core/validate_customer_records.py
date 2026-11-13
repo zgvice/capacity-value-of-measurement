@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import norm,rankdata
 from numba import set_num_threads
-from common import OUT,CORES,write_json
+from common import OUT,CORES,ROOT,write_json
 from customer_profiles import _empirical_nodes,_ar_scores,_reorder_nodes
 
 USERS=('LSE A','LSE B','LSE C')  # 三个匿名实测来源。
@@ -59,9 +59,13 @@ def leave_one_out(raw):
                 rows.append(dict(客户=user,留出场次=event,训练场次=int(training.event.nunique()),训练点数=len(training),
                     留出点数=len(held),训练相邻关联=rho,指标=metric,实测值=value,
                     模拟区间下界=low,模拟中位数=mid,模拟区间上界=high,落入诊断区间=bool(low<=value<=high)))
-    table=pd.DataFrame(rows);table.to_csv(DEST/'event_holdout.csv',index=False,encoding='utf-8-sig')
+    codes = raw.drop_duplicates('user').set_index('user')['customer_code']
+    table = pd.DataFrame(rows)
+    table['customer_code'] = table['客户'].map(codes)
+    table.to_csv(DEST/'event_holdout.csv',index=False,encoding='utf-8-sig')
     summary=table.groupby(['客户','指标']).agg(可检验场次=('留出场次','size'),
         落入诊断区间场次=('落入诊断区间','sum'),实测平均值=('实测值','mean'),模拟中位数平均=('模拟中位数','mean')).reset_index()
+    summary['customer_code'] = summary['客户'].map(codes)
     summary.to_csv(DEST/'holdout_summary.csv',index=False,encoding='utf-8-sig')
     return summary
 
@@ -85,9 +89,12 @@ def full_day(raw):
             summary.append(dict(客户=user,日期=date,片段=segment,点数=len(g),平均用电_千瓦=load,
                 平均偏差率=float(difference.mean()/load),偏差标准差率=float(difference.std()/load),
                 相邻差值关联=float(np.corrcoef(difference[:-1],difference[1:])[0,1]) if len(g)>2 and difference.std()>0 else np.nan))
-    pd.DataFrame(summary).to_csv(DEST/'daily_bias.csv',index=False,encoding='utf-8-sig')
+    result = pd.DataFrame(summary)
+    codes = table.drop_duplicates('客户').set_index('客户')['customer_code']
+    result['customer_code'] = result['客户'].map(codes)
+    result.to_csv(DEST/'daily_bias.csv',index=False,encoding='utf-8-sig')
     return dict(matched_customer_days=table.groupby(['客户','日期']).ngroups,
-        quarter_points=len(table), source='Anonymized paired baseline and meter observations',
+        quarter_points=len(table), source_columns='T0015—T2345；按日期和匿名客户编号匹配',
         interpretation='调用前、调用中、调用后分别记录基线与电表差值；不改变主实验误差分布')
 
 
@@ -95,6 +102,14 @@ def main():
     DEST.mkdir(exist_ok=True);set_num_threads(CORES)
     raw=pd.read_csv(OUT/'hubei/meter_series.csv',dtype={'event':str})
     summary=leave_one_out(raw);day=full_day(raw)
+    data = ROOT/'data'
+    aliases = pd.read_csv(data/'Customer_Labels.csv').set_index('customer_code')['customer_alias']
+    for saved, exported in [('event_holdout.csv', 'D33.csv'), ('holdout_summary.csv', 'D40.csv'),
+                            ('daily_bias.csv', 'D35.csv')]:
+        table = pd.read_csv(DEST/saved, float_precision='round_trip')
+        table.assign(客户=table['customer_code'].map(aliases)).to_csv(
+            data/exported, index=False, encoding='utf-8-sig'
+        )
     write_json(DEST/'diagnostics.json',dict(users=list(USERS),draws_per_event=DRAWS,seed=SEED,nodes=NODES,
         empirical_event_counts={u:int(raw[raw.user==u].event.nunique()) for u in USERS},full_day=day,
         leave_one_out='每次留出一整场，其余场次重新拟合经验边际及相邻秩关联；生成同长度完整时序',

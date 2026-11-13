@@ -11,10 +11,17 @@ python -m pip install -r requirements.txt
 julia --startup-file=no --project=code/adequacy/env -e 'using Pkg; Pkg.instantiate()'
 ```
 
+## Extract, fit and check the Hubei records
+
+```sh
+python -B -X utf8 code/extract_hubei_sources.py
+python -B -X utf8 code/prepare_data.py
+python -B -X utf8 code/core/validate_customer_records.py
+```
+
 ## Run the experiments
 
 ```sh
-python -B -X utf8 code/prepare_data.py
 python -B -X utf8 code/core/check_annual_sources.py
 python -B -X utf8 code/exp1.py
 python -B -X utf8 code/exp2.py
@@ -28,7 +35,6 @@ Add `--check` to an experiment command to check saved results.
 ## Run the record checks and draw the figures
 
 ```sh
-python -B -X utf8 code/core/validate_customer_records.py
 python -B -X utf8 code/core/minimum_record_package.py
 python -B -X utf8 reproduce_figures.py
 ```

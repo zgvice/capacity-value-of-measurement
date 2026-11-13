@@ -1,5 +1,5 @@
 ﻿dataset_id,description,source_relative_path,procedure_relative_path,availability
-D01,Three anonymized customers: cleaned observed event records,data/D01.csv,,Included in this package
+D01,Three anonymized customers: cleaned observed event records,data/D01.csv,code/extract_hubei_sources.py,Included in this package
 D02,Empirical customer power distributions,data/D02.csv,code/core/customer_profiles.py,Included in this package
 D03,Original all-source metering reconciliation (internal archive),,,Internal archive
 D04,Common 544-reading history,results/exp1/shared_records.csv,code/core/prepare_presentation_data.py,Included in this package
@@ -32,7 +32,7 @@ D30,All 88 true-duration comparisons,data/D30.csv,code/core/run_duration_sensiti
 D31,99-percent-tail numerical refinement,data/D31.csv,code/core/run_core_sensitivity.py,Included in this package
 D32,99-percent-tail information decomposition,data/D32.csv,code/core/run_core_sensitivity.py,Included in this package
 D33,All individual empirical event diagnostics,data/D33.csv,code/core/validate_customer_records.py,Included in this package
-D34,All 2660 official baseline-meter pairs,data/D34.csv,,Included in this package
+D34,All 2660 official baseline-meter pairs,data/D34.csv,code/extract_hubei_sources.py,Included in this package
 D35,All 84 customer-day-segment diagnostics,data/D35.csv,code/core/validate_customer_records.py,Included in this package
 D36,Independent historical coverage and settings,data/D36.json,code/core/run_experiment_four.py,Included in this package
 D37,Operating-duration and payback sensitivities,results/exp4/annual_sensitivity.csv,code/core/experiment_four_physics.py,Included in this package
@@ -55,8 +55,8 @@ P13,Result-table and plot-input assembly,code/core/prepare_presentation_data.py,
 P14,Stage execution order,code/core/pipeline.py,code/core/pipeline.py,Included in this package
 I01,AEMO empirical baseline-method report,inputs/baseline/baseline_consumption_methodology_phase_2_report_oct13.pdf,,Included in this package
 I02,PJM empirical baseline ranking tables,inputs/baseline/pjm-empirical-analysis-of-dr-baseline-methods-supplemental.pdf,,Included in this package
-I03,Original settlement workbook (internal archive),,,Internal archive
-I04,Original event workbooks (internal archive),,,Internal archive
+I03,Anonymized settlement source sheets,inputs/hubei_sources/settlement.xlsx,code/extract_hubei_sources.py,Included in this package
+I04,Anonymized event source sheets,inputs/hubei_sources/events.xlsx,code/extract_hubei_sources.py,Included in this package
 I05,Frozen historical instructions,inputs/frozen/call_tasks.csv,,Included in this package
 I06,Official annual atom probabilities,inputs/annual/official_atoms.csv.gz,code/core/check_annual_sources.py,Included in this package
 I07,Annual background arrays,inputs/annual/background_arrays.npz,code/core/check_annual_sources.py,Included in this package

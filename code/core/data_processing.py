@@ -2,7 +2,7 @@
 import argparse,json
 import numpy as np
 import pandas as pd
-from common import DATA,OUT,AUDIT,write_json
+from common import DATA,OUT,AUDIT,ROOT,write_json
 from customer_history_inputs import CALENDAR,TASK_FILE
 from customer_profiles import _empirical_profile
 
@@ -22,13 +22,22 @@ def check_inputs():
 
 def report():
     rows=[];models={}
+    codes = pd.read_csv(OUT/'hubei/meter_series.csv').drop_duplicates('user').set_index('user')['customer_code']
     for user in ('LSE A','LSE B','LSE C'):
         p,_=_empirical_profile(user);models[user]=p
         rows.append(dict(用户=user,记录数=p['records'],调用场次=p['events'],平均功率比例=p['mean_shape'],
-            比例标准差=p['SD_shape'],相邻15分钟关联=p['gaussian_rank_AR1']))
+            比例标准差=p['SD_shape'],相邻15分钟关联=p['gaussian_rank_AR1'],customer_code=codes[user]))
     table=pd.DataFrame(rows);dest=OUT/'hubei'
     table.to_csv(dest/'fitted_profiles.csv',index=False,encoding='utf-8-sig')
     write_json(DATA/'frozen/power_ratio_profiles.json',models)
+    data = ROOT/'data'
+    aliases = pd.read_csv(data/'Customer_Labels.csv').set_index('customer_code')['customer_alias']
+    table.assign(用户=table['customer_code'].map(aliases)).to_csv(
+        data/'D02.csv', index=False, encoding='utf-8-sig'
+    )
+    write_json(data/'I12.json', {
+        aliases[codes[user]]: dict(model, group=aliases[codes[user]]) for user, model in models.items()
+    })
     info=check_inputs();write_json(AUDIT/'data_check.json',info)
     return info
 
