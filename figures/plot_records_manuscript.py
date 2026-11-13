@@ -112,11 +112,11 @@ def draw():
     axh.set(xlim=(clock[0], stop), xlabel="Clock time on 24 Dec 2022", ylabel="Consumption (MW)")
     ticks = np.linspace(clock[0], stop, 4)  # Original four evenly spaced clock ticks.
     axh.set_xticks(ticks, [f"{int(t):02d}:{int(round((t % 1) * 60)):02d}" for t in ticks])
-    axh.set_title("a  Shared historical records", loc="left", pad=17, weight="bold")
+    axh.set_title("a  Shared simulated records", loc="left", pad=17, weight="bold")
     axh.legend(loc="lower left", ncol=2, handlelength=1.3, columnspacing=.8, borderaxespad=.35)
     axh.grid(axis="y", color="#E7EBEF", lw=.5)
     axh.tick_params(length=2.5)
-    fig.text(.125, .610, "20 calls; 544 shared readings.\nTrue delivery: 500 MW throughout.", fontsize=9, color=GRAY, va="top", linespacing=1.3)
+    fig.text(.125, .610, "20 simulated events, 544 readings.\nTrue delivery: 500 MW throughout.", fontsize=9, color=GRAY, va="top", linespacing=1.3)
 
     # (b) Existing representative future call; no new instruction is constructed.
     original = float(future["原邀约结束_小时"].iloc[0] - future["原邀约开始_小时"].iloc[0])
@@ -128,14 +128,14 @@ def draw():
             axt.barh(row, min(extension, allowed - original), left=original, height=.44, color=COLORS[i], edgecolor="none")
     axt.axvline(original, color=GRAY, lw=.75, ls=(0, (3, 3)))
     axt.set_yticks([3, 2, 1, 0], [f"+{h:g} h" for h in extensions])
-    axt.set(xlim=(0, allowed), ylim=(-.65, 3.65), xlabel="Hours since future call starts")
+    axt.set(xlim=(0, allowed), ylim=(-.65, 3.65), xlabel="Hours since start of future event")
     axt.set_xticks([0, original / 2, original, allowed])
     axt.set_title("b  Continuation capability", loc="left", pad=17, weight="bold")
     axt.text(original, 3.77, "Planned end", ha="center", va="bottom", fontsize=9, color=GRAY)
     axt.spines["left"].set_visible(False)
     axt.tick_params(axis="y", length=0)
     axt.tick_params(axis="x", length=2.5)
-    fig.text(.625, .610, "Gray: planned call.\nColor: extra 500 MW service.", fontsize=9, color=GRAY, va="top", linespacing=1.3)
+    fig.text(.625, .610, "Gray: scheduled event.\nColor: continued response at 500 MW.", fontsize=9, color=GRAY, va="top", linespacing=1.3)
 
     # (c) Existing full-year risk evaluations, including the saved capacity roots.
     for h, color in zip(extensions, COLORS):

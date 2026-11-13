@@ -53,10 +53,10 @@ def draw():
     nomination = float(process["指令功率_兆瓦"].iloc[0])
 
     fig = plt.figure(figsize=(WIDTH, HEIGHT))
-    fig.text(.035, .972, "Simulated customers in historical call windows", fontsize=11, weight="bold")
+    fig.text(.035, .972, "Simulated responses in PJM dispatch windows", fontsize=11, weight="bold")
     fig.text(.035, .942,
              f"Four customer types; true duration {duration:g} h; nomination {nomination:,.0f} MW")
-    fig.text(.035, .900, "a  Simulated delivery during winter and summer calls", fontsize=10, weight="bold")
+    fig.text(.035, .900, "a  Simulated delivery during winter and summer events", fontsize=10, weight="bold")
 
     # Original color scale: 100% means meeting instruction; 50--150% covers these data.
     cmap = LinearSegmentedColormap.from_list(
@@ -111,9 +111,9 @@ def draw():
 
     handles = [
         Line2D([0], [0], color=LIGHT, marker="o", mfc="white", mec=GRAY,
-               lw=1.2, markersize=5, label="15 records (five dates held out)"),
+               lw=1.2, markersize=5, label="15 event records"),
         Line2D([0], [0], color=LIGHT, marker="o", mfc=TEAL, mec="white",
-               lw=1.2, markersize=5, label="20 records (five dates restored)"),
+               lw=1.2, markersize=5, label="20 event records"),
     ]
     fig.legend(handles=handles, loc="center", bbox_to_anchor=(.535, .508),
                ncol=1, handlelength=1.6, labelspacing=.45)

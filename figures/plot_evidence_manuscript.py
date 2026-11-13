@@ -90,7 +90,7 @@ def figure_evidence():
     credit = fig.add_axes([.125, .415, .83, .215])
     duration = fig.add_axes([.125, .105, .83, .215])
     fig.text(.06, .975, "a  Verification of the same 20 records", fontsize=10, weight="bold")
-    names = ["Pointwise", "Pointwise + within-call", "Cross-call", "All joint"]
+    names = ["Pointwise", "Pointwise + within-event", "Across events", "All joint"]
     lo, hi, mid = interval(checks, "认证下界_兆瓦", "认证上界_兆瓦")
     y = np.arange(len(checks))
     method_colors = [BLUE, BLUE, GREEN, GREEN]
@@ -134,7 +134,7 @@ def figure_evidence():
     for record in (16, 19):
         value = float(history.loc[history["历史次数"] == record, "确认时长_小时"].iloc[0])
         duration.scatter(record, value, color=RED, s=31, zorder=6)
-    duration.set(xlim=(.5, 20.5), ylim=(0, 9), xlabel="Number of submitted call records",
+    duration.set(xlim=(.5, 20.5), ylim=(0, 9), xlabel="Number of submitted event records",
                  ylabel="Minimum feasible\nduration (h)")
     duration.set_xticks([1, 5, 10, 15, 20])
     duration.set_yticks([0, 3, 6, 9])

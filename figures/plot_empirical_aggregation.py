@@ -87,7 +87,7 @@ def main():
     fig.legend(handles=handles, loc="upper center", ncol=4, bbox_to_anchor=(0.52, 0.995),
                handlelength=2.1, columnspacing=1.25)
     fig.supylabel("Net accredited allowance (MW)", x=0.02, fontsize=9)
-    fig.supxlabel("Complete call records per customer", x=0.55, y=0.02, fontsize=9)
+    fig.supxlabel("Complete event records per customer", x=0.55, y=0.02, fontsize=9)
     fig.savefig(OUTPUT)
     plt.close(fig)
 
