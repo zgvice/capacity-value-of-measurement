@@ -150,7 +150,7 @@ def draw():
         x = row["净增加_兆瓦"]
         axr.scatter(x, budget, s=24, color=COLORS[i], edgecolor="white", lw=.7, zorder=5)
         axr.annotate(f"{x:.2f}", xy=(x, budget), xytext=(x + annotation_dx[i], annotation_y[i]), ha="center", va="center", fontsize=9.5, weight="bold", color=COLORS[i], arrowprops={"arrowstyle": "-", "color": COLORS[i], "lw": .75})
-    axr.set(xlim=(0, curves["资源净容量_兆瓦"].max()), ylim=(0, 2 * budget), xlabel="Net accredited capacity (MW)", ylabel="Annual CVaR of added\nunserved energy (MWh)")
+    axr.set(xlim=(0, curves["资源净容量_兆瓦"].max()), ylim=(0, 2 * budget), xlabel="Added load above $C_0$ (MW)", ylabel="Annual CVaR of added\nunserved energy (MWh)")
     axr.set_xticks([0, 50, 100, 150, 200])  # Same axis tick locations as the source figure.
     axr.set_yticks([0, 4000, 8000, 12000, 16000])  # Presentation spacing in original MWh units.
     axr.legend(loc="upper left", ncol=2, handlelength=1.35, columnspacing=.8, borderaxespad=.3)
